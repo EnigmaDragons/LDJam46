@@ -34,24 +34,24 @@ If you accomplish this, then you succeeded at the jam, regardless of how people 
 
 ### General Jam Schedule
 
-Day Before Jam - Setup your workspace. Buy food/snacks/drinks. Complete the Quick Start Guide.
-1hr before Jam - Jump in Voice Chat with the Jam Team. Get to know each other.
-Jam Start - 1-2 hours brainstorm session. Reach Team Consensus on Game Design and Initial Scope.
-First 8 Hours - Blitz to create the skeleton game, playable from Main Menu to Victory and Game Over.
-First Main Jam Phase - Add content and mechanics. QA Testers work on finding bugs. Designers work on making the game fun.
-Jam Midpoint - Team Syncs to review current full game and creates a shared vision for Content Complete Milestone
-Second Main Jam Phase - Finish up key content, mechanics and game feel.
-Final 6 Hours - Polish the game. Everyone plays through the game. Tune visuals. Fix bugs. 
-2hr before Jam End - Create Game Page, Gameplay Video, Sizzle Trailer, etc.
-Final Hour - Test Final Build and Submit once approved. 
-After Jam - Team Retrospective in Voice Chat. Talk about what went well, what didn't go well, and how we can improve.
+- Day Before Jam - Setup your workspace. Buy food/snacks/drinks. Complete the Quick Start Guide.
+- 1hr before Jam - Jump in Voice Chat with the Jam Team. Get to know each other.
+- Jam Start - 1-2 hours brainstorm session. Reach Team Consensus on Game Design and Initial Scope.
+- First 8 Hours - Blitz to create the skeleton game, playable from Main Menu to Victory and Game Over.
+- First Main Jam Phase - Add content and mechanics. QA Testers work on finding bugs. Designers work on making the game fun.
+- Jam Midpoint - Team Syncs to review current full game and creates a shared vision for Content Complete Milestone
+- Second Main Jam Phase - Finish up key content, mechanics and game feel.
+- Final 6 Hours - Polish the game. Everyone plays through the game. Tune visuals. Fix bugs. 
+- 2hr before Jam End - Create Game Page, Gameplay Video, Sizzle Trailer, etc.
+- Final Hour - Test Final Build and Submit once approved. 
+- After Jam - Team Retrospective in Voice Chat. Talk about what went well, what didn't go well, and how we can improve.
 
 ----
 
 ### Basic Milestones
 
-1st - Game Skeleton Complete
-2nd - Core Gameplay Loop Complete
-3rd - Initial Content 
-4th - Content Complete
-5th - Polished and Finalized
+- 1st - Game Skeleton Complete
+- 2nd - Core Gameplay Loop Complete
+- 3rd - Initial Content 
+- 4th - Content Complete
+- 5th - Polished and Finalized
