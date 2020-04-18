@@ -42,9 +42,16 @@ public class Rigidbody2dMovement : MonoBehaviour {
                 _sprite.flipX = true;
             } else if (_body.velocity.x < 0) {
                 _sprite.flipX = false;
-            }
+            }            
 
             // transition from idle to walk
+
+            if (_body.velocity.x < 0 || _body.velocity.x > 0 || _body.velocity.y < 0 || _body.velocity.y > 0) {
+                _animator.SetTrigger("toWALK");
+            } else if (_body.velocity.x == 0 || _body.velocity.y == 0) {
+                _animator.ResetTrigger("toWALK");
+                _animator.SetTrigger("Exit");
+            }
 
         } else {
             _body.velocity = Vector2.zero;
