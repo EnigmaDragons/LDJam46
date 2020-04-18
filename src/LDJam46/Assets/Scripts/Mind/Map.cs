@@ -10,7 +10,7 @@ namespace Assets.Scripts.Mind
         [SerializeField] private Transform groundParent;
         [SerializeField] private Transform objectParent;
         [SerializeField] private SpriteRenderer[] grounds;
-        [SerializeField] private GameObject player;
+        [SerializeField] private CurrentPlayerCharacter player;
         [SerializeField] private Vector2 distanceToGeneration;
         [SerializeField] private Vector2 groundSize;
         [SerializeField, Header("This order matters for spawn priority")] private MapObject[] mapObjects;
@@ -20,11 +20,12 @@ namespace Assets.Scripts.Mind
 
         private void Update()
         {
-            for (var x = (int)Math.Floor((player.transform.localPosition.x - distanceToGeneration.x) / groundSize.x) * groundSize.x; 
-                    x <= Math.Ceiling((player.transform.localPosition.x + distanceToGeneration.x) / groundSize.x) * groundSize.x; 
+            var pos = player.PlayerCharacter.transform.localPosition;
+            for (var x = (int)Math.Floor((pos.x - distanceToGeneration.x) / groundSize.x) * groundSize.x; 
+                    x <= Math.Ceiling((pos.x + distanceToGeneration.x) / groundSize.x) * groundSize.x; 
                     x += groundSize.x)
-                for (var y = (int)Math.Floor((player.transform.localPosition.y - distanceToGeneration.y) / groundSize.y) * groundSize.y;
-                        y <= Math.Ceiling((player.transform.localPosition.y + distanceToGeneration.y) / groundSize.y) * groundSize.y;
+                for (var y = (int)Math.Floor((pos.y - distanceToGeneration.y) / groundSize.y) * groundSize.y;
+                        y <= Math.Ceiling((pos.y + distanceToGeneration.y) / groundSize.y) * groundSize.y;
                         y += groundSize.y)
                     if (!_generatedGround.ContainsKey(new Vector2(x, y)))
                         SpawnMapTile(x, y);
