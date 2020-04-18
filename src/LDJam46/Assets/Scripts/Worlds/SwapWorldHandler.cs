@@ -10,7 +10,7 @@ public class SwapWorldHandler : OnMessage<SwapWorld>
     protected override void Execute(SwapWorld msg)
     {
         var newWorld = game.CurrentWorld == CurrentWorld.Mind ? CurrentWorld.Real : CurrentWorld.Mind;
-        Message.Publish(new WorldSwapStarted());
+        Message.Publish(new WorldSwapStarted(newWorld));
         transition.ShowTransition(
             () => Activate(newWorld),
             () => NotifyFinished(newWorld)); 

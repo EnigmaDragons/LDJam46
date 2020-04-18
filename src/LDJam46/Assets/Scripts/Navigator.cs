@@ -1,5 +1,4 @@
-﻿
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 [CreateAssetMenu(menuName = "OnlyOnce/Navigator")]
@@ -13,5 +12,14 @@ public class Navigator : ScriptableObject
     private void NavigateTo(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
+    }
+
+    public void QuitGame()
+    {
+#if UNITY_EDITOR
+	    UnityEditor.EditorApplication.isPlaying = false;
+#else
+        Application.Quit();
+#endif
     }
 }
