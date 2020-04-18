@@ -6,8 +6,8 @@ public class DialogueBoxUI : OnMessage<StartConversation>
     [SerializeField] private DialogueLineUI line;
     [SerializeField] private FloatReference inputCooldown;
 
-    private string[] _lines;
-    private int _index;
+    private string[] _lines = new string[0];
+    private int _index = 0;
     private float _cooldown = 0;
 
     protected override void Execute(StartConversation msg)
