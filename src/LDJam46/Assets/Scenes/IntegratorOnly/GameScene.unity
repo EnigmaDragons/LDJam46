@@ -220,6 +220,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 962789448618456904, guid: 74de7851fb1f80d418d8a872915871db,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2454375112093908137, guid: 74de7851fb1f80d418d8a872915871db,
         type: 3}
       propertyPath: m_Name
@@ -283,6 +288,11 @@ PrefabInstance:
     - target: {fileID: 2454375113376513198, guid: 74de7851fb1f80d418d8a872915871db,
         type: 3}
       propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5079158464358866111, guid: 74de7851fb1f80d418d8a872915871db,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
