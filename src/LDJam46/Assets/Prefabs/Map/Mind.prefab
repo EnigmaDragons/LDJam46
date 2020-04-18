@@ -88,6 +88,10 @@ MonoBehaviour:
     Object: {fileID: 3568707662482022383, guid: 205d1aa69a3eb7f428e482bf58c236c5,
       type: 3}
     PreventSpawnZone: 0.5
+  - PercentChance: 30
+    Object: {fileID: 1623815915377819225, guid: f96b67b7dff6b6a41bcc24f6eea26f88,
+      type: 3}
+    PreventSpawnZone: 0.5
   spawnRetries: 0
 --- !u!1 &6331489087899110391
 GameObject:

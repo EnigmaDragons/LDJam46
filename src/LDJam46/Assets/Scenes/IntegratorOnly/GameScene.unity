@@ -756,6 +756,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameUI
       objectReference: {fileID: 0}
+    - target: {fileID: 3541132994066549226, guid: 2f1ae3c029bf438439726f24c69d4aae,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3541132994066549226, guid: 2f1ae3c029bf438439726f24c69d4aae,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3541132994066549226, guid: 2f1ae3c029bf438439726f24c69d4aae,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3541132994066549226, guid: 2f1ae3c029bf438439726f24c69d4aae,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3711534777759529185, guid: 2f1ae3c029bf438439726f24c69d4aae,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -779,6 +799,26 @@ PrefabInstance:
     - target: {fileID: 3711534777759529185, guid: 2f1ae3c029bf438439726f24c69d4aae,
         type: 3}
       propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6721814249797310286, guid: 2f1ae3c029bf438439726f24c69d4aae,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6721814249797310286, guid: 2f1ae3c029bf438439726f24c69d4aae,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6721814249797310286, guid: 2f1ae3c029bf438439726f24c69d4aae,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6721814249797310286, guid: 2f1ae3c029bf438439726f24c69d4aae,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
