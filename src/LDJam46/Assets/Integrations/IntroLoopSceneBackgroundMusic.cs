@@ -6,8 +6,5 @@ public class IntroLoopSceneBackgroundMusic : MonoBehaviour
     [SerializeField] private IntroloopAudio music;
     [SerializeField] private IntroLoopAudioPlayer musicPlayer;
 
-    private void Start()
-    {
-        musicPlayer.PlaySelectedMusicLooping(music);
-    }
+    private void OnEnable() => musicPlayer.PlaySelectedMusicLooping(music);
 }
