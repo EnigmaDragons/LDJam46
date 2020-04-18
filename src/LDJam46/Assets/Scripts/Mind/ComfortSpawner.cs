@@ -1,7 +1,6 @@
-﻿
-using UnityEngine;
+﻿using UnityEngine;
 
-public class TreeSpawner : MonoBehaviour, ISpawner
+public class ComfortSpawner : MonoBehaviour, ISpawner
 {
     [SerializeField] private MapGeneratorObject[] objects;
 

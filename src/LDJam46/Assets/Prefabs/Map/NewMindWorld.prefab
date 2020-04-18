@@ -121,6 +121,7 @@ Transform:
   m_Children:
   - {fileID: 2972243433056939189}
   - {fileID: 6430891106935682978}
+  - {fileID: 8561036777467899617}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -139,3 +140,51 @@ MonoBehaviour:
   size: 40
   ground: {fileID: 2972243433056939188}
   trees: {fileID: 2680759604428647177}
+  comfort: {fileID: 1245487708979997720}
+--- !u!1 &5389882468684852429
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8561036777467899617}
+  - component: {fileID: 1245487708979997720}
+  m_Layer: 0
+  m_Name: Comforts
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8561036777467899617
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5389882468684852429}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2972243433338823488}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1245487708979997720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5389882468684852429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 780e17e8390c0db498c08308c436fdb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objects:
+  - PercentChance: 0.3
+    Object: {fileID: 3817069723814122353, guid: 2a448df4b6750934d8dad190e70780fb,
+      type: 3}
