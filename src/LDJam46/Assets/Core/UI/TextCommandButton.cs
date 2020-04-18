@@ -1,11 +1,13 @@
 ﻿using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(Button))]
-public sealed class TextCommandButton : MonoBehaviour
+public sealed class TextCommandButton : MonoBehaviour, IPointerEnterHandler, ISelectHandler, IDeselectHandler
 {
     [SerializeField] private TextMeshProUGUI label;
+    [SerializeField] private GameObject selector;
 
     private Button _button;
 
@@ -25,4 +27,8 @@ public sealed class TextCommandButton : MonoBehaviour
 
     public void Select() => _button.Select();
     public void Execute() => _button.onClick.Invoke();
+
+    public void OnPointerEnter(PointerEventData eventData) => Select();
+    public void OnSelect(BaseEventData eventData) => selector.SetActive(true);
+    public void OnDeselect(BaseEventData eventData) => selector.SetActive(false);
 }
