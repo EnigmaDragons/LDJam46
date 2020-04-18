@@ -6,6 +6,18 @@ public sealed class CurrentGameState : ScriptableObject
 {
     [SerializeField] private GameState gameState;
 
+    public CurrentWorld CurrentWorld => gameState.CurrentWorld;
+
+    public GameState GameState
+    {
+        get
+        {
+            if (gameState == null)
+                Init();
+            return gameState;
+        }
+    }
+
     public void Init() => gameState = new GameState();
     public void Init(GameState initialState) => gameState = initialState;
     public void Subscribe(Action<GameStateChanged> onChange, object owner) => Message.Subscribe(onChange, owner);
