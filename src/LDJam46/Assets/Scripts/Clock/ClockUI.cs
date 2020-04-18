@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using TMPro;
 using UnityEngine;
 
@@ -12,6 +13,8 @@ public class ClockUI : OnMessage<PassTime>
     {
         _minutes += msg.Minutes;
         SetTime();
+        if (_minutes >= 1020)
+            StartCoroutine(Win());
     }
 
     private void Start()
@@ -22,5 +25,11 @@ public class ClockUI : OnMessage<PassTime>
     private void SetTime()
     {
         clock.text = $"{Math.Floor((decimal)_minutes / 60):00}:{(_minutes % 60):00}";
+    }
+
+    private IEnumerator Win()
+    {
+        yield return new WaitForSeconds(0.5f);
+        Message.Publish(new ReportVictory());
     }
 }

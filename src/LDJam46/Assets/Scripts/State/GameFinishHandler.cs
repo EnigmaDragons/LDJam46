@@ -1,7 +1,7 @@
 ﻿
 using UnityEngine;
 
-public class GameFinishHandler : OnMessage<ReportGameOver>
+public class GameFinishHandler : OnMessage<ReportGameOver, ReportVictory>
 {
     [SerializeField] private Navigator navigator;
     
@@ -9,4 +9,6 @@ public class GameFinishHandler : OnMessage<ReportGameOver>
     {
         navigator.NavigateToGameOver();
     }
+
+    protected override void Execute(ReportVictory msg) => navigator.NavigateToVictory();
 }
