@@ -21,6 +21,9 @@ public class DialogueLineUI : MonoBehaviour
 
     private void Update()
     {
+        if (_text == null)
+            return;
+        
         _t += Time.deltaTime;
         textBox.text = _text.Substring(0, (int) Math.Min(_text.Length, Math.Floor(_t / secondsPerCharacter)));
     }
