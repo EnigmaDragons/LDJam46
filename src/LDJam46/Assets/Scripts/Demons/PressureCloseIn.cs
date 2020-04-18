@@ -1,5 +1,4 @@
-﻿using Assets.Scripts.Demons;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 [ExecuteInEditMode]
@@ -9,16 +8,21 @@ public class PressureCloseIn : MonoBehaviour
     [SerializeField] private float fullyOpenScale = 1.6f;
     [SerializeField] private float fullyClosedScale = 0.002f;
     [SerializeField] private float closeSpeed = 0.5f;
-    [SerializeField, Range(0f, 1f)] private float currentClosedAmount = 0f;
+    [SerializeField] private DemonState state;
 
-    private void OnEnable() => currentClosedAmount = 0;
+    private void OnEnable() => state.Activate();
     
     private void Update()
     {
-        currentClosedAmount += closeSpeed * Time.deltaTime;
-        var amount = Mathf.Lerp(fullyOpenScale, fullyClosedScale, currentClosedAmount);
+        state.Increment(closeSpeed * Time.deltaTime);
+        var amount = Mathf.Lerp(fullyOpenScale, fullyClosedScale, state.ProgressPercent);
         image.rectTransform.localScale = new Vector3(amount, amount, 1);
-        if (currentClosedAmount >= 1f) 
-            Message.Publish(new ReportGameOver(DemonName.Pressure));
+    }
+
+    public void Activate() => gameObject.SetActive(true);
+    public void Deactivate()
+    {
+        state.IsActive = false;
+        gameObject.SetActive(false);
     }
 }
