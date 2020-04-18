@@ -105,10 +105,10 @@ TextureImporter:
       length: 367.7924
       parentId: 1
     - name: Head
-      position: {x: 1398.1993, y: 617.64703, z: 1}
-      rotation: {x: 0, y: 0, z: -0.46346748, w: 0.88611394}
+      position: {x: 417.27866, y: -169.27995, z: 1}
+      rotation: {x: 0, y: 0, z: -0.79573363, w: 0.60564685}
       length: 358.08185
-      parentId: -1
+      parentId: 2
     - name: R_Leg
       position: {x: -46.582905, y: -242.86708, z: 0}
       rotation: {x: 0, y: 0, z: -0.87236124, w: 0.4888619}
@@ -121,12 +121,12 @@ TextureImporter:
       parentId: 2
     - name: Tail_UP
       position: {x: -270.72098, y: -4.239714, z: 0}
-      rotation: {x: 0, y: -0, z: -0.99118954, w: 0.1324513}
-      length: 145.50748
+      rotation: {x: 0, y: -0, z: -0.9911896, w: 0.13245095}
+      length: 145.50752
       parentId: 2
     - name: Tail_DOWN
-      position: {x: 145.50752, y: -0.00002536562, z: 0}
-      rotation: {x: 0, y: 0, z: -0.563738, w: 0.8259537}
+      position: {x: 145.5075, y: 0.00009206739, z: 0}
+      rotation: {x: 0, y: 0, z: -0.56373775, w: 0.8259539}
       length: 147.28561
       parentId: 6
     - name: R_Ear
@@ -135,7 +135,7 @@ TextureImporter:
       length: 338.56274
       parentId: -1
     - name: R_Ear2
-      position: {x: 338.56277, y: -0.0000036684323, z: 0}
+      position: {x: 338.56284, y: -0.00004019517, z: 0}
       rotation: {x: 0, y: 0, z: 0.7231569, w: 0.69068384}
       length: 260.0555
       parentId: 8
@@ -166,7 +166,7 @@ TextureImporter:
       parentId: 13
     - name: Cape4
       position: {x: 128.16125, y: 0.000012708708, z: -1}
-      rotation: {x: 0, y: 0, z: -0.059062485, w: 0.9982543}
+      rotation: {x: 0, y: 0, z: -0.059062533, w: 0.9982543}
       length: 96.4606
       parentId: 14
     spriteID: 5e97eb03825dee720800000000000000
