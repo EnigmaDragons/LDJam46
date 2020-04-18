@@ -18,7 +18,10 @@ public class DemonState : ScriptableObject
     }
 
     public void Increment(float amount)
-    {
+    {        
+        if (!IsActive)
+            return;
+        
         progressPercent += amount;
         if (progressPercent >= 1f) 
             Message.Publish(new ReportGameOver(Name));
@@ -26,6 +29,9 @@ public class DemonState : ScriptableObject
     
     public void Setback(float amount)
     {
+        if (!IsActive)
+            return;
+        
         progressPercent -= amount;
         if (progressPercent <= 0)
             IsActive = false;
