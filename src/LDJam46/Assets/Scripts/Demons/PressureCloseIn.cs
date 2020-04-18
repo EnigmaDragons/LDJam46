@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Assets.Scripts.Demons;
+using UnityEngine;
 using UnityEngine.UI;
 
 [ExecuteInEditMode]
@@ -17,5 +18,7 @@ public class PressureCloseIn : MonoBehaviour
         currentClosedAmount += closeSpeed * Time.deltaTime;
         var amount = Mathf.Lerp(fullyOpenScale, fullyClosedScale, currentClosedAmount);
         image.rectTransform.localScale = new Vector3(amount, amount, 1);
+        if (currentClosedAmount >= 1f) 
+            Message.Publish(new ReportGameOver(DemonName.Pressure));
     }
 }

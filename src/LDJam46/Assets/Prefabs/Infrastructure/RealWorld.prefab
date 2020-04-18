@@ -145,6 +145,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8091434619265725824}
   - component: {fileID: 928027968837735771}
+  - component: {fileID: 6012500749689797204}
   m_Layer: 0
   m_Name: RealWorld
   m_TagString: Untagged
@@ -181,6 +182,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   music: {fileID: 11400000, guid: 655f1680206d70e43af28114e8823089, type: 2}
   musicPlayer: {fileID: 11400000, guid: 95f47694e0b28ce48a808ae15f18f4d8, type: 2}
+--- !u!114 &6012500749689797204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388983054045390534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d58edd1b4e10af4d94073b5556d7ca8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6168794335674813448
 PrefabInstance:
   m_ObjectHideFlags: 0

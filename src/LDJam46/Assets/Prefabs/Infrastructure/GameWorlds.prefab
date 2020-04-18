@@ -60,6 +60,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MindWorld
       objectReference: {fileID: 0}
+    - target: {fileID: 2255727830845053857, guid: bdf96b6b0bdcde64d9dc0d0628813243,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6954196046115431409, guid: bdf96b6b0bdcde64d9dc0d0628813243,
         type: 3}
       propertyPath: m_LocalPosition.x
