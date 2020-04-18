@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class GroundSpawner : MonoBehaviour
+public class GroundSpawner : MonoBehaviour, ISpawner
 {
     [SerializeField] private GameObject floor;
     
