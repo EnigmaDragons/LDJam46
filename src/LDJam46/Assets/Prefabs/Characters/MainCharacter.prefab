@@ -118,6 +118,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveLimiter: 0.7
   moveSpeed: 4
+  state: {fileID: 11400000, guid: 6bb654c6d14f44349977173df0bb252b, type: 2}
 --- !u!61 &2454375113376513199
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -348,6 +349,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveLimiter: 0.7
   moveSpeed: 4
+  state: {fileID: 11400000, guid: 6bb654c6d14f44349977173df0bb252b, type: 2}
 --- !u!61 &7851706012143163927
 BoxCollider2D:
   m_ObjectHideFlags: 0

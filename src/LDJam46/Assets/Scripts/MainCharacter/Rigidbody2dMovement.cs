@@ -2,10 +2,11 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
-public class Rigidbody2dMovement : MonoBehaviour
-{
+public class Rigidbody2dMovement : MonoBehaviour {
     [SerializeField] private float moveLimiter = 0.7f;
     [SerializeField] private float moveSpeed = 20f;
+    [SerializeField] private CurrentGameState state;
+
     private Rigidbody2D _body;
 
     private float _horizontal;
@@ -24,12 +25,15 @@ public class Rigidbody2dMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (Math.Abs(_horizontal) > 0.001f && Math.Abs(_vertical) > 0.001f)
-        {
-            _horizontal *= moveLimiter;
-            _vertical *= moveLimiter;
-        } 
+        if (state.GameState.isInDialogue == false) {
+            if (Math.Abs(_horizontal) > 0.001f && Math.Abs(_vertical) > 0.001f) {
+                _horizontal *= moveLimiter;
+                _vertical *= moveLimiter;
+            }
 
-        _body.velocity = new Vector2(_horizontal * moveSpeed, _vertical * moveSpeed);
+            _body.velocity = new Vector2(_horizontal * moveSpeed, _vertical * moveSpeed);
+        } else {
+            _body.velocity = Vector2.zero;
+        }
     }
 }
