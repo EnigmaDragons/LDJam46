@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6954196046115431409}
   - component: {fileID: 2242870551334484595}
+  - component: {fileID: 5588154246874363195}
   m_Layer: 0
   m_Name: MindWorld
   m_TagString: Untagged
@@ -28,7 +29,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 8893512646323841297}
+  - {fileID: 2829403468097528006}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -46,6 +47,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   music: {fileID: 11400000, guid: 13882cb749cec354a9e46fff98703d64, type: 2}
   musicPlayer: {fileID: 11400000, guid: 95f47694e0b28ce48a808ae15f18f4d8, type: 2}
+--- !u!114 &5588154246874363195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2255727830845053857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36faf953c223e4b4d8ed4ffff562f3da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  demon: 0
 --- !u!1001 &3220616232013404396
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -165,9 +179,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69d7d34f06fdd5e48a658fc63bfa371f, type: 3}
---- !u!224 &8893512646323841297 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 6331489087548535293, guid: 69d7d34f06fdd5e48a658fc63bfa371f,
+--- !u!4 &2829403468097528006 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 861843465836836906, guid: 69d7d34f06fdd5e48a658fc63bfa371f,
     type: 3}
   m_PrefabInstance: {fileID: 3220616232013404396}
   m_PrefabAsset: {fileID: 0}
