@@ -353,12 +353,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1357103642 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2454375113376513198, guid: 74de7851fb1f80d418d8a872915871db,
-    type: 3}
-  m_PrefabInstance: {fileID: 199734824}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &376767173689934029
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -579,10 +573,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1758572893, guid: 89e4726b660b61c429cfad462c730282, type: 3}
-      propertyPath: m_Follow
-      value: 
-      objectReference: {fileID: 1357103642}
     - target: {fileID: 1378888205068749675, guid: 89e4726b660b61c429cfad462c730282,
         type: 3}
       propertyPath: m_RootOrder
