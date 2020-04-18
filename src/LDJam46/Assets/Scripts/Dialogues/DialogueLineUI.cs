@@ -10,7 +10,7 @@ public class DialogueLineUI : MonoBehaviour
     private string _text = "";
     private float _t;
 
-    public bool IsRevealed => _t > _text.Length * secondsPerCharacter;
+    public bool IsRevealed => _t >= _text.Length * secondsPerCharacter;
     public void Reveal() => _t = _text.Length * secondsPerCharacter;
 
     public void Display(string text)
@@ -19,7 +19,7 @@ public class DialogueLineUI : MonoBehaviour
         _t = 0;
     }
 
-    private void Update()
+    public void ManualUpdate()
     {
         _t += Time.deltaTime;
         textBox.text = _text.Substring(0, (int) Math.Min(_text.Length, Math.Floor(_t / secondsPerCharacter)));
