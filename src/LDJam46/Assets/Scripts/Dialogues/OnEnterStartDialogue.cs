@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Linq;
+using UnityEngine;
 
 public class OnEnterStartDialogue : MonoBehaviour
 {
@@ -16,6 +17,6 @@ public class OnEnterStartDialogue : MonoBehaviour
             return;
         
         _isTriggered = true;
-        Message.Publish(new StartConversation(dialogue.Lines));   
+        Message.Publish(new StartConversation(dialogue.Lines.Where(x => x.Type == DialogueLineType.Statement).Select(x => x.Text).ToArray()));   
     }
 }

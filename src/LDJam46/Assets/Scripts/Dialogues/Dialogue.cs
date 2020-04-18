@@ -1,8 +1,9 @@
 ﻿
+using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Dialogue")]
 public class Dialogue : ScriptableObject
 {
-    public string[] Lines;
+    public List<DialogueLine> Lines;
 }
