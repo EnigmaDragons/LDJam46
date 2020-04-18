@@ -10,6 +10,6 @@ public class GroundSpawner : MonoBehaviour, ISpawner
             Destroy(child.gameObject);
         
         var iterator = new TwoDimensionalIterator(size.x, size.y);
-        iterator.ForEach(xy => Instantiate(floor, new Vector3(xy.Item1, xy.Item2, 0), Quaternion.identity, transform));
+        iterator.ForEach(xy => Instantiate(floor, new Vector3(xy.Item1 - 0.5f, xy.Item2 - 0.5f, 0), Quaternion.identity, transform));
     }
 }
