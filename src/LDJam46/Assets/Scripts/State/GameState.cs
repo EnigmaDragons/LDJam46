@@ -12,7 +12,6 @@ public sealed class GameState
     // All enums used in this class should have specified integer values.
     // This is necessary to preserve backwards save compatibility.
     public CurrentWorld CurrentWorld { get; set; } = CurrentWorld.Real;
-    public List<string> Items { get; set; } = new List<string>();
-
+    public List<Item> Items { get; set; } = new List<Item>();
     public bool isInDialogue { get; set; } = false;
 }
