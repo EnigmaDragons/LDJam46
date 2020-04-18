@@ -1,6 +1,6 @@
 ﻿public class StartConversation
 {
-    public string[] Lines { get; }
+    public Dialogue Dialogue { get; }
 
-    public StartConversation(string[] lines) => Lines = lines;
+    public StartConversation(Dialogue dialogue) => Dialogue = dialogue;
 }

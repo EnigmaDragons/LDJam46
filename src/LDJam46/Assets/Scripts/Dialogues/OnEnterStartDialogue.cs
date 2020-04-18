@@ -17,6 +17,6 @@ public class OnEnterStartDialogue : MonoBehaviour
             return;
         
         _isTriggered = true;
-        Message.Publish(new StartConversation(dialogue.Lines.Where(x => x.Type == DialogueLineType.Statement).Select(x => x.Text).ToArray()));   
+        Message.Publish(new StartConversation(dialogue));   
     }
 }

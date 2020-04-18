@@ -18,6 +18,10 @@ public class DialogueEditor : Editor
             else if (line.Type == DialogueLineType.SoundEffect)
                 line.SoundEffect = (AudioClip)EditorGUILayout.ObjectField("Sound Effect", line.SoundEffect, typeof(AudioClip), allowSceneObjects:false);
         }
+        EditorGUILayout.Space();
+        SerializedProperty sprop = serializedObject.FindProperty("Event");
+        EditorGUILayout.PropertyField(sprop);
+        serializedObject.ApplyModifiedProperties();
     }
 
     private void AdjustItemCount(Dialogue dialogue, int newItemCount)

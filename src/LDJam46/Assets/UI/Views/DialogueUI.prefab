@@ -303,6 +303,7 @@ MonoBehaviour:
     UseConstant: 1
     ConstantValue: 0.3
     FloatVariable: {fileID: 0}
+  audioSource: {fileID: 11400000, guid: bfe56e3518f684c4387de97bd5db348d, type: 2}
 --- !u!114 &5470621728512879491
 MonoBehaviour:
   m_ObjectHideFlags: 0
