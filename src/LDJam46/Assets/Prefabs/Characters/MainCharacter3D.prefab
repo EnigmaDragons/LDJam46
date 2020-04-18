@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 814220116849332169}
   - component: {fileID: 3636667927120445916}
+  - component: {fileID: 800907492763796234}
   m_Layer: 0
   m_Name: MainCharacter3D
   m_TagString: Untagged
@@ -47,6 +48,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   realBody: {fileID: 1206767621821173836}
   mindBody: {fileID: 4626817338623346390}
+--- !u!114 &800907492763796234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4904771400176491400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2340a8ab8c658c2438e17f0365d11f7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  body: {fileID: 4626817338623346390}
 --- !u!1001 &4196289758495996352
 PrefabInstance:
   m_ObjectHideFlags: 0

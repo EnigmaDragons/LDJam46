@@ -15,5 +15,6 @@ public class MapGenerator : MonoBehaviour
         ground.Spawn(sizeV);
         trees.Spawn(sizeV);
         comfort.Spawn(sizeV);
+        Message.Publish(new MapGenerated(new Vector3(size / 2, size / 2, 0)));
     }
 }
