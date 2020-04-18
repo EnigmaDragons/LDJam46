@@ -5,24 +5,26 @@ public class SwapWorldHandler : OnMessage<SwapWorld>
     [SerializeField] private GameObject realWorld;
     [SerializeField] private GameObject mindWorld;
     [SerializeField] private CurrentGameState game;
+    [SerializeField] private WorldSwapVisualTransition transition;
     
     protected override void Execute(SwapWorld msg)
     {
-        if (game.CurrentWorld == CurrentWorld.Real)
-        {
-            Message.Publish(new WorldSwapStarted());
-            realWorld.SetActive(false);
-            mindWorld.SetActive(true);
-            game.UpdateState(gs => gs.CurrentWorld = CurrentWorld.Mind);
-            Message.Publish(new WorldSwapFinished());
-        }
-        else
-        {
-            Message.Publish(new WorldSwapStarted());
-            mindWorld.SetActive(false);
-            realWorld.SetActive(true);
-            game.UpdateState(gs => gs.CurrentWorld = CurrentWorld.Real);
-            Message.Publish(new WorldSwapFinished());
-        }
+        var newWorld = game.CurrentWorld == CurrentWorld.Mind ? CurrentWorld.Real : CurrentWorld.Mind;
+        Message.Publish(new WorldSwapStarted());
+        transition.ShowTransition(
+            () => Activate(newWorld),
+            () => NotifyFinished(newWorld)); 
+    }        
+    
+    private void Activate(CurrentWorld targetWorld)
+    {
+        mindWorld.SetActive(targetWorld == CurrentWorld.Mind);
+        realWorld.SetActive(targetWorld == CurrentWorld.Real);
+    }
+
+    private void NotifyFinished(CurrentWorld nowActive)
+    {
+        game.UpdateState(gs => gs.CurrentWorld = nowActive);
+        Message.Publish(new WorldSwapFinished());
     }
 }

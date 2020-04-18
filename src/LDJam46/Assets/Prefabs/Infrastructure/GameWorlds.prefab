@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5729040963389187624}
   - component: {fileID: 4702937671103701752}
+  - component: {fileID: 3180095440686371158}
   m_Layer: 0
   m_Name: GameWorlds
   m_TagString: Untagged
@@ -48,6 +49,21 @@ MonoBehaviour:
   realWorld: {fileID: 9193239071378593344}
   mindWorld: {fileID: 1256848402289217298}
   game: {fileID: 11400000, guid: 6bb654c6d14f44349977173df0bb252b, type: 2}
+  transition: {fileID: 3180095440686371158}
+--- !u!114 &3180095440686371158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5561073703985006151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7d1e2888bc65cd4cb7ee80163890aee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transitionMaterial: {fileID: 2100000, guid: 7624d611bd330e44b80ef65275598a16, type: 2}
+  transitionSpeed: 1
 --- !u!1001 &1025919616834868403
 PrefabInstance:
   m_ObjectHideFlags: 0
