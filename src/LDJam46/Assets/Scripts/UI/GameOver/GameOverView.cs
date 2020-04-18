@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class GameOverView : MonoBehaviour
 {
-    [SerializeField] private Navigg
+    [SerializeField] private Navigator navigator;
 }
