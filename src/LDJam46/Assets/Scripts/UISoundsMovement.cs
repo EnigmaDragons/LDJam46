@@ -19,6 +19,7 @@ public class UISoundsMovement : MonoBehaviour
 
     void Update()
     {
-	    transform.position = gameObjectToFollow.transform.position;
+	    if (gameObjectToFollow != null)
+			transform.position = gameObjectToFollow.transform.position;
     }
 }

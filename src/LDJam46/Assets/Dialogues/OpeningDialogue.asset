@@ -17,38 +17,33 @@ MonoBehaviour:
     Text: 
     SoundEffect: {fileID: 8300000, guid: eea876c369bd317449958e5983831871, type: 3}
     Effect: 0
+    TriggerName: 
   - Type: 0
     Text: Ok, keep it cool.
     SoundEffect: {fileID: 0}
     Effect: 0
+    TriggerName: 
   - Type: 0
     Text: It's just work...it's just work, no problem.
     SoundEffect: {fileID: 0}
     Effect: 0
+    TriggerName: 
   - Type: 1
     Text: 
     SoundEffect: {fileID: 8300000, guid: 16856eb9912b8734cb5fb3f4a771b3b7, type: 3}
     Effect: 0
+    TriggerName: 
   - Type: 2
     Text: 
     SoundEffect: {fileID: 0}
     Effect: 0
+    TriggerName: 
   - Type: 0
     Text: I've got 10 minutes before my meeting. I feel horrible, maybe a coffee
       would help?
     SoundEffect: {fileID: 0}
     Effect: 0
+    TriggerName: 
   Event:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: db6cb0ba71f33894abca82ecf4da3757, type: 2}
-        m_MethodName: SwapWorlds
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 0
+      m_Calls: []

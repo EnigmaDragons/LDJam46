@@ -41,8 +41,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2110893414743061234}
   - component: {fileID: 3169740408894507331}
-  - component: {fileID: 6369713363982684754}
   - component: {fileID: 345739953162740704}
+  - component: {fileID: 6895037835501772366}
+  - component: {fileID: 4618990940021892777}
   m_Layer: 0
   m_Name: DeveloperCheats
   m_TagString: Untagged
@@ -91,33 +92,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &6369713363982684754
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2864179596513333574}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a15d5ff66b7276842b4357acc6811c1a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  keys: 6c000000
-  action:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: 5cd12f4de267ef0409d7805a62e445f2, type: 2}
-        m_MethodName: NavigateToGameOver
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &345739953162740704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,6 +110,45 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 11400000, guid: db6cb0ba71f33894abca82ecf4da3757, type: 2}
         m_MethodName: SwapWorlds
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &6895037835501772366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2864179596513333574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ca366e2751c3b74c8f8e54c48037254, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4618990940021892777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2864179596513333574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a15d5ff66b7276842b4357acc6811c1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keys: 6c000000
+  action:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6895037835501772366}
+        m_MethodName: Go
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
