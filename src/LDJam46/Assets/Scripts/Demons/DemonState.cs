@@ -1,4 +1,5 @@
 ﻿
+using System;
 using Assets.Scripts.Demons;
 using UnityEngine;
 
@@ -21,10 +22,8 @@ public class DemonState : ScriptableObject
     {        
         if (!IsActive)
             return;
-        
-        progressPercent += amount;
-        if (progressPercent >= 1f) 
-            Message.Publish(new ReportGameOver(Name));
+
+        progressPercent = Math.Min(1, progressPercent + amount);
     }
     
     public void Setback(float amount)

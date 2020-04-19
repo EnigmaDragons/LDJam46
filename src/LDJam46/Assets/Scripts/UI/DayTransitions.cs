@@ -1,10 +1,58 @@
-﻿
+﻿using System;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DayTransitions : OnMessage<StartNextDay>
 {
+    [SerializeField] private Image day;
+    [SerializeField] private TextMeshProUGUI text;
+    [SerializeField] private CurrentGameState gameState;
+    [SerializeField] private Dialogue[] dialogues;
+    [SerializeField] private float preFadeSeconds;
+    [SerializeField] private float fadeInSeconds;
+
+    private float _prefadeRemaining;
+    private bool _prefading;
+    private bool _fadingIn;
+
     protected override void Execute(StartNextDay msg)
     {
-        throw new System.NotImplementedException();
+        gameState.UpdateState(x =>
+        {
+            x.DayNumber++;
+            x.HadPanicAttackToday = false;
+        });
+        text.text = $"DAY {gameState.GameState.DayNumber}";
+        day.color = new Color(1, 1, 1, 1);
+        text.color = new Color(1, 1, 1, 1);
+        _prefading = true;
+        _fadingIn = false;
+        _prefadeRemaining = preFadeSeconds;
+    }
+
+    private void Update()
+    {
+        if (_prefading)
+        {
+            _prefadeRemaining -= Time.deltaTime;
+            if (_prefadeRemaining <= 0)
+            {
+                _prefading = false;
+                _fadingIn = true;
+            }
+        }
+        else if (_fadingIn)
+        {
+            var a = Math.Max(0, day.color.a - Time.deltaTime / fadeInSeconds);
+            day.color = new Color(1, 1, 1, a);
+            text.color = new Color(1, 1, 1, a);
+            if (a == 0)
+            {
+                _fadingIn = false;
+                if (dialogues.Length >= gameState.GameState.DayNumber)
+                    Message.Publish(new StartConversation(dialogues[gameState.GameState.DayNumber - 1]));
+            }
+        }
     }
 }

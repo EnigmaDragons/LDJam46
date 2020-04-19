@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Assets.Scripts.Demons;
+using UnityEngine;
 using UnityEngine.UI;
 
 [ExecuteInEditMode]
@@ -17,6 +18,8 @@ public class PressureCloseIn : MonoBehaviour
         state.Increment(closeSpeed * Time.deltaTime);
         var amount = Mathf.Lerp(fullyOpenScale, fullyClosedScale, state.ProgressPercent);
         image.rectTransform.localScale = new Vector3(amount, amount, 1);
+        if (state.ProgressPercent >= 1)
+            Message.Publish(new ReportGameOver(DemonName.Stress));
     }
 
     public void Activate() => gameObject.SetActive(true);
