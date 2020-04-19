@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Paranoia
   m_EditorClassIdentifier: 
   Name: 1
-  IsActive: 0
-  progressPercent: 0
+  IsActive: 1
+  progressPercent: 0.08527481

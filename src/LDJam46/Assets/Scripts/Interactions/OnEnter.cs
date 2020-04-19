@@ -7,7 +7,7 @@ public class OnEnter : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.GetComponentInParent<SetAsPlayerCharacterOnEnable>() != null)
+        if (other.gameObject.tag == "Player")
             onTouch.Invoke();
     }
 }
