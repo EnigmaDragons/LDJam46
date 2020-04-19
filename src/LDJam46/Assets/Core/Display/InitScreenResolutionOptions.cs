@@ -2,11 +2,13 @@ using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
-     
+using UnityEngine.UI;
+
+
 public sealed class InitScreenResolutionOptions : MonoBehaviour
 {
     [SerializeField] private DisplaySettings display;
-    [SerializeField] private TMP_Dropdown dropdownMenu;
+    [SerializeField] private Dropdown dropdownMenu;
     [SerializeField] private int minScreenWidth = 800;
     [SerializeField] private Vector2Int screenRatio = new Vector2Int(16, 9);
 
@@ -22,13 +24,13 @@ public sealed class InitScreenResolutionOptions : MonoBehaviour
             .Distinct(comparer)
             .Reverse()
             .ToArray();
-        dropdownMenu.onValueChanged.AddListener(SetResolution);
+        /*dropdownMenu.onValueChanged.AddListener(SetResolution);
         dropdownMenu.options.Clear();
         var current = display.CurrentScreenSize;
         for (var i = 0; i < _resolutions.Length; i++)
         {
             var valString = ResToString(_resolutions[i]);
-            dropdownMenu.options.Add(new TMP_Dropdown.OptionData(valString));
+            dropdownMenu.options.Add(new Dropdown.OptionData(valString));
             if (comparer.Equals(_resolutions[i], current))
             {
                 dropdownMenu.value = i;
@@ -36,7 +38,7 @@ public sealed class InitScreenResolutionOptions : MonoBehaviour
             }
         }
 
-        dropdownMenu.RefreshShownValue();
+        dropdownMenu.RefreshShownValue();*/
     }
     
     private string ResToString(Resolution res) => res.width + " x " + res.height;

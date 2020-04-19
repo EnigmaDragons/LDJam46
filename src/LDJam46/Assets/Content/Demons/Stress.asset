@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Stress
   m_EditorClassIdentifier: 
   Name: 0
-  IsActive: 0
-  progressPercent: 0
+  IsActive: 1
+  progressPercent: 0.03342163

@@ -25,10 +25,19 @@ public sealed class TextCommandButton : MonoBehaviour, IPointerEnterHandler, ISe
         _button.onClick.AddListener(() => cmd.Action.Invoke());
     }
 
-    public void Select() => _button.Select();
+    public void Select()
+    {
+	    selector.SetActive(true);
+        _button.Select();
+    }
+
     public void Execute() => _button.onClick.Invoke();
 
     public void OnPointerEnter(PointerEventData eventData) => Select();
     public void OnSelect(BaseEventData eventData) => selector.SetActive(true);
-    public void OnDeselect(BaseEventData eventData) => selector.SetActive(false);
+    public void OnDeselect(BaseEventData eventData)
+    {
+	    selector.SetActive(false);
+	    //_button.OnDeselect(eventData);
+    }
 }

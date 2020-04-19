@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: ItemSpawner
   m_EditorClassIdentifier: 
   m_Cells:
-  - m_Tile: {fileID: 0}
+  - m_Tile: {fileID: 11400000, guid: 327044a745ae66641adfea1626c24206, type: 2}
     m_Matrix:
       e00: 1
       e01: 0
@@ -36,5 +36,6 @@ MonoBehaviour:
   m_Pivot: {x: 0, y: 0, z: 0}
   m_CanChangeZPosition: 0
   m_Anchor: {x: 0.5, y: 0.5, z: 0.5}
-  m_Prefabs: []
+  m_Prefabs:
+  - {fileID: 1577871207967866674, guid: 7cdbf8ba6bfd4c24dbc3e88951a67154, type: 3}
   m_PerlinScale: 0.5

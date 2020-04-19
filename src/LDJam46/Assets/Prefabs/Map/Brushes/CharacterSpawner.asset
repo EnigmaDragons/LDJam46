@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fdc5e1eccedb29e4894bbfab99032590, type: 3}
-  m_Name: Spawner
+  m_Name: CharacterSpawner
   m_EditorClassIdentifier: 
   m_Cells:
   - m_Tile: {fileID: 0}
@@ -37,5 +37,5 @@ MonoBehaviour:
   m_CanChangeZPosition: 0
   m_Anchor: {x: 0.5, y: 0.5, z: 0.5}
   m_Prefabs:
-  - {fileID: 2831012952563529656, guid: cea942ad0b9213c499d79cccdbf9f078, type: 3}
+  - {fileID: 6935371419224246324, guid: 9239572636076e74aa656179fc1237d0, type: 3}
   m_PerlinScale: 0.5
