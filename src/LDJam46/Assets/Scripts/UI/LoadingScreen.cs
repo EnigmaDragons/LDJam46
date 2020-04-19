@@ -7,10 +7,18 @@ using UnityEngine.UI;
 public class LoadingScreen : MonoBehaviour
 {
 	[SerializeField] private Slider loadingSlider;
+	[SerializeField] private GameObject forHiding;
+
+	private void Start()
+	{
+		forHiding.SetActive(false);
+	}
 
 	public void LoadScene(string sceneName)
-    {
-	    StartCoroutine(LoadSceneAsync(sceneName));
+	{
+		forHiding.SetActive(true);
+
+		StartCoroutine(LoadSceneAsync(sceneName));
     }
 
     IEnumerator LoadSceneAsync(string sceneName)

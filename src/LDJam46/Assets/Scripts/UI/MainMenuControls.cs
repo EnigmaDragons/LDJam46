@@ -64,7 +64,6 @@ public class MainMenuControls : MonoBehaviour
 
 	public void ToGameSceneAnimationEvent()
 	{
-		loadingScreen.SetActive(true);
 		loadingScreen.GetComponent<LoadingScreen>().LoadScene("GameScene");
 	}
 }
