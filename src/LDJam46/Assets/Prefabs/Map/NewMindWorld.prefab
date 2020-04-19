@@ -44,8 +44,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objects:
-  - PercentChance: 1
-    Object: {fileID: 4655853739762224663, guid: 112c87b8c55811847974185777f12f41,
+  - PercentChance: 0.2
+    Object: {fileID: 8614503867126594645, guid: a5d1a2008f5ec5049bd4573f7d05ac2e,
       type: 3}
   - PercentChance: 1
     Object: {fileID: 4454827217892787380, guid: 5a94dccb41fa14c4dae10897b3dba074,
@@ -58,6 +58,9 @@ MonoBehaviour:
       type: 3}
   - PercentChance: 1
     Object: {fileID: 5983247107070383104, guid: db9ec1b1fd483094ebe505bc79d1217d,
+      type: 3}
+  - PercentChance: 1
+    Object: {fileID: 4655853739762224663, guid: 112c87b8c55811847974185777f12f41,
       type: 3}
 --- !u!1 &2972243433056939190
 GameObject:
@@ -150,7 +153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b65890a6bb800648bfad59063659a28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  size: 40
+  size: 60
   ground: {fileID: 2972243433056939188}
   trees: {fileID: 2680759604428647177}
   comfort: {fileID: 1245487708979997720}
