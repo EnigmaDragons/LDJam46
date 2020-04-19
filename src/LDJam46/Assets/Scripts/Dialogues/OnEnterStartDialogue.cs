@@ -13,10 +13,11 @@ public class OnEnterStartDialogue : MonoBehaviour
 
     private void Execute(GameObject o)
     {
-        if (_isTriggered)
+        if (_isTriggered || o.tag != "Player")
             return;
         
         _isTriggered = true;
-        Message.Publish(new StartConversation(dialogue));   
+        Message.Publish(new StartConversation(dialogue)); 
+        gameObject.SetActive(false);
     }
 }

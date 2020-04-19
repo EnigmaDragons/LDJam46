@@ -2,5 +2,7 @@
 {
     Statement,
     SoundEffect,
-    VisualEffect
+    VisualEffect,
+    ActivateTrigger,
+    SwapWorld,
 }
