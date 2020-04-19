@@ -29,6 +29,6 @@ public class SwapWorldHandler : OnMessage<SwapWorld>
     private void NotifyFinished(CurrentWorld nowActive)
     {
         game.UpdateState(gs => gs.CurrentWorld = nowActive);
-        Message.Publish(new WorldSwapFinished());
+        Message.Publish(new WorldSwapFinished(nowActive));
     }
 }
