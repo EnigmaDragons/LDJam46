@@ -2,6 +2,7 @@
   "dependencies": {
     "com.unity.2d.animation": "3.2.1",
     "com.unity.2d.sprite": "1.0.0",
+    "com.unity.2d.tilemap.extras": "https://github.com/Unity-Technologies/2d-extras.git#master",
     "com.unity.cinemachine": "2.5.0",
     "com.unity.collab-proxy": "1.2.16",
     "com.unity.ext.nunit": "1.0.0",
@@ -42,7 +43,12 @@
     "com.unity.modules.video": "1.0.0",
     "com.unity.modules.vr": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
-    "com.unity.modules.xr": "1.0.0",
-    "com.unity.2d.tilemap.extras": "https://github.com/Unity-Technologies/2d-extras.git#master"
+    "com.unity.modules.xr": "1.0.0"
+  },
+  "lock": {
+    "com.unity.2d.tilemap.extras": {
+      "revision": "master",
+      "hash": "3b136eb3bf8602942510e8f88424f168790788ea"
+    }
   }
 }

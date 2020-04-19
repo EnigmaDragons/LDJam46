@@ -60,6 +60,7 @@ public class DialogueBoxUI : OnMessage<StartConversation>
         }
         else if (_dialogue.Lines[_index].Type == DialogueLineType.VisualEffect)
         {
+            Message.Publish(new StartFadeIn());
             _index++;
         }
     }
