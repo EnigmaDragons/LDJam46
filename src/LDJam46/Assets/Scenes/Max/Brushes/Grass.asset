@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdc5e1eccedb29e4894bbfab99032590, type: 3}
+  m_Name: Grass
+  m_EditorClassIdentifier: 
+  m_Cells:
+  - m_Tile: {fileID: 0}
+    m_Matrix:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Pivot: {x: 0, y: 0, z: 0}
+  m_CanChangeZPosition: 0
+  m_Anchor: {x: 0.5, y: 0.5, z: 0.5}
+  m_Prefabs:
+  - {fileID: 3633874728164725751, guid: af9d9d88a890c634cb7cf04903a37b7a, type: 3}
+  - {fileID: 5713231751543532057, guid: 1981600db0291ea4cae1f9391e536e2d, type: 3}
+  - {fileID: 4767584637486203378, guid: 32611020f3303ad488bff379ea6b6f23, type: 3}
+  - {fileID: 5163446273231881607, guid: f2ea90b2f050cb84f9b49c4a602fb577, type: 3}
+  - {fileID: 7907774374496334803, guid: b1ae497aac004dd40aff83fdbb7857a5, type: 3}
+  - {fileID: 7830013303524496796, guid: 2e09bab130cac3941aeef8c86d5d9d9e, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  m_PerlinScale: 0.5
