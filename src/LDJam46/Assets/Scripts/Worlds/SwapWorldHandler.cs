@@ -15,7 +15,7 @@ public class SwapWorldHandler : OnMessage<SwapWorld>
             () =>
             {
                 Activate(newWorld);
-                Message.Publish(new WorldSwapPeaked());
+                Message.Publish(new WorldSwapPeaked(newWorld));
             },
             () => NotifyFinished(newWorld)); 
     }        
