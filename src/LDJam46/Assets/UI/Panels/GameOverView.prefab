@@ -128,6 +128,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5750030969814677415}
   - component: {fileID: 1461009268833975006}
+  - component: {fileID: 8952344526029413486}
   m_Layer: 5
   m_Name: GameOverView
   m_TagString: Untagged
@@ -171,6 +172,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextDayButton: {fileID: 3114740423436750201}
+--- !u!114 &8952344526029413486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3291438307126424336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b70a64aadd044ec8855c8e23db761393, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  music: {fileID: 11400000, guid: 875c46469dd1e424ab94fbad3db7b61a, type: 2}
+  musicPlayer: {fileID: 11400000, guid: 95f47694e0b28ce48a808ae15f18f4d8, type: 2}
 --- !u!1 &3891339991831223294
 GameObject:
   m_ObjectHideFlags: 0
