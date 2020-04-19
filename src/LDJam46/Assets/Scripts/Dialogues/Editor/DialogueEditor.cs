@@ -1,4 +1,5 @@
-﻿using System.Security.Cryptography.X509Certificates;
+﻿using System;
+using System.Security.Cryptography.X509Certificates;
 using Assets.Scripts.Dialogues;
 using UnityEditor;
 using UnityEngine;
@@ -15,13 +16,13 @@ public class DialogueEditor : Editor
             EditorGUILayout.Space();
             line.Type = (DialogueLineType) EditorGUILayout.EnumPopup("Type", line.Type);
             if (line.Type == DialogueLineType.Statement)
-                line.Text = EditorGUILayout.TextField("Text", line.Text);
+                TextField("Text", ref line.Text);
             else if (line.Type == DialogueLineType.SoundEffect)
-                line.SoundEffect = (AudioClip)EditorGUILayout.ObjectField("Sound Effect", line.SoundEffect, typeof(AudioClip), allowSceneObjects:false);
+                AudioClipField("Sound Effect", ref line.SoundEffect);
             else if (line.Type == DialogueLineType.VisualEffect)
-                line.Effect = (DialogueEffect)EditorGUILayout.EnumPopup("Effect Type", line.Effect);
+                EnumPopup("Effect Type", ref line.Effect);
             else if (line.Type == DialogueLineType.ActivateTrigger)
-                line.TriggerName = EditorGUILayout.TextField("Trigger", line.TriggerName);
+                TextField("Trigger", ref line.TriggerName);
         }
     }
 
@@ -33,6 +34,31 @@ public class DialogueEditor : Editor
                 dialogue.Lines.Add(new DialogueLine());
             while (newItemCount < dialogue.Lines.Count)
                 dialogue.Lines.RemoveAt(dialogue.Lines.Count - 1);
+            EditorUtility.SetDirty(target);
         }
+    }
+
+    private void TextField(string label, ref string text)
+    {
+        var oldText = text;
+        text = EditorGUILayout.TextField(label, text);
+        if (oldText != text)
+            EditorUtility.SetDirty(target);
+    }
+
+    private void EnumPopup<T>(string label, ref T selected) where T : Enum
+    {
+        var oldSelected = selected;
+        selected = (T)EditorGUILayout.EnumPopup(label, selected);
+        if ((int)(object)oldSelected != (int)(object)selected)
+            EditorUtility.SetDirty(target);
+    }
+
+    private void AudioClipField(string label, ref AudioClip clip)
+    {
+        var oldClip = clip;
+        clip = (AudioClip)EditorGUILayout.ObjectField(label, clip, typeof(AudioClip), false);
+        if (oldClip != clip)
+            EditorUtility.SetDirty(target);
     }
 }
