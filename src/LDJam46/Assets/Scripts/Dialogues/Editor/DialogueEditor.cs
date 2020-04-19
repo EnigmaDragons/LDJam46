@@ -1,4 +1,5 @@
 ﻿using System.Security.Cryptography.X509Certificates;
+using Assets.Scripts.Dialogues;
 using UnityEditor;
 using UnityEngine;
 
@@ -17,6 +18,9 @@ public class DialogueEditor : Editor
                 line.Text = EditorGUILayout.TextField("Text", line.Text);
             else if (line.Type == DialogueLineType.SoundEffect)
                 line.SoundEffect = (AudioClip)EditorGUILayout.ObjectField("Sound Effect", line.SoundEffect, typeof(AudioClip), allowSceneObjects:false);
+            else if (line.Type == DialogueLineType.VisualEffect)
+                line.Effect = (DialogueEffect)EditorGUILayout.EnumPopup("Effect Type", line.Effect);
+            
         }
         EditorGUILayout.Space();
         SerializedProperty sprop = serializedObject.FindProperty("Event");

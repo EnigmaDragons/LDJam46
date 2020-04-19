@@ -15,16 +15,29 @@ MonoBehaviour:
   Lines:
   - Type: 1
     Text: 
-    SoundEffect: {fileID: 8300000, guid: d2d3358d72218ef4798f1ca2b15e1b1e, type: 3}
+    SoundEffect: {fileID: 8300000, guid: eea876c369bd317449958e5983831871, type: 3}
+    Effect: 0
   - Type: 0
     Text: Ok, keep it cool.
     SoundEffect: {fileID: 0}
+    Effect: 0
   - Type: 0
     Text: It's just work...it's just work, no problem.
     SoundEffect: {fileID: 0}
+    Effect: 0
   - Type: 1
     Text: 
-    SoundEffect: {fileID: 8300000, guid: d2d3358d72218ef4798f1ca2b15e1b1e, type: 3}
+    SoundEffect: {fileID: 8300000, guid: 16856eb9912b8734cb5fb3f4a771b3b7, type: 3}
+    Effect: 0
+  - Type: 2
+    Text: 
+    SoundEffect: {fileID: 0}
+    Effect: 0
+  - Type: 0
+    Text: I've got 10 minutes before my meeting. I feel horrible, maybe a coffee
+      would help?
+    SoundEffect: {fileID: 0}
+    Effect: 0
   Event:
     m_PersistentCalls:
       m_Calls:
@@ -38,4 +51,4 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 0

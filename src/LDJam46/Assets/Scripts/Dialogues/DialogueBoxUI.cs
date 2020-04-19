@@ -58,5 +58,10 @@ public class DialogueBoxUI : OnMessage<StartConversation>
             line.Display(_dialogue.Lines[_index].Text);
             _index++;
         }
+        else if (_dialogue.Lines[_index].Type == DialogueLineType.VisualEffect)
+        {
+            Message.Publish(new StartFadeIn());
+            _index++;
+        }
     }
 }
