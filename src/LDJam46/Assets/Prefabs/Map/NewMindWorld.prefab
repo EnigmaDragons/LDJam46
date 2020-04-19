@@ -140,6 +140,7 @@ Transform:
   - {fileID: 6430891106935682978}
   - {fileID: 8561036777467899617}
   - {fileID: 368442671949423589}
+  - {fileID: 2307970427144870964}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -160,6 +161,7 @@ MonoBehaviour:
   trees: {fileID: 2680759604428647177}
   comfort: {fileID: 1245487708979997720}
   boundary: {fileID: 2139681482228114391}
+  foliage: {fileID: 4696555370537054423}
 --- !u!114 &283709034839849408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -309,3 +311,54 @@ MonoBehaviour:
   - PercentChance: 0.3
     Object: {fileID: 3817069723814122353, guid: 2a448df4b6750934d8dad190e70780fb,
       type: 3}
+--- !u!1 &8355465645929789547
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2307970427144870964}
+  - component: {fileID: 4696555370537054423}
+  m_Layer: 0
+  m_Name: Foliage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2307970427144870964
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8355465645929789547}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2972243433338823488}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4696555370537054423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8355465645929789547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f83acb11bf6857418b201ff4a98d28d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  density: 2.7
+  foliage:
+  - {fileID: 3633874728164725751, guid: af9d9d88a890c634cb7cf04903a37b7a, type: 3}
+  - {fileID: 5713231751543532057, guid: 1981600db0291ea4cae1f9391e536e2d, type: 3}
+  - {fileID: 4767584637486203378, guid: 32611020f3303ad488bff379ea6b6f23, type: 3}
+  - {fileID: 5163446273231881607, guid: f2ea90b2f050cb84f9b49c4a602fb577, type: 3}
+  - {fileID: 7907774374496334803, guid: b1ae497aac004dd40aff83fdbb7857a5, type: 3}
+  - {fileID: 7830013303524496796, guid: 2e09bab130cac3941aeef8c86d5d9d9e, type: 3}
