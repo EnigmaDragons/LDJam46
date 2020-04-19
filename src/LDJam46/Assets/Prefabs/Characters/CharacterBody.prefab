@@ -75,7 +75,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d4823b95fc35774fb52f53a081ef57b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveLimiter: 0.7
   moveSpeed: 4
   state: {fileID: 11400000, guid: 6bb654c6d14f44349977173df0bb252b, type: 2}
 --- !u!114 &3424673675575777621
@@ -142,6 +141,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player-CHAR
+      objectReference: {fileID: 0}
+    - target: {fileID: 3733378787444964685, guid: 79260ee276120004d8b3bf765812b5a1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 6056071312093150119, guid: 79260ee276120004d8b3bf765812b5a1,
         type: 3}
