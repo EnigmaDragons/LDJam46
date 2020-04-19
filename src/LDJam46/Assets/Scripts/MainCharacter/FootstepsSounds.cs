@@ -17,6 +17,13 @@ public class FootstepsSounds : MonoBehaviour
     private void Awake() => _clips = new IndexSelector<AudioClip>(clips);
     private void OnEnable() => _readyToStart = true;
 
+    public void StartRunning()
+    {
+        _isMoving = true;
+        _secondsBetweenSteps = runSeconds;
+        StartCoroutine(MakeSounds());
+    }
+
     public void StartWalking()
     {
         _isMoving = true;
