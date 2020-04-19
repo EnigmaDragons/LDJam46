@@ -7,6 +7,7 @@ public class MapGenerator : MonoBehaviour
     [SerializeField] private TreeSpawner trees;
     [SerializeField] private ComfortSpawner comfort;
     [SerializeField] private BoundarySpawner boundary;
+    [SerializeField] private GrassSpawner foliage;
 
     public void OnEnable()
     {
@@ -15,6 +16,7 @@ public class MapGenerator : MonoBehaviour
         ground.Spawn(sizeV);
         trees.Spawn(sizeV);
         comfort.Spawn(sizeV);
+        foliage.Spawn(sizeV);
         Message.Publish(new MapGenerated(new Vector3(size / 2, size / 2, 0)));
     }
 }
