@@ -26,7 +26,7 @@ public class MainMenuControls : MonoBehaviour
 
 	void Update()
     {
-	    if (Input.GetAxis("Cancel") > 0.001)
+	    if (Input.GetButtonDown("Cancel"))
 	    {
 		    navigator.QuitGame();
 	    }
