@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Lines:
   - Type: 0
-    Text: 'Michelle: Hmmm, that''s better. I needed that. I should probably get back
+    Text: 'Hmmm, that''s better. I needed that. I should probably get back
       to my desk, this next meeting is going to be tricky.'
     SoundEffect: {fileID: 0}
     Effect: 0
