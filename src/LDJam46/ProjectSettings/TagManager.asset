@@ -52,3 +52,6 @@ TagManager:
   - name: Character
     uniqueID: 4148563585
     locked: 0
+  - name: Light Bloom
+    uniqueID: 3760483617
+    locked: 0

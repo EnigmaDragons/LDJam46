@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 7798623691347496007}
   - component: {fileID: 1416110540119011425}
   - component: {fileID: 3803785684175725703}
+  - component: {fileID: -3978732428231026851}
   m_Layer: 0
-  m_Name: ItemSpawn
+  m_Name: ItemSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -92,5 +93,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f1723261335faa24299b52ff5dbf3518, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-3978732428231026851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1577871207967866674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa4146f858fda3b4a9723d7cf45ad5e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
