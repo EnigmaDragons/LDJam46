@@ -322,8 +322,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objects:
-  - PercentChance: 0.3
+  - PercentChance: 0.1
+    Object: {fileID: 6524118501536594272, guid: caea0490557eb8346ac3f76d02bd92fe,
+      type: 3}
+  - PercentChance: 0.1
     Object: {fileID: 3817069723814122353, guid: 2a448df4b6750934d8dad190e70780fb,
+      type: 3}
+  - PercentChance: 0.1
+    Object: {fileID: 614160852467477022, guid: 006a747a21fb0ae49b6ac208c824fe36, type: 3}
+  - PercentChance: 0.1
+    Object: {fileID: 1541991578732236586, guid: fb30c05d11868e84885b8d5438ca8134,
+      type: 3}
+  - PercentChance: 0.1
+    Object: {fileID: 4506495074588965537, guid: 395015fd037ed724e978fa76038424c0,
+      type: 3}
+  - PercentChance: 0.1
+    Object: {fileID: 7046467474168593522, guid: b560d012ac75f56479a663da3425dc47,
+      type: 3}
+  - PercentChance: 0.1
+    Object: {fileID: 8163129512828860096, guid: 3ff29039e1359374e8562675b14f5d6a,
+      type: 3}
+  - PercentChance: 0.1
+    Object: {fileID: 533909007879346199, guid: c22809cf2a47fcc4092a4a350f481d27, type: 3}
+  - PercentChance: 0.1
+    Object: {fileID: 4593936209108532073, guid: 143955b7eac99584dafecc2b6de98d11,
       type: 3}
 --- !u!1 &8355465645929789547
 GameObject:
