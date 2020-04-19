@@ -7,7 +7,7 @@ public class DemonActivator : OnMessage<ActivateDemon, DeactivateAllDemons>
     
     protected override void Execute(ActivateDemon msg)
     {
-        if (msg.Demon == DemonName.Pressure)
+        if (msg.Demon == DemonName.Stress)
             pressure.Activate();
     }
 
