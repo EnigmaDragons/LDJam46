@@ -23,7 +23,8 @@ public class MindMapSetup3 : OnMessage<RecordCharacterSpawnPoint, RecordItemSpaw
             Destroy(child.gameObject);
         Instantiate(maps.Random(), mapParent.transform);
         
-        character.PlayerCharacter.transform.position = _characterSpawnPoints.Any() ?  _characterSpawnPoints.Random() : defaultSpawn;
+        Debug.Log($"Number of Possible Character Start Locations {_characterSpawnPoints.Count}");
+        Message.Publish(new MapGenerated(_characterSpawnPoints.Any() ?  _characterSpawnPoints.Random() : defaultSpawn));
         itemSpawner.Spawn(_itemSpawnPoints);
     }
     
