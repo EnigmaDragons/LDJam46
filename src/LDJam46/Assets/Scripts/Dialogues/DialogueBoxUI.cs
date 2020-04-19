@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System;
+using System.Collections;
+using UnityEngine;
 
 public class DialogueBoxUI : OnMessage<StartConversation>
 {
@@ -50,7 +52,7 @@ public class DialogueBoxUI : OnMessage<StartConversation>
         {
             audioSource.Play(_dialogue.Lines[_index].SoundEffect);
             _index++;
-            Resolve();
+            WithDelay(0.8f, Resolve);
         }
         else if (_dialogue.Lines[_index].Type == DialogueLineType.Statement)
         {
@@ -74,5 +76,14 @@ public class DialogueBoxUI : OnMessage<StartConversation>
             _index++;
             Resolve();
         }
+    }
+
+    private void WithDelay(float secondsToWait, Action action) 
+        => StartCoroutine(ExecuteWithDelay(secondsToWait, action));
+
+    private IEnumerator ExecuteWithDelay(float secondsToWait, Action action)
+    {
+        yield return new WaitForSeconds(secondsToWait);
+        action();
     }
 }
