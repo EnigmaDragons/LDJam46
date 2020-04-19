@@ -8,7 +8,12 @@ public class UISoundsMovement : MonoBehaviour
     {
 	    if (gameObjectToFollow == null)
 	    {
-		    enabled = false;
+		    gameObjectToFollow = GameObject.FindGameObjectWithTag("MainCamera");
+
+		    if (gameObjectToFollow == null)
+		    {
+				enabled = false;
+			}
 	    }
     }
 
