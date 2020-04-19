@@ -118,6 +118,7 @@ GameObject:
   - component: {fileID: 2972243433338823489}
   - component: {fileID: 283709034839849408}
   - component: {fileID: 8783129030331784166}
+  - component: {fileID: 1975839116122906439}
   m_Layer: 0
   m_Name: NewMindWorld
   m_TagString: Untagged
@@ -217,6 +218,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   music: {fileID: 11400000, guid: 13882cb749cec354a9e46fff98703d64, type: 2}
   musicPlayer: {fileID: 11400000, guid: 95f47694e0b28ce48a808ae15f18f4d8, type: 2}
+--- !u!114 &1975839116122906439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2972243433338823490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36faf953c223e4b4d8ed4ffff562f3da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  demon: 0
 --- !u!1 &3407628036272230941
 GameObject:
   m_ObjectHideFlags: 0
