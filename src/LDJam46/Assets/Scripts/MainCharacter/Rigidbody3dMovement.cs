@@ -6,10 +6,10 @@ using UnityEngine.UI;
 public class Rigidbody3dMovement : MonoBehaviour {
     [SerializeField] private float moveSpeed = 20f;
     [SerializeField] private CurrentGameState state;
+    [SerializeField] private FootstepsSounds footsteps;
     [SerializeField] private float sprintSpeed = 40f;
     [SerializeField] private float maxSprintTime;
     [SerializeField] private float sprintRegenPerSecond;
-
     private Rigidbody _body;
     private Animator _animator;
     private SpriteRenderer _sprite;
@@ -87,8 +87,10 @@ public class Rigidbody3dMovement : MonoBehaviour {
 
             if (_body.velocity.x < 0 || _body.velocity.x > 0 || _body.velocity.y < 0 || _body.velocity.y > 0) {
                 _animator.SetTrigger("toWALK");                
+                footsteps.StartWalking();
             } else if (_body.velocity.x == 0 || _body.velocity.y == 0) {
                 _animator.ResetTrigger("toWALK");
+                footsteps.Stop();
                 _animator.SetTrigger("Exit");
             }            
         } else {

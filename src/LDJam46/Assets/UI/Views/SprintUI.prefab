@@ -86,7 +86,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprintBar: {fileID: 4131706925721850119}
-  secondsToFade: 1
+  secondsToFade: 0.5
   background: {fileID: 5320921880822649094}
   fill: {fileID: 4003356302957317815}
 --- !u!1 &2734797171112905111
