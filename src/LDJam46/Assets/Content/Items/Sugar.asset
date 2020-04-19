@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fed3abf6995e0145ac0358aba4573e1, type: 3}
   m_Name: Sugar
   m_EditorClassIdentifier: 
-  Sprite: {fileID: 0}
+  Sprite: {fileID: 21300000, guid: d856eb42ae03c3243aaf07d9e0c52479, type: 3}
   Name: Sugar
   ComfortBonuses:
   - Comfort: {fileID: 11400000, guid: 4eed662bdbdab53459c136d4d145442f, type: 2}

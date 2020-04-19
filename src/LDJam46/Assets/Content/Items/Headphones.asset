@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fed3abf6995e0145ac0358aba4573e1, type: 3}
   m_Name: Headphones
   m_EditorClassIdentifier: 
-  Sprite: {fileID: 0}
+  Sprite: {fileID: 21300000, guid: 3da0f38155584f44ab5591bd6c1c3cab, type: 3}
   Name: Earphones
   ComfortBonuses:
   - Comfort: {fileID: 11400000, guid: 44907c3d90ec1c9458983de91e20b505, type: 2}

@@ -73,3 +73,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   states:
   - {fileID: 11400000, guid: fe415bd35e169db449f7404925ebbaf2, type: 2}
+  - {fileID: 11400000, guid: 0ef2d429b4140794cb62d30fc59555e5, type: 2}
+  - {fileID: 11400000, guid: 132b5da709a2a5644b7364fb9115976e, type: 2}
+  gameState: {fileID: 11400000, guid: 6bb654c6d14f44349977173df0bb252b, type: 2}
