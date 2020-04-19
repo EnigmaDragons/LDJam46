@@ -9,4 +9,5 @@ public class DialogueLine
     public string Text;
     public AudioClip SoundEffect;
     public DialogueEffect Effect;
+    public string TriggerName;
 }

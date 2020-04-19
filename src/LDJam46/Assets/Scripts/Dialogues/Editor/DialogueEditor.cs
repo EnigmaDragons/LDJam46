@@ -20,12 +20,9 @@ public class DialogueEditor : Editor
                 line.SoundEffect = (AudioClip)EditorGUILayout.ObjectField("Sound Effect", line.SoundEffect, typeof(AudioClip), allowSceneObjects:false);
             else if (line.Type == DialogueLineType.VisualEffect)
                 line.Effect = (DialogueEffect)EditorGUILayout.EnumPopup("Effect Type", line.Effect);
-            
+            else if (line.Type == DialogueLineType.ActivateTrigger)
+                line.TriggerName = EditorGUILayout.TextField("Trigger", line.TriggerName);
         }
-        EditorGUILayout.Space();
-        SerializedProperty sprop = serializedObject.FindProperty("Event");
-        EditorGUILayout.PropertyField(sprop);
-        serializedObject.ApplyModifiedProperties();
     }
 
     private void AdjustItemCount(Dialogue dialogue, int newItemCount)

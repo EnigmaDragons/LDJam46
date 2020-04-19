@@ -40,12 +40,11 @@ public class DialogueBoxUI : OnMessage<StartConversation>
         {
             line.Reveal();
         }
-        else if (_index + 1 == _dialogue.Lines.Count)
+        else if (_index == _dialogue.Lines.Count)
         {
             _playingDialogue = false;
             dialogueBox.SetActive(false);
             Message.Publish(new ConversationEnded());
-            _dialogue.Event.Invoke();
         }
         else if (_dialogue.Lines[_index].Type == DialogueLineType.SoundEffect)
         {
@@ -62,6 +61,18 @@ public class DialogueBoxUI : OnMessage<StartConversation>
         {
             Message.Publish(new StartFadeIn());
             _index++;
+        }
+        else if (_dialogue.Lines[_index].Type == DialogueLineType.ActivateTrigger)
+        {
+            Message.Publish(new ActivateTrigger(_dialogue.Lines[_index].TriggerName));
+            _index++;
+            Resolve();
+        }
+        else if (_dialogue.Lines[_index].Type == DialogueLineType.SwapWorld)
+        {
+            Message.Publish(new SwapWorld());
+            _index++;
+            Resolve();
         }
     }
 }
