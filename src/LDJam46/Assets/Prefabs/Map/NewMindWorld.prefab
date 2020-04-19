@@ -142,6 +142,7 @@ Transform:
   - {fileID: 8561036777467899617}
   - {fileID: 368442671949423589}
   - {fileID: 2307970427144870964}
+  - {fileID: 8270645930627025236}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -376,3 +377,58 @@ MonoBehaviour:
   - {fileID: 5163446273231881607, guid: f2ea90b2f050cb84f9b49c4a602fb577, type: 3}
   - {fileID: 7907774374496334803, guid: b1ae497aac004dd40aff83fdbb7857a5, type: 3}
   - {fileID: 7830013303524496796, guid: 2e09bab130cac3941aeef8c86d5d9d9e, type: 3}
+--- !u!1001 &5995746523556376834
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2972243433338823488}
+    m_Modifications:
+    - target: {fileID: 2446042927480289366, guid: 6cdd4fd71663d7849a882348100d0732,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2446042927480289366, guid: 6cdd4fd71663d7849a882348100d0732,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2446042927480289366, guid: 6cdd4fd71663d7849a882348100d0732,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2446042927480289366, guid: 6cdd4fd71663d7849a882348100d0732,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2446042927480289366, guid: 6cdd4fd71663d7849a882348100d0732,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2446042927480289366, guid: 6cdd4fd71663d7849a882348100d0732,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2446042927480289366, guid: 6cdd4fd71663d7849a882348100d0732,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5011528018690973910, guid: 6cdd4fd71663d7849a882348100d0732,
+        type: 3}
+      propertyPath: m_Name
+      value: Fog
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6cdd4fd71663d7849a882348100d0732, type: 3}
+--- !u!4 &8270645930627025236 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2446042927480289366, guid: 6cdd4fd71663d7849a882348100d0732,
+    type: 3}
+  m_PrefabInstance: {fileID: 5995746523556376834}
+  m_PrefabAsset: {fileID: 0}
