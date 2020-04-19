@@ -344,6 +344,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ClockUI
       objectReference: {fileID: 0}
+    - target: {fileID: 8502752536195148048, guid: adb5515c96054bb4b862f70d9b14377d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb5515c96054bb4b862f70d9b14377d, type: 3}
 --- !u!224 &4560898167336461150 stripped

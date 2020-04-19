@@ -31,8 +31,8 @@ public class ApplyDemonComfortEffects : OnMessage<ComfortConsumed>
             }
         }
         foreach (var item in usedItems)
-        {
             Message.Publish(new UseItem(item));
-        }
+        if (states.All(x => !x.IsActive))
+            Message.Publish(new SwapWorld());
     }
 }
