@@ -1,17 +1,19 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public class WinCondition : OnMessage<WorldSwapFinished>
+public class WinCondition : OnMessage<WorldSwapStarted>
 {
-    protected override void Execute(WorldSwapFinished msg)
+    [SerializeField] private CurrentGameState gameState;
+
+    protected override void Execute(WorldSwapStarted msg)
     {
-        if (msg.World == CurrentWorld.Real)
+        if (msg.NewWorld == CurrentWorld.Real && !gameState.GameState.HadPanicAttackToday)
             StartCoroutine(Win());
     }
 
     protected IEnumerator Win()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(3);
         Message.Publish(new ReportVictory());
     }
 }
