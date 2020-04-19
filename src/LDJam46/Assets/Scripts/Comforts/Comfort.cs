@@ -1,8 +1,8 @@
-﻿
-using UnityEngine;
+﻿using UnityEngine;
 
 [CreateAssetMenu(menuName = "Comfort")]
 public class Comfort : ScriptableObject
 {
-    public float BaseSetBackAmount;
+    public float DefaultPercentage;
+    public PerDemon[] ComfortLevels;
 }

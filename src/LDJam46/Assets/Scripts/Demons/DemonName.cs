@@ -2,6 +2,8 @@
 {
     public enum DemonName
     {
-        Pressure,
+        Stress,
+        Paranoia,
+        Humiliation,
     }
 }

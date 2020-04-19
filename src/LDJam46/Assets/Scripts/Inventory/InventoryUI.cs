@@ -1,13 +1,13 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-public class InventoryUI : OnMessage<GainItem, WorldSwapPeaked>
+public class InventoryUI : OnMessage<GainItem, WorldSwapPeaked, UseItem>
 {
     [SerializeField] private CurrentGameState state;
     [SerializeField] private Transform itemsParent;
     [SerializeField] private ItemUI itemPrefab;
 
-    private List<ItemUI> _items = new List<ItemUI>();
+    private Dictionary<Item, ItemUI> _items = new Dictionary<Item, ItemUI>();
 
     protected override void Execute(GainItem msg)
     {
@@ -16,13 +16,20 @@ public class InventoryUI : OnMessage<GainItem, WorldSwapPeaked>
         state.UpdateState(x => x.Items.Add(msg.Item));
         var itemUI = Instantiate(itemPrefab, itemsParent);
         itemUI.SetItem(msg.Item);
-        _items.Add(itemUI);
+        _items[msg.Item] = itemUI;
     }
 
     protected override void Execute(WorldSwapPeaked msg)
     {
         foreach (var item in _items)
-            Destroy(item);
+            Destroy(item.Value);
         _items.Clear();
+    }
+
+    protected override void Execute(UseItem msg)
+    {
+        state.UpdateState(x => x.Items.Remove(msg.Item));
+        Destroy(_items[msg.Item]);
+        _items.Remove(msg.Item);
     }
 }
