@@ -29,7 +29,7 @@ public class InventoryUI : OnMessage<GainItem, WorldSwapPeaked, UseItem>
     protected override void Execute(UseItem msg)
     {
         state.UpdateState(x => x.Items.Remove(msg.Item));
-        Destroy(_items[msg.Item]);
+        Destroy(_items[msg.Item].gameObject);
         _items.Remove(msg.Item);
     }
 }

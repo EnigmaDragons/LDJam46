@@ -11,6 +11,7 @@ public class ApplyDemonComfortEffects : OnMessage<ComfortConsumed>
     
     protected override void Execute(ComfortConsumed msg)
     {
+        var usedItems = new HashSet<Item>();
         foreach (var state in states)
         {
             var item = gameState.GameState.Items.FirstOrDefault(i => i.ComfortBonuses.Any(x => x.Comfort == msg.Comfort));
@@ -26,8 +27,12 @@ public class ApplyDemonComfortEffects : OnMessage<ComfortConsumed>
                 state.Setback(itemComfort.PerDemon.Any(x => x.Demon == state.Name)
                     ? itemComfort.PerDemon.First(x => x.Demon == state.Name).Percentage
                     : itemComfort.DefaultPercentage);
-                Message.Publish(new UseItem(item));
+                usedItems.Add(item);
             }
+        }
+        foreach (var item in usedItems)
+        {
+            Message.Publish(new UseItem(item));
         }
     }
 }
