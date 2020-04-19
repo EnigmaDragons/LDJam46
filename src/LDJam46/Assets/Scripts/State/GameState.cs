@@ -16,4 +16,5 @@ public sealed class GameState
     public bool isInDialogue { get; set; } = false;
     public int NumPanicAttacks { get; set; } = 0;
     public int NumBlackouts { get; set; } = 0;
+    public int DayNumber { get; set; } = 1;
 }
