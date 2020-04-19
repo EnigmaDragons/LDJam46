@@ -24,7 +24,7 @@ public sealed class InitScreenResolutionOptions : MonoBehaviour
             .Distinct(comparer)
             .Reverse()
             .ToArray();
-        dropdownMenu.onValueChanged.AddListener(SetResolution);
+        /*dropdownMenu.onValueChanged.AddListener(SetResolution);
         dropdownMenu.options.Clear();
         var current = display.CurrentScreenSize;
         for (var i = 0; i < _resolutions.Length; i++)
@@ -38,7 +38,7 @@ public sealed class InitScreenResolutionOptions : MonoBehaviour
             }
         }
 
-        dropdownMenu.RefreshShownValue();
+        dropdownMenu.RefreshShownValue();*/
     }
     
     private string ResToString(Resolution res) => res.width + " x " + res.height;
