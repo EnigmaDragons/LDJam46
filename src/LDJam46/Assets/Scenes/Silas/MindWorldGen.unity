@@ -289,11 +289,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2680759604428647177, guid: c9944717bd75da84dbbe9d08b370b69b,
-        type: 3}
-      propertyPath: objects.Array.data[0].PercentChance
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2972243433338823488, guid: c9944717bd75da84dbbe9d08b370b69b,
         type: 3}
       propertyPath: m_LocalPosition.x
