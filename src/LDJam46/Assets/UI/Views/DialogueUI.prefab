@@ -319,9 +319,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textBox: {fileID: 2204642141505312924}
   secondsPerCharacter:
-    UseConstant: 1
+    UseConstant: 0
     ConstantValue: 0.065
-    FloatVariable: {fileID: 0}
+    FloatVariable: {fileID: 11400000, guid: e6b77d20882c79641a5ef97883fe0a16, type: 2}
 --- !u!114 &5106866604528931462
 MonoBehaviour:
   m_ObjectHideFlags: 0
