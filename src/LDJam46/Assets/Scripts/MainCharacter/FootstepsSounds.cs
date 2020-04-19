@@ -31,13 +31,13 @@ public class FootstepsSounds : MonoBehaviour
 
     private IEnumerator MakeSounds()
     {
-        if (_readyToStart)
+        if (!_readyToStart)
             yield break;
         
         _readyToStart = false;
         while (_isMoving)
         {
-            source.PlayOneShot(_clips.MoveNext());
+            source.PlayOneShot(_clips.MoveNext(), source.volume);
             yield return new WaitForSeconds(_secondsBetweenSteps);
         }
         _readyToStart = true;
