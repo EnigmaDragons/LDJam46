@@ -30,6 +30,62 @@ Transform:
   m_Father: {fileID: 8303751209135254113}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1281842604236668918
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3426284255363476930}
+  - component: {fileID: 4996649465758117412}
+  m_Layer: 0
+  m_Name: Thoughts
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3426284255363476930
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1281842604236668918}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8303751209135254113}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4996649465758117412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1281842604236668918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61d1ccd22fab375419f5e1440f9ba75e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  standardThoughts:
+  - I need to get out
+  - " There\u2019s just too much going on"
+  - My headspace is so full
+  - "I can\u2019t escape"
+  maxTime:
+    UseConstant: 0
+    ConstantValue: 22
+    FloatVariable: {fileID: 11400000, guid: d55cff15275ad1b4986654f0682be0c4, type: 2}
+  minTime:
+    UseConstant: 0
+    ConstantValue: 12
+    FloatVariable: {fileID: 11400000, guid: 7cf3906d785f07044957c7af5480e809, type: 2}
 --- !u!1 &3579407353211073039
 GameObject:
   m_ObjectHideFlags: 0
@@ -64,6 +120,7 @@ Transform:
   m_Children:
   - {fileID: 5768396227801554760}
   - {fileID: 8267445112394759844}
+  - {fileID: 3426284255363476930}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
