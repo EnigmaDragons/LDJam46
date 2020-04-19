@@ -44,8 +44,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objects:
-  - PercentChance: 1
-    Object: {fileID: 4655853739762224663, guid: 112c87b8c55811847974185777f12f41,
+  - PercentChance: 0.2
+    Object: {fileID: 8614503867126594645, guid: a5d1a2008f5ec5049bd4573f7d05ac2e,
       type: 3}
   - PercentChance: 1
     Object: {fileID: 4454827217892787380, guid: 5a94dccb41fa14c4dae10897b3dba074,
@@ -58,6 +58,9 @@ MonoBehaviour:
       type: 3}
   - PercentChance: 1
     Object: {fileID: 5983247107070383104, guid: db9ec1b1fd483094ebe505bc79d1217d,
+      type: 3}
+  - PercentChance: 1
+    Object: {fileID: 4655853739762224663, guid: 112c87b8c55811847974185777f12f41,
       type: 3}
 --- !u!1 &2972243433056939190
 GameObject:
@@ -113,6 +116,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2972243433338823488}
   - component: {fileID: 2972243433338823489}
+  - component: {fileID: 283709034839849408}
+  - component: {fileID: 8783129030331784166}
   m_Layer: 0
   m_Name: NewMindWorld
   m_TagString: Untagged
@@ -150,11 +155,66 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b65890a6bb800648bfad59063659a28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  size: 40
+  size: 60
   ground: {fileID: 2972243433056939188}
   trees: {fileID: 2680759604428647177}
   comfort: {fileID: 1245487708979997720}
   boundary: {fileID: 2139681482228114391}
+--- !u!114 &283709034839849408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2972243433338823490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_LightType: 4
+  m_BlendStyleIndex: 0
+  m_FalloffIntensity: 0.5
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 0.4
+  m_LightVolumeOpacity: 0
+  m_ApplyToSortingLayers: 2d157ad717e229c3810e46f7
+  m_LightCookieSprite: {fileID: 0}
+  m_UseNormalMap: 0
+  m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
+  m_ShadowIntensity: 0
+  m_ShadowVolumeIntensity: 0
+  m_PointLightInnerAngle: 360
+  m_PointLightOuterAngle: 360
+  m_PointLightInnerRadius: 0
+  m_PointLightOuterRadius: 1
+  m_PointLightDistance: 3
+  m_PointLightQuality: 1
+  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 1
+  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffOffset: {x: 0, y: 0}
+  m_ShapePath:
+  - {x: -0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: 0.5, z: 0}
+  - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &8783129030331784166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2972243433338823490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b70a64aadd044ec8855c8e23db761393, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  music: {fileID: 11400000, guid: 13882cb749cec354a9e46fff98703d64, type: 2}
+  musicPlayer: {fileID: 11400000, guid: 95f47694e0b28ce48a808ae15f18f4d8, type: 2}
 --- !u!1 &3407628036272230941
 GameObject:
   m_ObjectHideFlags: 0
