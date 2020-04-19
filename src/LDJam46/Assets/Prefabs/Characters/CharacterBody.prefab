@@ -25,8 +25,8 @@ GameObject:
   - component: {fileID: 6009764076032054699}
   - component: {fileID: 4367587671885473061}
   - component: {fileID: 3424673675575777621}
-  - component: {fileID: 1380551318926328619}
-  - component: {fileID: 6301648574889205653}
+  - component: {fileID: 608416418252672265}
+  - component: {fileID: 3968923045084815896}
   m_Layer: 0
   m_Name: CharacterBody
   m_TagString: Untagged
@@ -77,9 +77,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d4823b95fc35774fb52f53a081ef57b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 4
+  moveSpeed: 2
   state: {fileID: 11400000, guid: 6bb654c6d14f44349977173df0bb252b, type: 2}
-  footsteps: {fileID: 6301648574889205653}
+  footsteps: {fileID: 3968923045084815896}
+  sprintSpeed: 4
+  maxSprintTime: 3
+  sprintRegenPerSecond: 0.5
 --- !u!114 &3424673675575777621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -93,7 +96,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 11400000, guid: 7079b948dc75d2246a8ef03bf8f7b636, type: 2}
---- !u!82 &1380551318926328619
+--- !u!82 &608416418252672265
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -102,11 +105,10 @@ AudioSource:
   m_GameObject: {fileID: 8793830873276366614}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: -5586420925646639766, guid: d6eedae8265dd6146907e7ef03b80fb6,
-    type: 2}
+  OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 0
-  m_Volume: 0.2
+  m_PlayOnAwake: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -190,7 +192,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &6301648574889205653
+--- !u!114 &3968923045084815896
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -202,12 +204,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80ed91cc30f84fb4d8637d2b99aa9bdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  source: {fileID: 1380551318926328619}
-  clips:
-  - {fileID: 8300000, guid: b49a4140faefb6449ad1070f43392f51, type: 3}
-  - {fileID: 8300000, guid: 52e4388404c036143a5367d8fa2d9b0d, type: 3}
-  - {fileID: 8300000, guid: 8ddddae739fc8d54a8a94f289cbdb23a, type: 3}
-  - {fileID: 8300000, guid: 173de4c2db4a38249a71398c455e239d, type: 3}
+  source: {fileID: 608416418252672265}
+  clips: []
   walkSeconds: 0.7
   runSeconds: 0.3
 --- !u!1001 &4395335954938144668

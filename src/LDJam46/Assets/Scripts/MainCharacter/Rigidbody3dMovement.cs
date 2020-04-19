@@ -1,12 +1,15 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Rigidbody))]
 public class Rigidbody3dMovement : MonoBehaviour {
     [SerializeField] private float moveSpeed = 20f;
     [SerializeField] private CurrentGameState state;
     [SerializeField] private FootstepsSounds footsteps;
-    
+    [SerializeField] private float sprintSpeed = 40f;
+    [SerializeField] private float maxSprintTime;
+    [SerializeField] private float sprintRegenPerSecond;
     private Rigidbody _body;
     private Animator _animator;
     private SpriteRenderer _sprite;
@@ -14,6 +17,7 @@ public class Rigidbody3dMovement : MonoBehaviour {
     private float _horizontal;
     private float _vertical;
     private float _idleTimer;
+    private float _currentSprintTime;
 
     private bool _isThinking = false;
 
@@ -22,6 +26,7 @@ public class Rigidbody3dMovement : MonoBehaviour {
         _body = GetComponent<Rigidbody>();
         _animator = GetComponentInChildren<Animator>();
         _sprite = GetComponentInChildren<SpriteRenderer>();
+        _currentSprintTime = maxSprintTime;
     }
 
     private void Update()
@@ -49,8 +54,27 @@ public class Rigidbody3dMovement : MonoBehaviour {
 
     void FixedUpdate()
     {
-        if (state.GameState.isInDialogue == false) {
-            _body.velocity =  Vector2.ClampMagnitude(new Vector2(_horizontal, _vertical).normalized, 1) * moveSpeed;
+        if (!state.GameState.isInDialogue) {
+            if (Input.GetButton("Sprint"))
+            {
+                if (_currentSprintTime > 0)
+                {
+                    _body.velocity = Vector2.ClampMagnitude(new Vector2(_horizontal, _vertical).normalized, 1) * sprintSpeed;
+                    _currentSprintTime = Math.Max(0, _currentSprintTime -= Time.fixedDeltaTime);
+                    Message.Publish(new SprintChanged(_currentSprintTime / maxSprintTime));
+                }
+                else
+                {
+                    _body.velocity = Vector2.ClampMagnitude(new Vector2(_horizontal, _vertical).normalized, 1) * moveSpeed;
+                }
+            }
+            else
+            {
+                _body.velocity = Vector2.ClampMagnitude(new Vector2(_horizontal, _vertical).normalized, 1) * moveSpeed;
+                _currentSprintTime = Math.Min(maxSprintTime, _currentSprintTime + Time.fixedDeltaTime * sprintRegenPerSecond);
+                Message.Publish(new SprintChanged(_currentSprintTime / maxSprintTime));
+            }
+            
             
             // if velocity > 0 flip X (right)
             if (_body.velocity.x > 0) {
