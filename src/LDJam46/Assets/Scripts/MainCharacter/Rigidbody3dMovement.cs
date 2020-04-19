@@ -3,7 +3,6 @@ using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
 public class Rigidbody3dMovement : MonoBehaviour {
-    [SerializeField] private float moveLimiter = 0.7f;
     [SerializeField] private float moveSpeed = 20f;
     [SerializeField] private CurrentGameState state;
 
@@ -50,12 +49,7 @@ public class Rigidbody3dMovement : MonoBehaviour {
     void FixedUpdate()
     {
         if (state.GameState.isInDialogue == false) {
-            if (Math.Abs(_horizontal) > 0.001f && Math.Abs(_vertical) > 0.001f) {
-                _horizontal *= moveLimiter;
-                _vertical *= moveLimiter;
-            }
-
-            _body.velocity = new Vector2(_horizontal * moveSpeed, _vertical * moveSpeed);
+            _body.velocity =  Vector2.ClampMagnitude(new Vector2(_horizontal, _vertical).normalized, 1) * moveSpeed;
             
             // if velocity > 0 flip X (right)
             if (_body.velocity.x > 0) {
