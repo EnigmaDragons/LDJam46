@@ -1,5 +1,7 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MainMenuControls : MonoBehaviour
@@ -14,10 +16,13 @@ public class MainMenuControls : MonoBehaviour
 	[SerializeField] private GameObject optionsPanel;
 	[SerializeField] private GameObject creditsPanel;
 
+	[SerializeField] private GameObject loadingScreen;
+
 	private void Start()
 	{
 		optionsPanel.SetActive(false);
 		creditsPanel.SetActive(false);
+		loadingScreen.SetActive(false);
 	}
 
 	void Update()
@@ -59,6 +64,7 @@ public class MainMenuControls : MonoBehaviour
 
 	public void ToGameSceneAnimationEvent()
 	{
-		navigator.NavigateToGameScene();
+		loadingScreen.SetActive(true);
+		loadingScreen.GetComponent<LoadingScreen>().LoadScene("GameScene");
 	}
 }
