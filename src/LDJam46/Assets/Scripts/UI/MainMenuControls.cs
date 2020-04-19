@@ -7,7 +7,7 @@ public class MainMenuControls : MonoBehaviour
 	[SerializeField] private Navigator navigator;
 	[SerializeField] private Animator animator;
 
-	private Selectable mainMenuSelectable;
+	[SerializeField] private Selectable mainMenuSelectable;
 	[SerializeField] private Selectable optionsSelectable;
 	[SerializeField] private Selectable creditsSelectable;
 
@@ -18,10 +18,6 @@ public class MainMenuControls : MonoBehaviour
 	{
 		optionsPanel.SetActive(false);
 		creditsPanel.SetActive(false);
-
-		// this is really ugly but it works
-		mainMenuSelectable = transform.Find("MenuButtonsPanel").GetChild(0).GetComponent<Selectable>();
-		EventSystem.current.SetSelectedGameObject(mainMenuSelectable.gameObject);
 	}
 
 	void Update()
@@ -54,5 +50,15 @@ public class MainMenuControls : MonoBehaviour
 	{
 		EventSystem.current.SetSelectedGameObject(null);
 		animator.SetTrigger("CreditsToMainMenu");
+	}
+
+	public void MainMenuToGameScene()
+	{
+		animator.SetTrigger("MainMenuToGameScene");
+	}
+
+	public void ToGameSceneAnimationEvent()
+	{
+		navigator.NavigateToGameScene();
 	}
 }
