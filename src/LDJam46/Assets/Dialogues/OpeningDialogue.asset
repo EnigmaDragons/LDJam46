@@ -44,6 +44,8 @@ MonoBehaviour:
     SoundEffect: {fileID: 0}
     Effect: 0
     TriggerName: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
+  - Type: 3
+    Text: 
+    SoundEffect: {fileID: 0}
+    Effect: 0
+    TriggerName: MorningCoffee
