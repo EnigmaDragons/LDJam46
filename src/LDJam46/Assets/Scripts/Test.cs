@@ -1,9 +1,15 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 
 public class Test : MonoBehaviour
 {
-    private void Start()
+    [SerializeField] private bool trigger;
+    [SerializeField] private UnityEvent action;
+    
+    private void Update()
     {
-        Message.Publish(new PassTime(100));
+        if (trigger)
+            action.Invoke();
+        trigger = false;
     }
 }

@@ -581,6 +581,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CountersUI
       objectReference: {fileID: 0}
+    - target: {fileID: 4528640971500576249, guid: 16f6725ce1a6ed94498e4206b73cd369,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5197860431948089090, guid: 16f6725ce1a6ed94498e4206b73cd369,
         type: 3}
       propertyPath: m_textInfo.characterCount

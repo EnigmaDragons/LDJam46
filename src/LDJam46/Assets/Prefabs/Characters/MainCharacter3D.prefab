@@ -214,36 +214,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 814220116849332169}
     m_Modifications:
-    - target: {fileID: 1773796188681172439, guid: d2297701d89e8414aabea34f608ca751,
-        type: 3}
-      propertyPath: m_Bounds.m_Center.x
-      value: -0.7748678
-      objectReference: {fileID: 0}
-    - target: {fileID: 1773796188681172439, guid: d2297701d89e8414aabea34f608ca751,
-        type: 3}
-      propertyPath: m_Bounds.m_Center.y
-      value: 4.7164097
-      objectReference: {fileID: 0}
-    - target: {fileID: 1773796188681172439, guid: d2297701d89e8414aabea34f608ca751,
-        type: 3}
-      propertyPath: m_Bounds.m_Center.z
-      value: -0.000000066057964
-      objectReference: {fileID: 0}
-    - target: {fileID: 1773796188681172439, guid: d2297701d89e8414aabea34f608ca751,
-        type: 3}
-      propertyPath: m_Bounds.m_Extent.x
-      value: 2.6602912
-      objectReference: {fileID: 0}
-    - target: {fileID: 1773796188681172439, guid: d2297701d89e8414aabea34f608ca751,
-        type: 3}
-      propertyPath: m_Bounds.m_Extent.y
-      value: 3.563194
-      objectReference: {fileID: 0}
-    - target: {fileID: 1773796188681172439, guid: d2297701d89e8414aabea34f608ca751,
-        type: 3}
-      propertyPath: m_Bounds.m_Extent.z
-      value: 0.0000006655146
-      objectReference: {fileID: 0}
     - target: {fileID: 2195997977883095061, guid: d2297701d89e8414aabea34f608ca751,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -304,25 +274,10 @@ PrefabInstance:
       propertyPath: clips.Array.data[3]
       value: 
       objectReference: {fileID: 8300000, guid: 173de4c2db4a38249a71398c455e239d, type: 3}
-    - target: {fileID: 6301648574889205653, guid: d2297701d89e8414aabea34f608ca751,
-        type: 3}
-      propertyPath: clips.Array.data[2]
-      value: 
-      objectReference: {fileID: 8300000, guid: 52e4388404c036143a5367d8fa2d9b0d, type: 3}
-    - target: {fileID: 6301648574889205653, guid: d2297701d89e8414aabea34f608ca751,
-        type: 3}
-      propertyPath: clips.Array.data[3]
-      value: 
-      objectReference: {fileID: 8300000, guid: 52e4388404c036143a5367d8fa2d9b0d, type: 3}
     - target: {fileID: 8793830873276366614, guid: d2297701d89e8414aabea34f608ca751,
         type: 3}
       propertyPath: m_Name
       value: RealBody
-      objectReference: {fileID: 0}
-    - target: {fileID: 8793830873276366614, guid: d2297701d89e8414aabea34f608ca751,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2297701d89e8414aabea34f608ca751, type: 3}

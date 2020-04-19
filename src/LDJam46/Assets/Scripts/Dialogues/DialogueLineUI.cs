@@ -10,11 +10,14 @@ public class DialogueLineUI : MonoBehaviour
     private string _text = "";
     private float _t;
 
+    private void OnEnable() => textBox.text = "";
+    
     public bool IsRevealed => _t >= _text.Length * secondsPerCharacter;
     public void Reveal() => _t = _text.Length * secondsPerCharacter;
 
     public void Display(string text)
     {
+        textBox.text = "";
         _text = text;
         _t = 0;
     }

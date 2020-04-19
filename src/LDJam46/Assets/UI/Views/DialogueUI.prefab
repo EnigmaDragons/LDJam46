@@ -190,8 +190,8 @@ RectTransform:
   m_Father: {fileID: 1305636886282398049}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.28, y: 0.05}
-  m_AnchorMax: {x: 0.72, y: 0.3}
+  m_AnchorMin: {x: 0.28, y: 0.1}
+  m_AnchorMax: {x: 0.72, y: 0.32}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -319,9 +319,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textBox: {fileID: 2204642141505312924}
   secondsPerCharacter:
-    UseConstant: 1
+    UseConstant: 0
     ConstantValue: 0.065
-    FloatVariable: {fileID: 0}
+    FloatVariable: {fileID: 11400000, guid: e6b77d20882c79641a5ef97883fe0a16, type: 2}
 --- !u!114 &5106866604528931462
 MonoBehaviour:
   m_ObjectHideFlags: 0

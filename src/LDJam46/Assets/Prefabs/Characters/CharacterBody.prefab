@@ -225,6 +225,11 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: -0.006108711
       objectReference: {fileID: 0}
+    - target: {fileID: 1618074002003653290, guid: 79260ee276120004d8b3bf765812b5a1,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2621821756639236683, guid: 79260ee276120004d8b3bf765812b5a1,
         type: 3}
       propertyPath: m_Bounds.m_Extent.y
@@ -313,6 +318,11 @@ PrefabInstance:
     - target: {fileID: 6056071312093150119, guid: 79260ee276120004d8b3bf765812b5a1,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6443642251651022998, guid: 79260ee276120004d8b3bf765812b5a1,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9089407518733185114, guid: 79260ee276120004d8b3bf765812b5a1,
