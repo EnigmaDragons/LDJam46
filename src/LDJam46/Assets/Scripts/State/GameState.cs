@@ -14,4 +14,6 @@ public sealed class GameState
     public CurrentWorld CurrentWorld { get; set; } = CurrentWorld.Real;
     public List<Item> Items { get; set; } = new List<Item>();
     public bool isInDialogue { get; set; } = false;
+    public int NumPanicAttacks { get; set; } = 0;
+    public int NumBlackouts { get; set; } = 0;
 }
