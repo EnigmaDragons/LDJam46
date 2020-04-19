@@ -2,4 +2,5 @@
 {
     Statement,
     SoundEffect,
+    VisualEffect
 }
