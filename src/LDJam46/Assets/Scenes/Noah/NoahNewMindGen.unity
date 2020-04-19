@@ -433,5 +433,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: NewMindWorld
       objectReference: {fileID: 0}
+    - target: {fileID: 9021213238447049564, guid: c9944717bd75da84dbbe9d08b370b69b,
+        type: 3}
+      propertyPath: _demonState
+      value: 
+      objectReference: {fileID: 11400000, guid: 0ef2d429b4140794cb62d30fc59555e5,
+        type: 2}
+    - target: {fileID: 9021213238447049564, guid: c9944717bd75da84dbbe9d08b370b69b,
+        type: 3}
+      propertyPath: _accelrationMultipier
+      value: 0.4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9944717bd75da84dbbe9d08b370b69b, type: 3}
