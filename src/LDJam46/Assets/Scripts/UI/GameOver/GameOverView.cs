@@ -3,13 +3,14 @@ using UnityEngine.UI;
 
 public class GameOverView : MonoBehaviour
 {
-    [SerializeField] private Navigator navigator;
-    [SerializeField] private Button restartButton;
-    [SerializeField] private Button quitToMenuButton;
+    [SerializeField] private Button nextDayButton;
 
     private void Awake()
     {
-        restartButton.onClick.AddListener(() => navigator.NavigateToGameScene());
-        quitToMenuButton.onClick.AddListener(() => navigator.NavigateToMainMenu());
+        nextDayButton.onClick.AddListener(() =>
+        {
+            gameObject.SetActive(false);
+            Message.Publish(new StartNextDay());
+        });
     }
 }
