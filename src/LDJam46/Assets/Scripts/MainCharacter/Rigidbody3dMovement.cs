@@ -62,10 +62,12 @@ public class Rigidbody3dMovement : MonoBehaviour {
                     _body.velocity = Vector2.ClampMagnitude(new Vector2(_horizontal, _vertical).normalized, 1) * sprintSpeed;
                     _currentSprintTime = Math.Max(0, _currentSprintTime -= Time.fixedDeltaTime);
                     Message.Publish(new SprintChanged(_currentSprintTime / maxSprintTime));
+                    Run();
                 }
                 else
                 {
                     _body.velocity = Vector2.ClampMagnitude(new Vector2(_horizontal, _vertical).normalized, 1) * moveSpeed;
+                    Walk();
                 }
             }
             else
@@ -73,6 +75,7 @@ public class Rigidbody3dMovement : MonoBehaviour {
                 _body.velocity = Vector2.ClampMagnitude(new Vector2(_horizontal, _vertical).normalized, 1) * moveSpeed;
                 _currentSprintTime = Math.Min(maxSprintTime, _currentSprintTime + Time.fixedDeltaTime * sprintRegenPerSecond);
                 Message.Publish(new SprintChanged(_currentSprintTime / maxSprintTime));
+                Walk();
             }
             
             
@@ -81,20 +84,43 @@ public class Rigidbody3dMovement : MonoBehaviour {
                 _sprite.flipX = true;
             } else if (_body.velocity.x < 0) {
                 _sprite.flipX = false;
-            }            
-
-            // transition from idle to walk
-
-            if (_body.velocity.x < 0 || _body.velocity.x > 0 || _body.velocity.y < 0 || _body.velocity.y > 0) {
-                _animator.SetTrigger("toWALK");                
-                footsteps.StartWalking();
-            } else if (_body.velocity.x == 0 || _body.velocity.y == 0) {
-                _animator.ResetTrigger("toWALK");
-                footsteps.Stop();
-                _animator.SetTrigger("Exit");
-            }            
+            }
         } else {
             _body.velocity = Vector2.zero;
+        }
+    }
+
+    private bool IsStopped() => _body.velocity.x == 0 && _body.velocity.y == 0;
+
+    private void Idle()
+    {
+        _animator.ResetTrigger("toRUN");
+        _animator.ResetTrigger("toWALK");
+        footsteps.Stop();
+        _animator.SetTrigger("Exit");
+    }
+
+    private void Walk()
+    {
+        if (IsStopped())
+            Idle();
+        else
+        {
+            _animator.ResetTrigger("toRUN");
+            _animator.SetTrigger("toWALK");
+            footsteps.StartWalking();
+        }
+    }
+
+    private void Run()
+    {
+        if (IsStopped())
+            Idle();
+        else
+        {
+            _animator.ResetTrigger("toWALK");
+            _animator.SetTrigger("toRUN");
+            footsteps.StartRunning();
         }
     }
 }
