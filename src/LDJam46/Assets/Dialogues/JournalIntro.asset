@@ -14,17 +14,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Lines:
   - Type: 0
-    Text: I can use my journal to keep track of how things affect my anxiety.
+    Text: Phew, glad that's over! I hate it when that happens!
+    SoundEffect: {fileID: 0}
+    Effect: 0
+    TriggerName: 
+  - Type: 0
+    Text: I can use my journal to keep track of how to deal with my anxiety.
     SoundEffect: {fileID: 0}
     Effect: 0
     TriggerName: 
   - Type: 0
     Text: I'll start by filling what i know about my pills and coffee
-    SoundEffect: {fileID: 0}
+    SoundEffect: {fileID: 8300000, guid: 3d3b671013b3e9f41ab80a089ccc322d, type: 3}
     Effect: 0
     TriggerName: 
   - Type: 1
     Text: 
     SoundEffect: {fileID: 8300000, guid: 3d3b671013b3e9f41ab80a089ccc322d, type: 3}
     Effect: 0
+    TriggerName: 
+  - Type: 2
+    Text: JOURNAL
+    SoundEffect: {fileID: 0}
+    Effect: 1
     TriggerName: 

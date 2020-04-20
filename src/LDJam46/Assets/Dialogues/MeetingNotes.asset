@@ -10,47 +10,57 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c5c7a4a9e5e821e4d8c01ebf9cb5f11c, type: 3}
-  m_Name: OpeningDialogue
+  m_Name: MeetingNotes
   m_EditorClassIdentifier: 
   Lines:
-  - Type: 1
-    Text: 
-    SoundEffect: {fileID: 8300000, guid: eea876c369bd317449958e5983831871, type: 3}
-    Effect: 0
-    TriggerName: 
   - Type: 0
-    Text: Ok, keep it cool.
+    Text: My headspace is just so full of stressful stuff I need to do. I feel so
+      alone with making these decisions.
     SoundEffect: {fileID: 0}
     Effect: 0
     TriggerName: 
   - Type: 0
-    Text: It's just work...it's just work, no problem.
-    SoundEffect: {fileID: 0}
-    Effect: 0
-    TriggerName: 
-  - Type: 1
-    Text: 
-    SoundEffect: {fileID: 8300000, guid: 16856eb9912b8734cb5fb3f4a771b3b7, type: 3}
-    Effect: 0
-    TriggerName: 
-  - Type: 2
     Text: 
     SoundEffect: {fileID: 0}
     Effect: 0
     TriggerName: 
   - Type: 0
-    Text: I've got 10 minutes before my meeting. I feel horrible, maybe a coffee
-      would help?
+    Text: 
     SoundEffect: {fileID: 0}
     Effect: 0
     TriggerName: 
-  - Type: 3
+  - Type: 0
     Text: 
     SoundEffect: {fileID: 0}
     Effect: 0
-    TriggerName: MorningCoffee
-  - Type: 1
+    TriggerName: 
+  - Type: 0
     Text: 
-    SoundEffect: {fileID: 8300000, guid: 6351975687510ca4aa3cb6d3d3ad3081, type: 3}
+    SoundEffect: {fileID: 0}
     Effect: 0
-    TriggerName: MorningCoffee
+    TriggerName: 
+  - Type: 0
+    Text: 
+    SoundEffect: {fileID: 0}
+    Effect: 0
+    TriggerName: 
+  - Type: 0
+    Text: 
+    SoundEffect: {fileID: 0}
+    Effect: 0
+    TriggerName: 
+  - Type: 0
+    Text: 
+    SoundEffect: {fileID: 0}
+    Effect: 0
+    TriggerName: 
+  - Type: 0
+    Text: 
+    SoundEffect: {fileID: 0}
+    Effect: 0
+    TriggerName: 
+  - Type: 0
+    Text: 
+    SoundEffect: {fileID: 0}
+    Effect: 0
+    TriggerName: 

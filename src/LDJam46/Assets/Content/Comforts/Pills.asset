@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DefaultPercentage: 0.8
   ComfortLevels: []
-  JournalEntry: 0
+  JournalEntry: 4
   Penalties:
   - Demon: 2
     Penalty: 1
