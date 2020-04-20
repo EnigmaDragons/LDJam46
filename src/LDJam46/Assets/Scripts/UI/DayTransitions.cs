@@ -24,6 +24,7 @@ public class DayTransitions : OnMessage<StartNextDay>
             x.DayNumber++;
             x.HadPanicAttackToday = false;
             x.IsTransitioningDays = true;
+            x.BlackoutsToday = 0;
         });
         text.text = $"DAY {gameState.GameState.DayNumber}";
         day.color = new Color(1, 1, 1, 1);
