@@ -15,7 +15,27 @@ public sealed class GameState
     public List<Item> Items { get; set; } = new List<Item>();
     public bool isInDialogue { get; set; } = false;
     public int NumPanicAttacks { get; set; } = 0;
-    public int NumBlackouts { get; set; } = 0;
-    public int DayNumber { get; set; } = 0;
+    private int _numBlackouts = 0;
+    public int NumBlackouts
+    {
+        get => _numBlackouts;
+        set
+        {
+            _numBlackouts = value;
+            BlackoutsToday++;
+        }
+    }
+
+    private int _dayNumber = 0;
+    public int DayNumber
+    {
+        get => _dayNumber;
+        set
+        {
+            _dayNumber = value;
+            BlackoutsToday = 0;
+        }
+    }
     public bool HadPanicAttackToday { get; set; } = false;
+    public int BlackoutsToday { get; private set; } = 0;
 }

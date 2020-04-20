@@ -7,7 +7,7 @@ public class WinCondition : OnMessage<WorldSwapStarted>
 
     protected override void Execute(WorldSwapStarted msg)
     {
-        if (msg.NewWorld == CurrentWorld.Real && !gameState.GameState.HadPanicAttackToday)
+        if (msg.NewWorld == CurrentWorld.Real && !gameState.GameState.HadPanicAttackToday && gameState.GameState.BlackoutsToday == 3)
             StartCoroutine(Win());
     }
 
