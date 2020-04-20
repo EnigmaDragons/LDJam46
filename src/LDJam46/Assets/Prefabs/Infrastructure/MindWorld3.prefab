@@ -152,11 +152,11 @@ MonoBehaviour:
           type: 3}
       demons:
       - Demon: 0
-        SpawnChance: 1
-      - Demon: 1
-        SpawnChance: 1
-      - Demon: 2
         SpawnChance: 0
+      - Demon: 1
+        SpawnChance: 0
+      - Demon: 2
+        SpawnChance: 1
     - items:
       - NumberToSpawn: 1
         Object: {fileID: 3817069723814122353, guid: 2a448df4b6750934d8dad190e70780fb,
