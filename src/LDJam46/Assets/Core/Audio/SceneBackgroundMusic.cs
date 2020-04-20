@@ -6,7 +6,7 @@ public sealed class SceneBackgroundMusic : MonoBehaviour
     [SerializeField] private GameMusicPlayer musicPlayer;
     [SerializeField] private bool shouldLoop = true;
 
-    private void Start()
+    private void OnEnable()
     {
         if (shouldLoop)
             musicPlayer.PlaySelectedMusicLooping(music);
