@@ -12,4 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5c7a4a9e5e821e4d8c01ebf9cb5f11c, type: 3}
   m_Name: JournalIntro
   m_EditorClassIdentifier: 
-  Lines: []
+  Lines:
+  - Type: 0
+    Text: I can use my journal to keep track of how things affect my anxiety.
+    SoundEffect: {fileID: 0}
+    Effect: 0
+    TriggerName: 
+  - Type: 0
+    Text: I'll start by filling what i know about my pills and coffee
+    SoundEffect: {fileID: 0}
+    Effect: 0
+    TriggerName: 
+  - Type: 1
+    Text: 
+    SoundEffect: {fileID: 8300000, guid: 3d3b671013b3e9f41ab80a089ccc322d, type: 3}
+    Effect: 0
+    TriggerName: 
