@@ -1,6 +1,7 @@
 ﻿using System;
 using Assets.Scripts.Demons;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ParanoiaDemon : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class ParanoiaDemon : MonoBehaviour
     [SerializeField] private float _accelrationMultipier;
     [SerializeField] private float _minSpeed;
     [SerializeField] private Transform[] spawnPoints;
+    [SerializeField] private SpriteRenderer image;
 
     private float _speed;
     private Vector2 _playerLookDirection;
@@ -45,10 +47,12 @@ public class ParanoiaDemon : MonoBehaviour
         var angle = Vector2.Angle(_playerLookDirection, transform.position - _player.PlayerCharacter.transform.position);
         if (angle < _freezeAngle)
         {
+            image.color = new Color(1, 1, 1, 0.5f);
             _speed = 0;
         }
         else
         {
+            image.color = new Color(1, 1, 1, 1f);
             _demonState.Increment(Time.deltaTime / _secondsPerPercent / 100);
             _speed = Math.Max(_speed, _minSpeed);
             _speed += _demonState.ProgressPercent * _accelrationMultipier;

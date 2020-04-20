@@ -91,6 +91,7 @@ MonoBehaviour:
   _accelrationMultipier: 0.1
   _minSpeed: 1
   spawnPoints: []
+  image: {fileID: 9017359658345469964}
 --- !u!54 &524693721708564241
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -230,6 +231,12 @@ GameObject:
 --- !u!4 &3664577820138175047 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9098923046569123693, guid: 6e7429823b80981419bdaf425c073c57,
+    type: 3}
+  m_PrefabInstance: {fileID: 5521110029735978282}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &9017359658345469964 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 3583445304115789094, guid: 6e7429823b80981419bdaf425c073c57,
     type: 3}
   m_PrefabInstance: {fileID: 5521110029735978282}
   m_PrefabAsset: {fileID: 0}

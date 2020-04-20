@@ -154,7 +154,7 @@ MonoBehaviour:
       - Demon: 0
         SpawnChance: 1
       - Demon: 1
-        SpawnChance: 0
+        SpawnChance: 1
       - Demon: 2
         SpawnChance: 0
     - items:
