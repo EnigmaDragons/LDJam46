@@ -1,9 +1,20 @@
 ﻿
 using UnityEngine;
 
-public class JournalView : MonoBehaviour
+public class JournalView : OnMessage<ShowJournal>
 {
     [SerializeField] private GameObject journalView;
+    [SerializeField] private CurrentGameState game;
+
+    private bool _queueShowJournal = false;
+
+    private void Update()
+    {
+        if (!_queueShowJournal || game.GameState.isInDialogue) return;
+
+        _queueShowJournal = false;
+        Show();
+    }
     
     public void Toggle()
     {
@@ -22,4 +33,6 @@ public class JournalView : MonoBehaviour
     {
         journalView.SetActive(false);
     }
+
+    protected override void Execute(ShowJournal msg) => _queueShowJournal = true;
 }
