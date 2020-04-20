@@ -15,7 +15,7 @@ MonoBehaviour:
   Lines:
   - Type: 0
     Text: 'Manager: Hey Pauline, I really do need that report now or we''re going
-      to need to have a talk.'
+      to need to have a talk!!'
     SoundEffect: {fileID: 0}
     Effect: 0
     TriggerName: 
