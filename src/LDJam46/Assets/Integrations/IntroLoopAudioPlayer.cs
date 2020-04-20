@@ -18,6 +18,7 @@ public class IntroLoopAudioPlayer : ScriptableObject
     
     public void PlaySelectedMusicLooping(IntroloopAudio clipToPlay)
     {
+        if (clipToPlay == null) return;
         if (currentClip != null && currentClip.name == clipToPlay.name) return;
         
         currentClip = clipToPlay;

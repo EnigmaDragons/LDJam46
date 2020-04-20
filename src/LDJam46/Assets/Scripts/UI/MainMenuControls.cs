@@ -16,13 +16,12 @@ public class MainMenuControls : MonoBehaviour
 	[SerializeField] private GameObject optionsPanel;
 	[SerializeField] private GameObject creditsPanel;
 
-	[SerializeField] private GameObject loadingScreen;
+	[SerializeField] private LoadingScreen loadingScreen;
 
 	private void Start()
 	{
 		optionsPanel.SetActive(false);
 		creditsPanel.SetActive(false);
-		loadingScreen.SetActive(false);
 	}
 
 	void Update()
@@ -64,6 +63,6 @@ public class MainMenuControls : MonoBehaviour
 
 	public void ToGameSceneAnimationEvent()
 	{
-		loadingScreen.GetComponent<LoadingScreen>().LoadScene("GameScene");
+		loadingScreen.LoadScene("GameScene");
 	}
 }

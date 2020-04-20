@@ -1,25 +1,28 @@
 ﻿using UnityEngine;
 
-public class SwapWorldHandler : OnMessage<SwapWorld>
+public class SwapWorldHandler : OnMessage<SwapWorld, ReadyForWorldSwapPeak, ReadyForWorldSwapFinished>
 {
     [SerializeField] private GameObject realWorld;
     [SerializeField] private GameObject mindWorld;
     [SerializeField] private CurrentGameState game;
-    [SerializeField] private WorldSwapVisualTransition transition;
+
+    private CurrentWorld _newWorld;
     
     protected override void Execute(SwapWorld msg)
     {
-        var newWorld = game.CurrentWorld == CurrentWorld.Mind ? CurrentWorld.Real : CurrentWorld.Mind;
-        Message.Publish(new WorldSwapStarted(newWorld));
-        transition.ShowTransition(
-            () =>
-            {
-                Activate(newWorld);
-                Message.Publish(new WorldSwapPeaked(newWorld));
-            },
-            () => NotifyFinished(newWorld)); 
-    }        
-    
+        _newWorld = game.CurrentWorld == CurrentWorld.Mind ? CurrentWorld.Real : CurrentWorld.Mind;
+        Message.Publish(new WorldSwapStarted(_newWorld));
+    }
+
+    protected override void Execute(ReadyForWorldSwapPeak msg)
+    {
+        Activate(_newWorld);
+        Message.Publish(new WorldSwapPeaked(_newWorld));
+    }
+
+    protected override void Execute(ReadyForWorldSwapFinished msg)
+        => NotifyFinished(_newWorld);
+
     private void Activate(CurrentWorld targetWorld)
     {
         mindWorld.SetActive(targetWorld == CurrentWorld.Mind);
