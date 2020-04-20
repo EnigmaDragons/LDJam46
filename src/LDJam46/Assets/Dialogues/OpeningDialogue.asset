@@ -49,3 +49,8 @@ MonoBehaviour:
     SoundEffect: {fileID: 0}
     Effect: 0
     TriggerName: MorningCoffee
+  - Type: 1
+    Text: 
+    SoundEffect: {fileID: 8300000, guid: 6351975687510ca4aa3cb6d3d3ad3081, type: 3}
+    Effect: 0
+    TriggerName: MorningCoffee

@@ -42,8 +42,6 @@ public class PauseMenu : MonoBehaviour
 
     public void Pause()
     {
-	    Time.timeScale = 0.0f;
-
 	    overlay.SetActive(true);
 	    optionsPanel.SetActive(false);
 	    controlsPanel.SetActive(false);
@@ -51,8 +49,6 @@ public class PauseMenu : MonoBehaviour
 
     public void Resume()
     {
-	    Time.timeScale = 1.0f;
-
 	    overlay.SetActive(false);
 	}
 
