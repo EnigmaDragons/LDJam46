@@ -50,7 +50,6 @@ public class Rigidbody3dMovement : MonoBehaviour {
             _isThinking = true;            
             _animator.ResetTrigger("Exit");
             _animator.SetTrigger("toTHINKING");
-            Debug.Log("Move - Thinking");
         }
     }
 

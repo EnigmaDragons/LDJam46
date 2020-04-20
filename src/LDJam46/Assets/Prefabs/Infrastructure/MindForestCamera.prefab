@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 35599754795372359}
   - component: {fileID: 3947232424659045860}
   m_Layer: 0
-  m_Name: AngledCameraWithShaderTransition
+  m_Name: MindForestCamera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -228,7 +228,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 3
-  m_FollowOffset: {x: 0, y: -8.8, z: -10}
+  m_FollowOffset: {x: 0, y: -8.4, z: -10}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
