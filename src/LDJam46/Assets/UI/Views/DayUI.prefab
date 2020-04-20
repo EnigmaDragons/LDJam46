@@ -54,7 +54,12 @@ MonoBehaviour:
   text: {fileID: 8853543389143931511}
   gameState: {fileID: 11400000, guid: 6bb654c6d14f44349977173df0bb252b, type: 2}
   dialogues:
-  - {fileID: 11400000, guid: 964aaeed23c01ba4daabdf8759b5cc82, type: 2}
+  - Dialogue: {fileID: 11400000, guid: 964aaeed23c01ba4daabdf8759b5cc82, type: 2}
+    Day: 1
+    DayBlackoutNumber: 1
+  - Dialogue: {fileID: 11400000, guid: daac9c5e1faf67840957e4ba16e41f10, type: 2}
+    Day: 1
+    DayBlackoutNumber: 2
   preFadeSeconds: 3
   fadeInSeconds: 1
   startingItems:
