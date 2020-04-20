@@ -48,6 +48,9 @@ MonoBehaviour:
   - Dialogue: {fileID: 11400000, guid: 964aaeed23c01ba4daabdf8759b5cc82, type: 2}
     Day: 1
     DayBlackoutNumber: 1
-  - Dialogue: {fileID: 11400000, guid: daac9c5e1faf67840957e4ba16e41f10, type: 2}
+  - Dialogue: {fileID: 11400000, guid: 56f0d3244ffa2924dad601259440d727, type: 2}
     Day: 1
     DayBlackoutNumber: 2
+  - Dialogue: {fileID: 11400000, guid: daac9c5e1faf67840957e4ba16e41f10, type: 2}
+    Day: 1
+    DayBlackoutNumber: 3

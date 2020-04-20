@@ -69,7 +69,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -679865043
   m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 57ded2f9a04bca4489685ca9d3fd565d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -786,6 +786,51 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1177082573145883806, guid: c51bb77d7084b04419ccadc9bd93e446,
+        type: 3}
+      propertyPath: triggers.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1177082573145883806, guid: c51bb77d7084b04419ccadc9bd93e446,
+        type: 3}
+      propertyPath: triggers.Array.data[2].Name
+      value: Journal
+      objectReference: {fileID: 0}
+    - target: {fileID: 1177082573145883806, guid: c51bb77d7084b04419ccadc9bd93e446,
+        type: 3}
+      propertyPath: triggers.Array.data[2].Obj
+      value: 
+      objectReference: {fileID: 1970627543936364549}
+    - target: {fileID: 1177082573145883806, guid: c51bb77d7084b04419ccadc9bd93e446,
+        type: 3}
+      propertyPath: triggers.Array.data[3].Name
+      value: Email 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1177082573145883806, guid: c51bb77d7084b04419ccadc9bd93e446,
+        type: 3}
+      propertyPath: triggers.Array.data[3].Obj
+      value: 
+      objectReference: {fileID: 1970627543936364549}
+    - target: {fileID: 1177082573145883806, guid: c51bb77d7084b04419ccadc9bd93e446,
+        type: 3}
+      propertyPath: triggers.Array.data[4].Name
+      value: Desk
+      objectReference: {fileID: 0}
+    - target: {fileID: 1177082573145883806, guid: c51bb77d7084b04419ccadc9bd93e446,
+        type: 3}
+      propertyPath: triggers.Array.data[4].Obj
+      value: 
+      objectReference: {fileID: 1970627543936364549}
+    - target: {fileID: 1177082573145883806, guid: c51bb77d7084b04419ccadc9bd93e446,
+        type: 3}
+      propertyPath: triggers.Array.data[5].Name
+      value: Desk
+      objectReference: {fileID: 0}
+    - target: {fileID: 1177082573145883806, guid: c51bb77d7084b04419ccadc9bd93e446,
+        type: 3}
+      propertyPath: triggers.Array.data[5].Obj
+      value: 
+      objectReference: {fileID: 1970627543936364549}
     - target: {fileID: 3019729898853868591, guid: c51bb77d7084b04419ccadc9bd93e446,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -883,6 +928,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c51bb77d7084b04419ccadc9bd93e446, type: 3}
+--- !u!1 &1970627543936364549 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 51163425517553385, guid: c51bb77d7084b04419ccadc9bd93e446,
+    type: 3}
+  m_PrefabInstance: {fileID: 2012220156660037356}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8416328132749152906 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8007429044309714022, guid: c51bb77d7084b04419ccadc9bd93e446,
