@@ -10,7 +10,7 @@ public class SelectFirstSelectable : MonoBehaviour
 
 	void OnEnable()
 	{
-		//EventSystem.current.SetSelectedGameObject(selectable.gameObject);
+		EventSystem.current.SetSelectedGameObject(selectable.gameObject);
 		selectable.Select();
 	}
 
