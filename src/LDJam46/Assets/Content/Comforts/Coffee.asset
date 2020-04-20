@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60b45686d16714a44ac3595e1070a624, type: 3}
   m_Name: Coffee
   m_EditorClassIdentifier: 
-  DefaultPercentage: 0.25
+  DefaultPercentage: 0
   ComfortLevels:
-  - Percentage: 0.35
+  - Percentage: 0.25
     Demon: 0
   JournalEntry: 5
   Penalties:
   - Demon: 1
-    Penalty: 0.6
+    Penalty: 0.5

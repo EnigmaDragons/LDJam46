@@ -16,7 +16,7 @@ MonoBehaviour:
   Name: Sugar
   ComfortBonuses:
   - Comfort: {fileID: 11400000, guid: 4eed662bdbdab53459c136d4d145442f, type: 2}
-    DefaultPercentage: 0.5
+    DefaultPercentage: 0
     PerDemon:
-    - Percentage: 0.65
+    - Percentage: 0.5
       Demon: 0

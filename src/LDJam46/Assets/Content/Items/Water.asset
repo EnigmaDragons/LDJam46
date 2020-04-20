@@ -16,5 +16,9 @@ MonoBehaviour:
   Name: Pills
   ComfortBonuses:
   - Comfort: {fileID: 11400000, guid: fa0b7c7f0caf7cf4da8fa1aaa88afa10, type: 2}
-    DefaultPercentage: 1
-    PerDemon: []
+    DefaultPercentage: 0
+    PerDemon:
+    - Percentage: 1
+      Demon: 0
+    - Percentage: 1
+      Demon: 1
