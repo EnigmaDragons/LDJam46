@@ -696,6 +696,8 @@ GameObject:
   - component: {fileID: 5287151496810707919}
   - component: {fileID: 5092936561474369159}
   - component: {fileID: 8134109916956729738}
+  - component: {fileID: 8001281715061350341}
+  - component: {fileID: 9065691921457032895}
   m_Layer: 5
   m_Name: JournalView
   m_TagString: Untagged
@@ -871,6 +873,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   game: {fileID: 11400000, guid: 6bb654c6d14f44349977173df0bb252b, type: 2}
+--- !u!114 &8001281715061350341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6946018501814735078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fbcef9e8adb5ea4eafd6a3e1a392eab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: 3d3b671013b3e9f41ab80a089ccc322d, type: 3}
+  volume: 1
+  player: {fileID: 11400000, guid: bfe56e3518f684c4387de97bd5db348d, type: 2}
+--- !u!114 &9065691921457032895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6946018501814735078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 243f4d0ae4d04e045973e8e3fd55e044, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: fe15cd2d6ffe80a4ca062faffb75e121, type: 3}
+  volume: 0.65
+  player: {fileID: 11400000, guid: bfe56e3518f684c4387de97bd5db348d, type: 2}
 --- !u!1 &6946018501870868720
 GameObject:
   m_ObjectHideFlags: 0
