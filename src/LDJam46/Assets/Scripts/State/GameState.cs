@@ -34,8 +34,10 @@ public sealed class GameState
         {
             _dayNumber = value;
             BlackoutsToday = 0;
+            ComfortsConsumedLastBlackoutToday = new List<Comfort>();
         }
     }
     public bool HadPanicAttackToday { get; set; } = false;
-    public int BlackoutsToday { get; private set; } = 0;
+    public int BlackoutsToday { get; set; } = 0;
+    public List<Comfort> ComfortsConsumedLastBlackoutToday { get; set; } = new List<Comfort>();
 }
