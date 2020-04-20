@@ -39,6 +39,9 @@ public class DialogueBoxUI : OnMessage<StartConversation>
 
     private void Resolve()
     {
+        if (!_playingDialogue)
+            return;
+        
         if (!line.IsRevealed)
         {
             line.Reveal();

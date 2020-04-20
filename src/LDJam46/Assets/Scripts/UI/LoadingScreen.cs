@@ -19,6 +19,7 @@ public class LoadingScreen : MonoBehaviour
 	public void InitiLoad()
 	{
 		forHiding.SetActive(true);
+		backgroundAnimator.gameObject.SetActive(true);
 		backgroundAnimator.SetTrigger("Start");
 	}
 
