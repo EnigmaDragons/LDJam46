@@ -1,0 +1,7 @@
+Fixed: Update, now it only performs when isPlaying
+Fixed: Tooptip texts.. such as second units.
+Fixed: Looping now it's called with InvokeRepeating and stopped with CancelInvoke.
+Fixed: Editor displays notification about duplication more than once.
+Added: Now Play will check existing isPlaying state, and if existing animation plays. then skip. (Avoids repeating animation play)
+Added: Restart parameter
+Added: "Play Once" button for example..

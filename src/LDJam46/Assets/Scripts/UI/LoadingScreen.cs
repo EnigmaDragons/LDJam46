@@ -19,11 +19,13 @@ public class LoadingScreen : MonoBehaviour
 	public void InitiLoad()
 	{
 		forHiding.SetActive(true);
+		backgroundAnimator.gameObject.SetActive(true);
 		backgroundAnimator.SetTrigger("Start");
 	}
 
 	public void LoadScene(string sceneName)
 	{
+		gameObject.SetActive(true);
 		StartCoroutine(MandatoryWait());
 		StartCoroutine(LoadSceneAsync(sceneName));
 	}

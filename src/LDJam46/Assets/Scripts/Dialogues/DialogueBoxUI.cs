@@ -39,27 +39,30 @@ public class DialogueBoxUI : OnMessage<StartConversation>
 
     private void Resolve()
     {
+        if (!_playingDialogue)
+            return;
+        
         if (!line.IsRevealed)
         {
             line.Reveal();
         }
-        else if (_index == _dialogue.Lines.Count)
+        else if (_playingDialogue && _index == _dialogue.Lines.Count)
         {
-            Debug.Log("Finished Dialogue", gameObject);
+            Debug.Log("Dialogue - Finished", gameObject);
             _playingDialogue = false;
             dialogueBox.SetActive(false);
             Message.Publish(new ConversationEnded());
         }
         else if (_dialogue.Lines[_index].Type == DialogueLineType.SoundEffect)
         {
-            Debug.Log($"Playing Dialogue Sound {_dialogue.Lines[_index].SoundEffect.name}", gameObject);
+            Debug.Log($"Dialogue - Playing Sound {_dialogue.Lines[_index].SoundEffect.name}", gameObject);
             audioSource.Play(_dialogue.Lines[_index].SoundEffect);
             _index++;
             WithDelay(0.8f, Resolve);
         }
         else if (_dialogue.Lines[_index].Type == DialogueLineType.Statement)
         {
-            Debug.Log($"Displaying Statement {_dialogue.Lines[_index].Type}", gameObject);
+            Debug.Log($"Dialogue - Displaying Statement {_dialogue.Lines[_index].Text}", gameObject);
             line.Display(_dialogue.Lines[_index].Text);
             _index++;
         }
@@ -71,14 +74,14 @@ public class DialogueBoxUI : OnMessage<StartConversation>
         }
         else if (_dialogue.Lines[_index].Type == DialogueLineType.ActivateTrigger)
         {
-            Debug.Log($"Activating Trigger {_dialogue.Lines[_index].TriggerName}", gameObject);
+            Debug.Log($"Dialogue - Activating Trigger {_dialogue.Lines[_index].TriggerName}", gameObject);
             Message.Publish(new ActivateTrigger(_dialogue.Lines[_index].TriggerName));
             _index++;
             Resolve();
         }
         else if (_dialogue.Lines[_index].Type == DialogueLineType.SwapWorld)
         {
-            Debug.Log($"Swapping World", gameObject);
+            Debug.Log($"Dialogue - Swapping World", gameObject);
             Message.Publish(new SwapWorld());
             _index++;
             Resolve();
@@ -89,17 +92,17 @@ public class DialogueBoxUI : OnMessage<StartConversation>
     {
         if (fx == DialogueEffect.FadeIn)
         {
-            Debug.Log("Starting Fade In", gameObject);
+            Debug.Log("Dialogue - Starting Fade In", gameObject);
             Message.Publish(new StartFadeIn());
         }
         else if (fx == DialogueEffect.ShowJournal)
         {
-            Debug.Log("Showing Journal", gameObject);
+            Debug.Log("Dialogue - Showing Journal", gameObject);
             Message.Publish(new ShowJournal());
         }
         else
         {
-            Debug.Log($"Unimplemented Dialogue Effect {fx.ToString()}", gameObject);
+            Debug.Log($"Dialogue - Unimplemented Effect {fx.ToString()}", gameObject);
         }
     }
 
