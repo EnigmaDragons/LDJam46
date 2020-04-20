@@ -44,6 +44,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shadows
       objectReference: {fileID: 0}
+    - target: {fileID: 2338531027459748640, guid: 931f810d1968b0d488e538e984c4fc27,
+        type: 3}
+      propertyPath: InitialModule.startSize.minScalar
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3392991565736906026, guid: 931f810d1968b0d488e538e984c4fc27,
         type: 3}
       propertyPath: InitialModule.maxNumParticles
