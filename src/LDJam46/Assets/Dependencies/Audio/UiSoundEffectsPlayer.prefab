@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7318196694813104344}
   - component: {fileID: 8343361537247501593}
   - component: {fileID: 1783581389}
+  - component: {fileID: 5913335928936295795}
   m_Layer: 0
   m_Name: UiSoundEffectsPlayer
   m_TagString: Untagged
@@ -178,3 +179,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObjectToFollow: {fileID: 0}
+--- !u!114 &5913335928936295795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6438735157852827517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c43cf89054a9644198fcb253eb2ac70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 11400000, guid: bfe56e3518f684c4387de97bd5db348d, type: 2}
+  itemCollected:
+    Clip: {fileID: 8300000, guid: 38b98b2b6991dc740ad935909c9efb9c, type: 3}
+    Volume: 0.5
