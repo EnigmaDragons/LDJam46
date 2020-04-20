@@ -14,8 +14,9 @@ public sealed class GameState
     public CurrentWorld CurrentWorld { get; set; } = CurrentWorld.Real;
     public List<Item> Items { get; set; } = new List<Item>();
     public List<JournalEntry> UnlockedJournalEntries = new List<JournalEntry>();
-    public bool isInDialogue { get; set; } = false;
+    public bool isInDialogue = false;
     public int NumPanicAttacks { get; set; } = 0;
+    
     private int _numBlackouts = 0;
     public int NumBlackouts
     {
@@ -26,6 +27,7 @@ public sealed class GameState
             BlackoutsToday++;
         }
     }
+    
     private int _dayNumber = 0;
     public int DayNumber
     {
