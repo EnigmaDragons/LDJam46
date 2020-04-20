@@ -33,7 +33,7 @@ public class Rigidbody3dMovement : MonoBehaviour {
     {
         _horizontal = Input.GetAxisRaw("Horizontal"); 
         _vertical = Input.GetAxisRaw("Vertical");
-
+        
         // if Idle for (5s) transition toTHINKING
         if (_animator.GetCurrentAnimatorStateInfo(0).IsName("Idle-MAIN")) {            
             if (_isThinking) {
@@ -44,6 +44,7 @@ public class Rigidbody3dMovement : MonoBehaviour {
                 _idleTimer = _animator.GetCurrentAnimatorStateInfo(0).normalizedTime;
             }            
         }
+
         if (_idleTimer > 5 && !_isThinking) {
             _idleTimer = 0;
             _isThinking = true;            
@@ -88,6 +89,7 @@ public class Rigidbody3dMovement : MonoBehaviour {
             }
         } else {
             _body.velocity = Vector2.zero;
+            Idle();
         }
     }
 
