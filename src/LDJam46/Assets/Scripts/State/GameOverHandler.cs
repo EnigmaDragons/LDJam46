@@ -17,7 +17,6 @@ public class GameOverHandler : OnMessage<ReportGameOver>
             });
             activate.SetActive(true);
             Message.Publish(new SwapWorld());
-            Message.Publish(new StartNextDay());
         }
     }
 }

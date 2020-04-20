@@ -543,6 +543,11 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4354473172014122202, guid: 0ebeba7705e3b834b9681ef3bb877f24,
+        type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4725292322458311615, guid: 0ebeba7705e3b834b9681ef3bb877f24,
         type: 3}
       propertyPath: m_textInfo.characterCount
