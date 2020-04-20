@@ -10,6 +10,8 @@ public class PauseMenu : MonoBehaviour
 	[SerializeField] private GameObject controlsPanel;
 	[SerializeField] private Selectable firstSelectable;
 
+	private bool _enablePausing = true;
+
 	void Start()
     {
 	    overlay.SetActive(false);
@@ -19,7 +21,7 @@ public class PauseMenu : MonoBehaviour
 
     void Update()
     {
-	    if (Input.GetButtonDown("Pause") || Input.GetKeyDown(KeyCode.Escape))
+	    if ((Input.GetButtonDown("Pause") || Input.GetKeyDown(KeyCode.Escape)) && _enablePausing)
 	    {
 		    if (overlay.activeSelf)
 		    {
@@ -76,5 +78,10 @@ public class PauseMenu : MonoBehaviour
 			controlsPanel.SetActive(true);
 			optionsPanel.SetActive(false);
 		}
+    }
+
+    public void EnablePausing(bool enable)
+    {
+		_enablePausing = enable;
     }
 }
