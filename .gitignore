@@ -36,3 +36,4 @@ sysinfo.txt
 *.unitypackage
 
 *.idea/
+src/LDJam46/Packages/com.unity.2d.tilemap.extras/

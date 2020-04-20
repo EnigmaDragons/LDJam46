@@ -61,6 +61,11 @@ public class MainMenuControls : MonoBehaviour
 		animator.SetTrigger("MainMenuToGameScene");
 	}
 
+	public void ToGameSceneAnimationInitEvent()
+	{
+		loadingScreen.InitiLoad();
+	}
+
 	public void ToGameSceneAnimationEvent()
 	{
 		loadingScreen.LoadScene("GameScene");
