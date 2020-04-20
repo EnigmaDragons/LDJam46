@@ -12,3 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92f556974df45fa449efca15fbdef0ea, type: 3}
   m_Name: EventPublisher
   m_EditorClassIdentifier: 
+  stress: {fileID: 11400000, guid: fe415bd35e169db449f7404925ebbaf2, type: 2}
+  humiliation: {fileID: 11400000, guid: 132b5da709a2a5644b7364fb9115976e, type: 2}

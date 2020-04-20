@@ -26,7 +26,7 @@ public class ParanoiaDemon : MonoBehaviour
             if (x.Demon == DemonName.Paranoia)
             {
                 demonState.Activate();
-                transform.position = spawnPoints.Random().position;
+                Respawn();
                 gameObject.SetActive(true);
             }
         }, this);
@@ -48,7 +48,7 @@ public class ParanoiaDemon : MonoBehaviour
             demonState.Increment(Time.deltaTime * secondsLookingPercent);
             if (image.color.a == 0)
             {
-                transform.position = spawnPoints.OrderBy(x => Rng.Dbl()).First(x => Vector2.Distance(player.PlayerCharacter.transform.position, x.position) > freezeDistance).position;
+                Respawn();
                 demonState.Increment(fadeBonusPercent);
             }
         }
@@ -72,5 +72,10 @@ public class ParanoiaDemon : MonoBehaviour
             : new Vector2(-1, 0);
         var angle = Vector2.Angle(playerLookDirection, transform.position - player.PlayerCharacter.transform.position);
         return angle < freezeAngle && Vector2.Distance(transform.position, player.PlayerCharacter.transform.position) <= freezeDistance;
+    }
+
+    public void Respawn()
+    {
+        transform.position = spawnPoints.OrderBy(x => Rng.Dbl()).First(x => Vector2.Distance(player.PlayerCharacter.transform.position, x.position) > freezeDistance).position;
     }
 }
