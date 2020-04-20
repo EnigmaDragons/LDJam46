@@ -25,7 +25,7 @@ MonoBehaviour:
     Effect: 0
     TriggerName: 
   - Type: 0
-    Text: 'Maybe I should search around to see how to get out of here. '
+    Text: Maybe I should search around to see how to get out of my head!
     SoundEffect: {fileID: 0}
     Effect: 0
     TriggerName: 

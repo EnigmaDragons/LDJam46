@@ -12,3 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78fefad2f75c44c3a2f87b87785bdf2c, type: 3}
   m_Name: CurrentGameState
   m_EditorClassIdentifier: 
+  gameState:
+    UnlockedJournalEntries: 
+    isInDialogue: 0

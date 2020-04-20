@@ -50,6 +50,7 @@ GameObject:
   - component: {fileID: 2347931390286617893}
   - component: {fileID: 59384500801006762}
   - component: {fileID: 524693721708564241}
+  - component: {fileID: 2069562510481247826}
   m_Layer: 0
   m_Name: Paranoia
   m_TagString: Untagged
@@ -108,6 +109,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 0
+--- !u!114 &2069562510481247826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8886757744331328615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19d15246e1ca164d882778053367d8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  entry: 1
 --- !u!1001 &5521110029735978282
 PrefabInstance:
   m_ObjectHideFlags: 0
