@@ -7,13 +7,14 @@ public class PauseMenu : MonoBehaviour
 	[SerializeField] private GameObject overlay;
 	[SerializeField] private GameObject optionsPanel;
 	[SerializeField] private GameObject optionsPanelBackButton;
-
+	[SerializeField] private GameObject controlsPanel;
 	[SerializeField] private Selectable firstSelectable;
 
 	void Start()
     {
 	    overlay.SetActive(false);
 	    optionsPanelBackButton.SetActive(false);
+		controlsPanel.SetActive(false);
 	}
 
     void Update()
@@ -29,7 +30,7 @@ public class PauseMenu : MonoBehaviour
 			    }
 			    else
 			    {
-					Resume();
+				    Resume();
 				}
 		    }
 		    else
@@ -42,18 +43,42 @@ public class PauseMenu : MonoBehaviour
     public void Pause()
     {
 	    Time.timeScale = 0.0f;
+
 	    overlay.SetActive(true);
 	    optionsPanel.SetActive(false);
+	    controlsPanel.SetActive(false);
 	}
 
     public void Resume()
     {
 	    Time.timeScale = 1.0f;
+
 	    overlay.SetActive(false);
 	}
 
     public void ToggleOptionsPanel()
     {
-	    optionsPanel.SetActive(!optionsPanel.activeSelf);
+	    if (optionsPanel.activeSelf)
+	    {
+		    optionsPanel.SetActive(false);
+	    }
+	    else
+	    {
+		    optionsPanel.SetActive(true);
+		    controlsPanel.SetActive(false);
+	    }
+	}
+
+    public void ToggleControlsPanel()
+    {
+	    if (controlsPanel.activeSelf)
+	    {
+			controlsPanel.SetActive(false);
+		}
+	    else
+	    {
+			controlsPanel.SetActive(true);
+			optionsPanel.SetActive(false);
+		}
     }
 }
