@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8581495139913191582}
   - component: {fileID: 2028999499908749490}
+  - component: {fileID: 8392999112387631598}
   m_Layer: 0
   m_Name: JournalUI
   m_TagString: Untagged
@@ -48,9 +49,9 @@ MonoBehaviour:
   action:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8562983193600639556}
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 8392999112387631598}
+        m_MethodName: Toggle
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -59,6 +60,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+--- !u!114 &8392999112387631598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6808758780718749268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb4d2dc67c8908448b1d2748a343960f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  journalView: {fileID: 8562983193600639556}
+  dismiss: {fileID: 4010862601501306097}
 --- !u!1001 &1635058307066598050
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -195,3 +210,15 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1635058307066598050}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &4010862601501306097 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2385103053333462611, guid: f4fa45929947ae047bdf7f17b29c2ee9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1635058307066598050}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

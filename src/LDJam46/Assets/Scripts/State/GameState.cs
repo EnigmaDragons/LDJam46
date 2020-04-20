@@ -13,6 +13,7 @@ public sealed class GameState
     // This is necessary to preserve backwards save compatibility.
     public CurrentWorld CurrentWorld { get; set; } = CurrentWorld.Real;
     public List<Item> Items { get; set; } = new List<Item>();
+    public List<JournalEntry> UnlockedJournalEntries = new List<JournalEntry>();
     public bool isInDialogue { get; set; } = false;
     public int NumPanicAttacks { get; set; } = 0;
     private int _numBlackouts = 0;

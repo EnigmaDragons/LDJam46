@@ -30,13 +30,13 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.595122
       - serializedVersion: 3
-        time: 2.2666667
-        value: -2645
-        inSlope: -50.89377
-        outSlope: -50.89377
+        time: 1.3166667
+        value: -2221.6484
+        inSlope: -747.091
+        outSlope: -747.091
         tangentMode: 0
-        weightedMode: 3
-        inWeight: 0.86243904
+        weightedMode: 0
+        inWeight: 0.33333334
         outWeight: 0.33333334
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -58,13 +58,13 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.59219515
       - serializedVersion: 3
-        time: 2.2666667
-        value: -1195
-        inSlope: -80.072426
-        outSlope: -80.072426
+        time: 1.3166667
+        value: -992.2615
+        inSlope: -357.7739
+        outSlope: -357.7739
         tangentMode: 0
-        weightedMode: 3
-        inWeight: 0.8702439
+        weightedMode: 0
+        inWeight: 0.33333334
         outWeight: 0.33333334
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -86,13 +86,13 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.6068293
       - serializedVersion: 3
-        time: 2.2666667
-        value: -1193
-        inSlope: -46.398632
-        outSlope: -46.398632
+        time: 1.3166667
+        value: -1009.77795
+        inSlope: -323.33304
+        outSlope: -323.33304
         tangentMode: 0
-        weightedMode: 3
-        inWeight: 0.8692683
+        weightedMode: 0
+        inWeight: 0.33333334
         outWeight: 0.33333334
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -114,13 +114,13 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.5970732
       - serializedVersion: 3
-        time: 2.2666667
-        value: -2739
-        inSlope: 31.532688
-        outSlope: 31.532688
+        time: 1.3166667
+        value: -2420.7178
+        inSlope: -561.67456
+        outSlope: -561.67456
         tangentMode: 0
-        weightedMode: 3
-        inWeight: 0.8614634
+        weightedMode: 0
+        inWeight: 0.33333334
         outWeight: 0.33333334
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -171,7 +171,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 2.2666667
+    m_StopTime: 1.8333334
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -200,13 +200,13 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.595122
       - serializedVersion: 3
-        time: 2.2666667
-        value: -2645
-        inSlope: -50.89377
-        outSlope: -50.89377
+        time: 1.3166667
+        value: -2221.6484
+        inSlope: -747.091
+        outSlope: -747.091
         tangentMode: 0
-        weightedMode: 3
-        inWeight: 0.86243904
+        weightedMode: 0
+        inWeight: 0.33333334
         outWeight: 0.33333334
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -228,13 +228,13 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.59219515
       - serializedVersion: 3
-        time: 2.2666667
-        value: -1195
-        inSlope: -80.072426
-        outSlope: -80.072426
+        time: 1.3166667
+        value: -992.2615
+        inSlope: -357.7739
+        outSlope: -357.7739
         tangentMode: 0
-        weightedMode: 3
-        inWeight: 0.8702439
+        weightedMode: 0
+        inWeight: 0.33333334
         outWeight: 0.33333334
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -256,13 +256,13 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.6068293
       - serializedVersion: 3
-        time: 2.2666667
-        value: -1193
-        inSlope: -46.398632
-        outSlope: -46.398632
+        time: 1.3166667
+        value: -1009.77795
+        inSlope: -323.33304
+        outSlope: -323.33304
         tangentMode: 0
-        weightedMode: 3
-        inWeight: 0.8692683
+        weightedMode: 0
+        inWeight: 0.33333334
         outWeight: 0.33333334
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -284,13 +284,13 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.5970732
       - serializedVersion: 3
-        time: 2.2666667
-        value: -2739
-        inSlope: 31.532688
-        outSlope: 31.532688
+        time: 1.3166667
+        value: -2420.7178
+        inSlope: -561.67456
+        outSlope: -561.67456
         tangentMode: 0
-        weightedMode: 3
-        inWeight: 0.8614634
+        weightedMode: 0
+        inWeight: 0.33333334
         outWeight: 0.33333334
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -303,7 +303,14 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 1.3333334
+  - time: 0.85
+    functionName: ToGameSceneAnimationInitEvent
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 1.8333334
     functionName: ToGameSceneAnimationEvent
     data: 
     objectReferenceParameter: {fileID: 0}
