@@ -476,26 +476,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Menu
       objectReference: {fileID: 0}
-    - target: {fileID: 6955266691052405222, guid: e059fe98f0db926449679e09f88994c2,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7336758439876823040, guid: e059fe98f0db926449679e09f88994c2,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8716685369802611505, guid: e059fe98f0db926449679e09f88994c2,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8716685369802611505, guid: e059fe98f0db926449679e09f88994c2,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e059fe98f0db926449679e09f88994c2, type: 3}
 --- !u!224 &1690144794 stripped
