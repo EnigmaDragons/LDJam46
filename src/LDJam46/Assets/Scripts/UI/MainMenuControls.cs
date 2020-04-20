@@ -1,7 +1,6 @@
-﻿using System.Collections;
+﻿using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MainMenuControls : MonoBehaviour
@@ -16,12 +15,17 @@ public class MainMenuControls : MonoBehaviour
 	[SerializeField] private GameObject optionsPanel;
 	[SerializeField] private GameObject creditsPanel;
 
+	[SerializeField] private TMP_Text versionNumberText;
+	[SerializeField] private StringVariable versionNumber;
+
 	[SerializeField] private LoadingScreen loadingScreen;
 
 	private void Start()
 	{
 		optionsPanel.SetActive(false);
 		creditsPanel.SetActive(false);
+
+		versionNumberText.text = 'v' + versionNumber.Value;
 	}
 
 	void Update()
