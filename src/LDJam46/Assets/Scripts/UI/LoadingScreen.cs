@@ -24,6 +24,7 @@ public class LoadingScreen : MonoBehaviour
 
 	public void LoadScene(string sceneName)
 	{
+		gameObject.SetActive(true);
 		StartCoroutine(MandatoryWait());
 		StartCoroutine(LoadSceneAsync(sceneName));
 	}
