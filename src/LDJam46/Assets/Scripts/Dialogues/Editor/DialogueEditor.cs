@@ -1,4 +1,5 @@
-﻿using System;
+﻿#if UNITY_EDITOR
+using System;
 using System.Security.Cryptography.X509Certificates;
 using Assets.Scripts.Dialogues;
 using UnityEditor;
@@ -62,3 +63,4 @@ public class DialogueEditor : Editor
             EditorUtility.SetDirty(target);
     }
 }
+#endif
