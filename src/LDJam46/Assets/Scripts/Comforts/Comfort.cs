@@ -6,4 +6,5 @@ public class Comfort : ScriptableObject
     public float DefaultPercentage;
     public PerDemon[] ComfortLevels;
     public JournalEntry JournalEntry;
+    public ComfortPenalty[] Penalties;
 }

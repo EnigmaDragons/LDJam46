@@ -24,8 +24,14 @@ public class MindMapSetup3 : MonoBehaviour
         var rules = GetRules();
         itemSpawner.Spawn(map.ItemSpawnPoints.Select(x => x.position).ToList(), rules.items);
         foreach (var demon in rules.demons)
-            if (demon.SpawnChance > Rng.Dbl())
+        {
+            var chance = demon.SpawnChance;
+            foreach (var comfort in gameState.GameState.ComfortsConsumedLastBlackoutToday)
+                demon.SpawnChance += comfort.Penalties.FirstOrDefault(x => x.Demon == demon.Demon)?.Penalty ?? 0;
+            if (chance > Rng.Dbl())
                 Message.Publish(new ActivateDemon(demon.Demon));
+        }
+        gameState.UpdateState(x => x.ComfortsConsumedLastBlackoutToday = new List<Comfort>());
     }
 
     private BlackoutSpawnRules GetRules()

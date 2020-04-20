@@ -16,3 +16,7 @@ MonoBehaviour:
   ComfortLevels:
   - Percentage: 0.4
     Demon: 2
+  JournalEntry: 0
+  Penalties:
+  - Demon: 1
+    Penalty: 0.1
