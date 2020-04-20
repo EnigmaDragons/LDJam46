@@ -23,3 +23,8 @@ MonoBehaviour:
     SoundEffect: {fileID: 0}
     Effect: 0
     TriggerName: 
+  - Type: 2
+    Text: 
+    SoundEffect: {fileID: 0}
+    Effect: 1
+    TriggerName: 

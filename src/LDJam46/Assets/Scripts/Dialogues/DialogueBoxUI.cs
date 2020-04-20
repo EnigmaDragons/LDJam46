@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using Assets.Scripts.Dialogues;
 using UnityEngine;
 
 public class DialogueBoxUI : OnMessage<StartConversation>
@@ -64,8 +65,8 @@ public class DialogueBoxUI : OnMessage<StartConversation>
         }
         else if (_dialogue.Lines[_index].Type == DialogueLineType.VisualEffect)
         {
-            Debug.Log("Starting Fade In", gameObject);
-            Message.Publish(new StartFadeIn());
+            var fx = _dialogue.Lines[_index].Effect;
+            PlayDialogueEffect(fx);
             _index++;
         }
         else if (_dialogue.Lines[_index].Type == DialogueLineType.ActivateTrigger)
@@ -81,6 +82,24 @@ public class DialogueBoxUI : OnMessage<StartConversation>
             Message.Publish(new SwapWorld());
             _index++;
             Resolve();
+        }
+    }
+
+    private void PlayDialogueEffect(DialogueEffect fx)
+    {
+        if (fx == DialogueEffect.FadeIn)
+        {
+            Debug.Log("Starting Fade In", gameObject);
+            Message.Publish(new StartFadeIn());
+        }
+        else if (fx == DialogueEffect.ShowJournal)
+        {
+            Debug.Log("Showing Journal", gameObject);
+            Message.Publish(new ShowJournal());
+        }
+        else
+        {
+            Debug.Log($"Unimplemented Dialogue Effect {fx.ToString()}", gameObject);
         }
     }
 
