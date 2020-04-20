@@ -9,7 +9,6 @@ public class DayTransitions : OnMessage<StartNextDay>
     [SerializeField] private Image day;
     [SerializeField] private TextMeshProUGUI text;
     [SerializeField] private CurrentGameState gameState;
-    [SerializeField] private Dialogue[] dialogues;
     [SerializeField] private float preFadeSeconds;
     [SerializeField] private float fadeInSeconds;
     [SerializeField] private Item[] startingItems;
@@ -53,8 +52,7 @@ public class DayTransitions : OnMessage<StartNextDay>
             if (a == 0)
             {
                 _fadingIn = false;
-                if (dialogues.Length >= gameState.GameState.DayNumber)
-                    Message.Publish(new StartConversation(dialogues[gameState.GameState.DayNumber - 1]));
+                Message.Publish(new NewDayStarted());
             }
         }
     }
