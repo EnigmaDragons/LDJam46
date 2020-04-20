@@ -123,6 +123,7 @@ GameObject:
   - component: {fileID: 7811146613290401183}
   - component: {fileID: 1805944678313826936}
   - component: {fileID: 7727989020406450297}
+  - component: {fileID: 1708347299962842757}
   m_Layer: 0
   m_Name: FinalOfficeMap
   m_TagString: Untagged
@@ -205,6 +206,18 @@ MonoBehaviour:
   music: {fileID: 8300000, guid: d09d9ed3dd03a404ea245bf5908049b8, type: 3}
   musicPlayer: {fileID: 11400000, guid: bff4472ff6b738f4b94ef00c955e84f3, type: 2}
   shouldLoop: 1
+--- !u!114 &1708347299962842757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5869106214488537683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d58edd1b4e10af4d94073b5556d7ca8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6387303596498398175
 GameObject:
   m_ObjectHideFlags: 0
