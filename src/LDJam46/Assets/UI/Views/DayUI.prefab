@@ -57,6 +57,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 964aaeed23c01ba4daabdf8759b5cc82, type: 2}
   preFadeSeconds: 3
   fadeInSeconds: 1
+  startingItems:
+  - {fileID: 11400000, guid: 9b888444acb6f484ba28d4bbf9019c2e, type: 2}
 --- !u!1 &3072568532758016380
 GameObject:
   m_ObjectHideFlags: 0

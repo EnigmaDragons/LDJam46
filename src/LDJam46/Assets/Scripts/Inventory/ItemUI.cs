@@ -7,6 +7,11 @@ public class ItemUI : MonoBehaviour
 
     public void SetItem(Item item)
     {
+        if (item == null)
+        {
+            Debug.LogError($"Item is Null");
+            return;
+        }
         itemImage.sprite = item.Sprite;
     }
 }
