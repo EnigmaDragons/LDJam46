@@ -1,21 +1,23 @@
 ﻿using System;
+using System.Linq;
 using Assets.Scripts.Demons;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class ParanoiaDemon : MonoBehaviour
 {
-    [SerializeField] private CurrentPlayerCharacter _player;
-    [SerializeField] private DemonState _demonState;
-    [SerializeField] private float _freezeAngle;
-    [SerializeField] private float _secondsPerPercent;
-    [SerializeField] private float _accelrationMultipier;
-    [SerializeField] private float _minSpeed;
+    [SerializeField] private CurrentPlayerCharacter player;
+    [SerializeField] private DemonState demonState;
+    [SerializeField] private float freezeAngle = 90;
+    [SerializeField] private float freezeDistance = 5;
+    [SerializeField] private float fadeSeconds = 3;
+    [SerializeField] private float secondsLookingPercent = 0.02f;
+    [SerializeField] private float fadeBonusPercent = 0.06f;
+    [SerializeField] private float maxedOutBonusSpeed = 7.5f;
+    [SerializeField] private float accelerationMultipier = 5;
+    [SerializeField] private float minSpeed = 2.5f;
     [SerializeField] private Transform[] spawnPoints;
     [SerializeField] private SpriteRenderer image;
-
-    private float _speed;
-    private Vector2 _playerLookDirection;
 
     private void Awake()
     {
@@ -23,7 +25,7 @@ public class ParanoiaDemon : MonoBehaviour
         {
             if (x.Demon == DemonName.Paranoia)
             {
-                _demonState.Activate();
+                demonState.Activate();
                 transform.position = spawnPoints.Random().position;
                 gameObject.SetActive(true);
             }
@@ -38,25 +40,37 @@ public class ParanoiaDemon : MonoBehaviour
 
     private void Update()
     {
-        if (_demonState.IsActive == false)
+        if (demonState.IsActive == false)
             gameObject.SetActive(false);
-        if (_player.PlayerCharacter.GetComponentInChildren<SpriteRenderer>().flipX)
-            _playerLookDirection = new Vector2(1, 0);
-        else
-            _playerLookDirection = new Vector2(-1, 0);
-        var angle = Vector2.Angle(_playerLookDirection, transform.position - _player.PlayerCharacter.transform.position);
-        if (angle < _freezeAngle)
+        if (IsPlayerLooking())
         {
-            image.color = new Color(1, 1, 1, 0.5f);
-            _speed = 0;
+            image.color = new Color(1, 1, 1, Math.Max(0, image.color.a - Time.deltaTime / fadeSeconds));
+            demonState.Increment(Time.deltaTime * secondsLookingPercent);
+            if (image.color.a == 0)
+            {
+                transform.position = spawnPoints.OrderBy(x => Rng.Dbl()).First(x => Vector2.Distance(player.PlayerCharacter.transform.position, x.position) > freezeDistance).position;
+                demonState.Increment(fadeBonusPercent);
+            }
         }
         else
         {
             image.color = new Color(1, 1, 1, 1f);
-            _demonState.Increment(Time.deltaTime / _secondsPerPercent / 100);
-            _speed = Math.Max(_speed, _minSpeed);
-            _speed += _demonState.ProgressPercent * _accelrationMultipier;
-            transform.position += Vector3.ClampMagnitude((_player.PlayerCharacter.GetComponentInChildren<Collider>().transform.position - transform.position).normalized, 1) * _speed * Time.deltaTime;
+            var direction = Vector3.ClampMagnitude((player.PlayerCharacter.GetComponentInChildren<Collider>().transform.position - transform.position).normalized, 1);
+            var speed = minSpeed + accelerationMultipier * demonState.ProgressPercent;
+            if (demonState.ProgressPercent >= 1)
+                speed += maxedOutBonusSpeed;
+            speed *= Time.deltaTime;
+            transform.position += direction * speed;
         }
+        Message.Publish(new ParanoiaDistance(Vector2.Distance(transform.position, player.PlayerCharacter.transform.position)));
+    }
+
+    private bool IsPlayerLooking()
+    {
+        var playerLookDirection = player.PlayerCharacter.GetComponentInChildren<SpriteRenderer>().flipX 
+            ? new Vector2(1, 0)
+            : new Vector2(-1, 0);
+        var angle = Vector2.Angle(playerLookDirection, transform.position - player.PlayerCharacter.transform.position);
+        return angle < freezeAngle && Vector2.Distance(transform.position, player.PlayerCharacter.transform.position) <= freezeDistance;
     }
 }
