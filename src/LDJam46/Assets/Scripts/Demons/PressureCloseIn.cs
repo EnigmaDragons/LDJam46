@@ -39,7 +39,12 @@ public class PressureCloseIn : MonoBehaviour
         }
     }
 
-    public void Activate() => gameObject.SetActive(true);
+    public void Activate()
+    {
+        gameObject.SetActive(true);
+        state.Activate();
+    }
+
     public void Deactivate()
     {
         state.IsActive = false;
