@@ -14,11 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Lines:
   - Type: 0
-    Text: 'Hmmm, that''s better. I needed that. I should probably get back
-      to my desk, this next meeting is going to be tricky.'
+    Text: 'Hmmm, that''s better. I needed that. '
     SoundEffect: {fileID: 0}
     Effect: 0
     TriggerName: 
+  - Type: 0
+    Text: I should probably get back to my desk, this next meeting is going to be
+      tricky.
+    SoundEffect: {fileID: 0}
+    Effect: 0
+    TriggerName: Desk
   - Type: 3
     Text: 
     SoundEffect: {fileID: 0}
