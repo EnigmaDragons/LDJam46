@@ -55,3 +55,6 @@ TagManager:
   - name: Light Bloom
     uniqueID: 3760483617
     locked: 0
+  - name: In Game Text
+    uniqueID: 94532073
+    locked: 0
