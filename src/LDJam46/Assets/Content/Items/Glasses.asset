@@ -16,14 +16,18 @@ MonoBehaviour:
   Name: Glasses
   ComfortBonuses:
   - Comfort: {fileID: 11400000, guid: 7ac4817c3fa19444cb4c59060a92cbd8, type: 2}
-    DefaultPercentage: 0.6
+    DefaultPercentage: 0
     PerDemon:
-    - Percentage: 0.8
+    - Percentage: 0.5
       Demon: 0
-    - Percentage: 0.8
-      Demon: 2
-  - Comfort: {fileID: 11400000, guid: 607c1418bf2d68b48bf7fcbb94d00ba0, type: 2}
-    DefaultPercentage: 0.8
-    PerDemon:
-    - Percentage: 1
+    - Percentage: 0.5
       Demon: 1
+  - Comfort: {fileID: 11400000, guid: 607c1418bf2d68b48bf7fcbb94d00ba0, type: 2}
+    DefaultPercentage: 0
+    PerDemon:
+    - Percentage: 0.75
+      Demon: 0
+    - Percentage: 0.75
+      Demon: 1
+    - Percentage: 1
+      Demon: 2

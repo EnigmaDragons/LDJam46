@@ -18,39 +18,47 @@ MonoBehaviour:
     SoundEffect: {fileID: 8300000, guid: eea876c369bd317449958e5983831871, type: 3}
     Effect: 0
     TriggerName: 
+    Image: {fileID: 0}
   - Type: 0
     Text: Ok, keep it cool.
     SoundEffect: {fileID: 0}
     Effect: 0
     TriggerName: 
+    Image: {fileID: 0}
   - Type: 0
     Text: It's just work...it's just work, no problem.
     SoundEffect: {fileID: 0}
     Effect: 0
     TriggerName: 
+    Image: {fileID: 0}
   - Type: 1
     Text: 
     SoundEffect: {fileID: 8300000, guid: 16856eb9912b8734cb5fb3f4a771b3b7, type: 3}
     Effect: 0
     TriggerName: 
+    Image: {fileID: 0}
   - Type: 2
     Text: 
     SoundEffect: {fileID: 0}
     Effect: 0
     TriggerName: 
+    Image: {fileID: 0}
   - Type: 0
     Text: I've got 10 minutes before my meeting. I feel horrible, maybe a coffee
       would help?
     SoundEffect: {fileID: 0}
     Effect: 0
     TriggerName: 
+    Image: {fileID: 0}
   - Type: 3
     Text: 
     SoundEffect: {fileID: 0}
     Effect: 0
     TriggerName: MorningCoffee
+    Image: {fileID: 0}
   - Type: 1
     Text: 
     SoundEffect: {fileID: 8300000, guid: 6351975687510ca4aa3cb6d3d3ad3081, type: 3}
     Effect: 0
     TriggerName: MorningCoffee
+    Image: {fileID: 0}

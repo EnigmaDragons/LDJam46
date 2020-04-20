@@ -16,7 +16,9 @@ MonoBehaviour:
   Name: Earphones
   ComfortBonuses:
   - Comfort: {fileID: 11400000, guid: 44907c3d90ec1c9458983de91e20b505, type: 2}
-    DefaultPercentage: 0.5
+    DefaultPercentage: 0
     PerDemon:
-    - Percentage: 0.8
-      Demon: 2
+    - Percentage: 0.75
+      Demon: 0
+    - Percentage: 0.5
+      Demon: 1

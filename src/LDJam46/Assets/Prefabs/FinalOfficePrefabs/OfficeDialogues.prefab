@@ -48,9 +48,27 @@ MonoBehaviour:
   - Dialogue: {fileID: 11400000, guid: 964aaeed23c01ba4daabdf8759b5cc82, type: 2}
     Day: 1
     DayBlackoutNumber: 1
-  - Dialogue: {fileID: 11400000, guid: 56f0d3244ffa2924dad601259440d727, type: 2}
+  - Dialogue: {fileID: 11400000, guid: 3e7e9dafd78802f448627daced051142, type: 2}
     Day: 1
     DayBlackoutNumber: 2
-  - Dialogue: {fileID: 11400000, guid: daac9c5e1faf67840957e4ba16e41f10, type: 2}
+  - Dialogue: {fileID: 11400000, guid: 86c8ff49cf4b1334bb2440b39767aae5, type: 2}
+    Day: 1
+    DayBlackoutNumber: 3
+  - Dialogue: {fileID: 11400000, guid: 24c1dc79254b51448be6a3a670290f95, type: 2}
+    Day: 1
+    DayBlackoutNumber: 3
+  - Dialogue: {fileID: 11400000, guid: cf329485b1464fb4dbe86b669981b760, type: 2}
+    Day: 1
+    DayBlackoutNumber: 3
+  - Dialogue: {fileID: 11400000, guid: 33d64c399a13f1d45946167e7122c0f7, type: 2}
+    Day: 1
+    DayBlackoutNumber: 3
+  - Dialogue: {fileID: 11400000, guid: 4fc4925a0f0cf3545b2c753e53a87c07, type: 2}
+    Day: 1
+    DayBlackoutNumber: 3
+  - Dialogue: {fileID: 11400000, guid: 8aae7ce3997e7d649923456ca9885f2b, type: 2}
+    Day: 1
+    DayBlackoutNumber: 3
+  - Dialogue: {fileID: 11400000, guid: 5db2d1cb0a96f6a47b23fdd0ef4abd94, type: 2}
     Day: 1
     DayBlackoutNumber: 3

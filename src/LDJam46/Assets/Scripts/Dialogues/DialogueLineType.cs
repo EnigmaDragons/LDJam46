@@ -5,4 +5,5 @@
     VisualEffect,
     ActivateTrigger,
     SwapWorld,
+    ShowImage,
 }

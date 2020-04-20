@@ -2,6 +2,7 @@
 using System.Collections;
 using Assets.Scripts.Dialogues;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DialogueBoxUI : OnMessage<StartConversation>
 {
@@ -9,6 +10,7 @@ public class DialogueBoxUI : OnMessage<StartConversation>
     [SerializeField] private DialogueLineUI line;
     [SerializeField] private FloatReference inputCooldown;
     [SerializeField] private UiSfxPlayer audioSource;
+    [SerializeField] private Image image;
 
     private Dialogue _dialogue;
     private int _index = 0;
@@ -41,7 +43,8 @@ public class DialogueBoxUI : OnMessage<StartConversation>
     {
         if (!_playingDialogue)
             return;
-        
+
+        image.gameObject.SetActive(false);
         if (!line.IsRevealed)
         {
             line.Reveal();
@@ -85,6 +88,12 @@ public class DialogueBoxUI : OnMessage<StartConversation>
             Message.Publish(new SwapWorld());
             _index++;
             Resolve();
+        }
+        else if (_dialogue.Lines[_index].Type == DialogueLineType.ShowImage)
+        {
+            image.sprite = _dialogue.Lines[_index].Image;
+            image.gameObject.SetActive(true);
+            _index++;
         }
     }
 

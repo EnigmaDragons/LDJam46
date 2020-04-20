@@ -4,6 +4,7 @@ using System.Security.Cryptography.X509Certificates;
 using Assets.Scripts.Dialogues;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.UI;
 
 [CustomEditor(typeof(Dialogue)), CanEditMultipleObjects]
 public class DialogueEditor : Editor
@@ -12,8 +13,10 @@ public class DialogueEditor : Editor
     {
         var dialogue = (Dialogue)target;
         AdjustItemCount(dialogue, EditorGUILayout.IntField("Size", dialogue.Lines.Count));
-        foreach (var line in dialogue.Lines)
+        var linesCopy = dialogue.Lines.ToArray();
+        for (var i = 0; i < linesCopy.Length; i++)
         {
+            var line = linesCopy[i];
             EditorGUILayout.Space();
             line.Type = (DialogueLineType) EditorGUILayout.EnumPopup("Type", line.Type);
             if (line.Type == DialogueLineType.Statement)
@@ -24,6 +27,16 @@ public class DialogueEditor : Editor
                 EnumPopup("Effect Type", ref line.Effect);
             else if (line.Type == DialogueLineType.ActivateTrigger)
                 TextField("Trigger", ref line.TriggerName);
+            else if (line.Type == DialogueLineType.ShowImage)
+                SpriteField("Sprite", ref line.Image);
+            if (GUILayout.Button("Insert"))
+            {
+                dialogue.Lines.Insert(i, line.Clone());
+            }
+            if (GUILayout.Button("Remove"))
+            {
+                dialogue.Lines.Remove(line);
+            }
         }
     }
 
@@ -60,6 +73,14 @@ public class DialogueEditor : Editor
         var oldClip = clip;
         clip = (AudioClip)EditorGUILayout.ObjectField(label, clip, typeof(AudioClip), false);
         if (oldClip != clip)
+            EditorUtility.SetDirty(target);
+    }
+
+    private void SpriteField(string label, ref Sprite sprite)
+    {
+        var oldSprite = sprite;
+        sprite = (Sprite)EditorGUILayout.ObjectField(label, sprite, typeof(Sprite), false);
+        if (oldSprite != sprite)
             EditorUtility.SetDirty(target);
     }
 }
