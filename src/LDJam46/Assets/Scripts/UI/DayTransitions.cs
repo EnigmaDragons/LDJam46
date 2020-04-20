@@ -23,6 +23,7 @@ public class DayTransitions : OnMessage<StartNextDay>
         {
             x.DayNumber++;
             x.HadPanicAttackToday = false;
+            x.IsTransitioningDays = true;
         });
         text.text = $"DAY {gameState.GameState.DayNumber}";
         day.color = new Color(1, 1, 1, 1);
@@ -51,6 +52,7 @@ public class DayTransitions : OnMessage<StartNextDay>
             text.color = new Color(1, 1, 1, a);
             if (a == 0)
             {
+                gameState.UpdateState(g => g.IsTransitioningDays = false);
                 _fadingIn = false;
                 Message.Publish(new NewDayStarted());
             }
