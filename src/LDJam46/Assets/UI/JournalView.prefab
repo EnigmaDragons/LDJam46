@@ -126,6 +126,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6946018501390933889}
+  - component: {fileID: 2877380486787474384}
   m_Layer: 5
   m_Name: Demon-Humiliation
   m_TagString: Untagged
@@ -154,6 +155,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2877380486787474384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6946018501390933888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 878e8f9be24595442a07d255b491be62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  entry: 3
+  game: {fileID: 11400000, guid: 6bb654c6d14f44349977173df0bb252b, type: 2}
 --- !u!1 &6946018501395499226
 GameObject:
   m_ObjectHideFlags: 0
@@ -865,6 +880,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6946018501870868721}
+  - component: {fileID: 9197012546017246345}
   m_Layer: 5
   m_Name: Comfort-Music
   m_TagString: Untagged
@@ -895,6 +911,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &9197012546017246345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6946018501870868720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 878e8f9be24595442a07d255b491be62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  entry: 7
+  game: {fileID: 11400000, guid: 6bb654c6d14f44349977173df0bb252b, type: 2}
 --- !u!1 &6946018501874331089
 GameObject:
   m_ObjectHideFlags: 0
@@ -1780,6 +1810,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6946018502731069548}
+  - component: {fileID: 1894396975657138950}
   m_Layer: 5
   m_Name: Comfort-Coffee
   m_TagString: Untagged
@@ -1809,6 +1840,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1894396975657138950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6946018502731069547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 878e8f9be24595442a07d255b491be62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  entry: 5
+  game: {fileID: 11400000, guid: 6bb654c6d14f44349977173df0bb252b, type: 2}
 --- !u!1 &6946018502736485665
 GameObject:
   m_ObjectHideFlags: 0
@@ -1818,6 +1863,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6946018502736485666}
+  - component: {fileID: 5477632581134332226}
   m_Layer: 5
   m_Name: Comfort-Reading
   m_TagString: Untagged
@@ -1847,6 +1893,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &5477632581134332226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6946018502736485665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 878e8f9be24595442a07d255b491be62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  entry: 8
+  game: {fileID: 11400000, guid: 6bb654c6d14f44349977173df0bb252b, type: 2}
 --- !u!1 &6946018502920717440
 GameObject:
   m_ObjectHideFlags: 0
@@ -1856,6 +1916,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6946018502920717441}
+  - component: {fileID: 2134396079782382916}
   m_Layer: 5
   m_Name: Comfort-Pills
   m_TagString: Untagged
@@ -1884,6 +1945,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2134396079782382916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6946018502920717440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 878e8f9be24595442a07d255b491be62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  entry: 4
+  game: {fileID: 11400000, guid: 6bb654c6d14f44349977173df0bb252b, type: 2}
 --- !u!1 &6946018503000198173
 GameObject:
   m_ObjectHideFlags: 0
@@ -1893,6 +1968,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6946018503000198174}
+  - component: {fileID: 3136161236213517450}
   m_Layer: 5
   m_Name: Demon-Stress
   m_TagString: Untagged
@@ -1921,6 +1997,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &3136161236213517450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6946018503000198173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 878e8f9be24595442a07d255b491be62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  entry: 2
+  game: {fileID: 11400000, guid: 6bb654c6d14f44349977173df0bb252b, type: 2}
 --- !u!1 &6946018503032594957
 GameObject:
   m_ObjectHideFlags: 0
@@ -2003,6 +2093,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6946018503263003482}
+  - component: {fileID: 5171542863179577092}
   m_Layer: 5
   m_Name: Comfort-Motivation
   m_TagString: Untagged
@@ -2033,6 +2124,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &5171542863179577092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6946018503263003481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 878e8f9be24595442a07d255b491be62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  entry: 6
+  game: {fileID: 11400000, guid: 6bb654c6d14f44349977173df0bb252b, type: 2}
 --- !u!1 &6946018503283132373
 GameObject:
   m_ObjectHideFlags: 0
@@ -2334,6 +2439,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6946018503489755558}
+  - component: {fileID: 7634803606820683424}
   m_Layer: 5
   m_Name: Demon-Paranoia
   m_TagString: Untagged
@@ -2362,3 +2468,17 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &7634803606820683424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6946018503489755557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 878e8f9be24595442a07d255b491be62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  entry: 1
+  game: {fileID: 11400000, guid: 6bb654c6d14f44349977173df0bb252b, type: 2}
