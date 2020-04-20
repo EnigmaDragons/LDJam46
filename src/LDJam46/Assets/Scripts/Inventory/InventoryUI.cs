@@ -22,8 +22,13 @@ public class InventoryUI : OnMessage<GainItem, WorldSwapPeaked, UseItem>
     protected override void Execute(WorldSwapPeaked msg)
     {
         foreach (var item in _items)
-            Destroy(item.Value);
-        _items.Clear();
+        {
+            if (!state.GameState.Items.Contains(item.Key))
+            {
+                Destroy(item.Value.gameObject);
+                _items.Remove(item.Key);
+            }
+        }
     }
 
     protected override void Execute(UseItem msg)

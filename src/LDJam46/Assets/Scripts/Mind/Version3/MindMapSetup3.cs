@@ -13,8 +13,13 @@ public class MindMapSetup3 : MonoBehaviour
     [SerializeField] private DaySpawnRules[] days;
     [SerializeField] private CurrentGameState gameState;
 
+    [SerializeField] private DemonState[] states;
+
     private void OnEnable()
     {
+        foreach (var state in states)
+            state.IsActive = false;
+
         foreach (Transform child in mapParent.transform)
             Destroy(child.gameObject);
         var map = Instantiate(maps.Random(), mapParent.transform);

@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60b45686d16714a44ac3595e1070a624, type: 3}
   m_Name: Book
   m_EditorClassIdentifier: 
-  DefaultPercentage: 0.4
+  DefaultPercentage: 0.5
   ComfortLevels:
-  - Percentage: 0.5
-    Demon: 1
+  - Percentage: 0.75
+    Demon: 2
   JournalEntry: 8
   Penalties: []
