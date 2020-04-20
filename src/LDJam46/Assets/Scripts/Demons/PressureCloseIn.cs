@@ -10,6 +10,7 @@ public class PressureCloseIn : MonoBehaviour
     [SerializeField] private float fullyClosedScale = 0.002f;
     [SerializeField] private float closeSpeed = 0.5f;
     [SerializeField] private DemonState state;
+    [SerializeField] private AudioSource voices;
 
     private void OnEnable() => state.Activate();
     
@@ -18,8 +19,24 @@ public class PressureCloseIn : MonoBehaviour
         state.Increment(closeSpeed * Time.deltaTime);
         var amount = Mathf.Lerp(fullyOpenScale, fullyClosedScale, state.ProgressPercent);
         image.rectTransform.localScale = new Vector3(amount, amount, 1);
+        
+        UpdateSounds();
+
         if (state.ProgressPercent >= 1)
             Message.Publish(new ReportGameOver(DemonName.Stress));
+    }
+
+    private void UpdateSounds()
+    {
+        if (!voices.isPlaying && state.ProgressPercent >= 0.6f)
+        {
+            StartCoroutine(AudioFadeUtils.FadeIn(voices, 0.5f));
+        }
+
+        if (voices.isPlaying && state.ProgressPercent < 0.6f)
+        {
+            StartCoroutine(AudioFadeUtils.FadeOut(voices, 0.5f));
+        }
     }
 
     public void Activate() => gameObject.SetActive(true);

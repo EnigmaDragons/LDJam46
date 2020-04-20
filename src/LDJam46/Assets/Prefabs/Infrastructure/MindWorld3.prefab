@@ -139,8 +139,8 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: 7079b948dc75d2246a8ef03bf8f7b636, type: 2}
   defaultSpawn: {x: 20, y: 20, z: 0}
   maps:
-  - {fileID: 3834018896916075562, guid: 71cbc3d522174d749ac33713aa2f6f69, type: 3}
-  itemSpawner: {fileID: 0}
+  - {fileID: 1013479025086196655, guid: 71cbc3d522174d749ac33713aa2f6f69, type: 3}
+  itemSpawner: {fileID: 8401037420671847780}
   mapParent: {fileID: 853916593613440575}
 --- !u!114 &7358094938512888647
 MonoBehaviour:
@@ -270,7 +270,93 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27f64eb8c21aab94593c457d9331fd80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rules:
-  - NumberToSpawn: 2
-    Object: {fileID: 3817069723814122353, guid: 2a448df4b6750934d8dad190e70780fb,
-      type: 3}
+  days:
+  - blackouts:
+    - items:
+      - NumberToSpawn: 1
+        Object: {fileID: 3817069723814122353, guid: 2a448df4b6750934d8dad190e70780fb,
+          type: 3}
+      - NumberToSpawn: 1
+        Object: {fileID: 4593936209108532073, guid: 143955b7eac99584dafecc2b6de98d11,
+          type: 3}
+    - items:
+      - NumberToSpawn: 1
+        Object: {fileID: 3817069723814122353, guid: 2a448df4b6750934d8dad190e70780fb,
+          type: 3}
+      - NumberToSpawn: 1
+        Object: {fileID: 4593936209108532073, guid: 143955b7eac99584dafecc2b6de98d11,
+          type: 3}
+      - NumberToSpawn: 1
+        Object: {fileID: 4506495074588965537, guid: 395015fd037ed724e978fa76038424c0,
+          type: 3}
+  - blackouts:
+    - items:
+      - NumberToSpawn: 1
+        Object: {fileID: 4593936209108532073, guid: 143955b7eac99584dafecc2b6de98d11,
+          type: 3}
+      - NumberToSpawn: 1
+        Object: {fileID: 3817069723814122353, guid: 2a448df4b6750934d8dad190e70780fb,
+          type: 3}
+      - NumberToSpawn: 1
+        Object: {fileID: 4506495074588965537, guid: 395015fd037ed724e978fa76038424c0,
+          type: 3}
+    - items:
+      - NumberToSpawn: 1
+        Object: {fileID: 3817069723814122353, guid: 2a448df4b6750934d8dad190e70780fb,
+          type: 3}
+      - NumberToSpawn: 1
+        Object: {fileID: 4593936209108532073, guid: 143955b7eac99584dafecc2b6de98d11,
+          type: 3}
+      - NumberToSpawn: 1
+        Object: {fileID: 4506495074588965537, guid: 395015fd037ed724e978fa76038424c0,
+          type: 3}
+      - NumberToSpawn: 1
+        Object: {fileID: 7046467474168593522, guid: b560d012ac75f56479a663da3425dc47,
+          type: 3}
+  - blackouts:
+    - items:
+      - NumberToSpawn: 1
+        Object: {fileID: 3817069723814122353, guid: 2a448df4b6750934d8dad190e70780fb,
+          type: 3}
+      - NumberToSpawn: 1
+        Object: {fileID: 4593936209108532073, guid: 143955b7eac99584dafecc2b6de98d11,
+          type: 3}
+      - NumberToSpawn: 1
+        Object: {fileID: 4506495074588965537, guid: 395015fd037ed724e978fa76038424c0,
+          type: 3}
+      - NumberToSpawn: 1
+        Object: {fileID: 7046467474168593522, guid: b560d012ac75f56479a663da3425dc47,
+          type: 3}
+    - items:
+      - NumberToSpawn: 1
+        Object: {fileID: 3817069723814122353, guid: 2a448df4b6750934d8dad190e70780fb,
+          type: 3}
+      - NumberToSpawn: 1
+        Object: {fileID: 4506495074588965537, guid: 395015fd037ed724e978fa76038424c0,
+          type: 3}
+      - NumberToSpawn: 1
+        Object: {fileID: 7046467474168593522, guid: b560d012ac75f56479a663da3425dc47,
+          type: 3}
+      - NumberToSpawn: 1
+        Object: {fileID: 4593936209108532073, guid: 143955b7eac99584dafecc2b6de98d11,
+          type: 3}
+      - NumberToSpawn: 1
+        Object: {fileID: 6524118501536594272, guid: caea0490557eb8346ac3f76d02bd92fe,
+          type: 3}
+    - items:
+      - NumberToSpawn: 1
+        Object: {fileID: 3817069723814122353, guid: 2a448df4b6750934d8dad190e70780fb,
+          type: 3}
+      - NumberToSpawn: 1
+        Object: {fileID: 4506495074588965537, guid: 395015fd037ed724e978fa76038424c0,
+          type: 3}
+      - NumberToSpawn: 1
+        Object: {fileID: 7046467474168593522, guid: b560d012ac75f56479a663da3425dc47,
+          type: 3}
+      - NumberToSpawn: 1
+        Object: {fileID: 4593936209108532073, guid: 143955b7eac99584dafecc2b6de98d11,
+          type: 3}
+      - NumberToSpawn: 1
+        Object: {fileID: 6524118501536594272, guid: caea0490557eb8346ac3f76d02bd92fe,
+          type: 3}
+  gameState: {fileID: 11400000, guid: 6bb654c6d14f44349977173df0bb252b, type: 2}

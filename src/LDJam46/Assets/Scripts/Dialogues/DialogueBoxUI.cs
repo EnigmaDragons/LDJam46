@@ -44,34 +44,40 @@ public class DialogueBoxUI : OnMessage<StartConversation>
         }
         else if (_index == _dialogue.Lines.Count)
         {
+            Debug.Log("Finished Dialogue", gameObject);
             _playingDialogue = false;
             dialogueBox.SetActive(false);
             Message.Publish(new ConversationEnded());
         }
         else if (_dialogue.Lines[_index].Type == DialogueLineType.SoundEffect)
         {
+            Debug.Log($"Playing Dialogue Sound {_dialogue.Lines[_index].SoundEffect.name}", gameObject);
             audioSource.Play(_dialogue.Lines[_index].SoundEffect);
             _index++;
             WithDelay(0.8f, Resolve);
         }
         else if (_dialogue.Lines[_index].Type == DialogueLineType.Statement)
         {
+            Debug.Log($"Displaying Statement {_dialogue.Lines[_index].Type}", gameObject);
             line.Display(_dialogue.Lines[_index].Text);
             _index++;
         }
         else if (_dialogue.Lines[_index].Type == DialogueLineType.VisualEffect)
         {
+            Debug.Log("Starting Fade In", gameObject);
             Message.Publish(new StartFadeIn());
             _index++;
         }
         else if (_dialogue.Lines[_index].Type == DialogueLineType.ActivateTrigger)
         {
+            Debug.Log($"Activating Trigger {_dialogue.Lines[_index].TriggerName}", gameObject);
             Message.Publish(new ActivateTrigger(_dialogue.Lines[_index].TriggerName));
             _index++;
             Resolve();
         }
         else if (_dialogue.Lines[_index].Type == DialogueLineType.SwapWorld)
         {
+            Debug.Log($"Swapping World", gameObject);
             Message.Publish(new SwapWorld());
             _index++;
             Resolve();

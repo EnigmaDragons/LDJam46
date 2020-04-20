@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -11,6 +12,7 @@ public class DayTransitions : OnMessage<StartNextDay>
     [SerializeField] private Dialogue[] dialogues;
     [SerializeField] private float preFadeSeconds;
     [SerializeField] private float fadeInSeconds;
+    [SerializeField] private Item[] startingItems;
 
     private float _prefadeRemaining;
     private bool _prefading;
@@ -29,6 +31,7 @@ public class DayTransitions : OnMessage<StartNextDay>
         _prefading = true;
         _fadingIn = false;
         _prefadeRemaining = preFadeSeconds;
+        startingItems.ForEach(i => Message.Publish(new GainItem(i)));
     }
 
     private void Update()

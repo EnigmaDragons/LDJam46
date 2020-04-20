@@ -1,11 +1,12 @@
-﻿
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class ItemSpawner3 : MonoBehaviour
 {
-    [SerializeField] private ItemSpawnRule[] rules;
-    
+    [SerializeField] private DaySpawnRules[] days;
+    [SerializeField] private CurrentGameState gameState;
+
     public void Spawn(List<Vector3> possibleItemLocations)
     {
         Debug.Log($"Number of Possible Item Locations {possibleItemLocations.Count}");
@@ -14,7 +15,7 @@ public class ItemSpawner3 : MonoBehaviour
         
         var queue = possibleItemLocations.ToArray().Shuffled();
         var index = 0;
-        foreach (var rule in rules)
+        foreach (var rule in GetRules())
         {
             Debug.Log($"Spawning {rule.NumberToSpawn} {rule.Object.name}(s)");
             for (var n = 0; n < rule.NumberToSpawn; n++)
@@ -28,5 +29,12 @@ public class ItemSpawner3 : MonoBehaviour
             }
 
         }
+    }
+
+    private ItemSpawnRule[] GetRules()
+    {
+        var day = days.Length >= gameState.GameState.DayNumber ? days[gameState.GameState.DayNumber - 1] : days.Last();
+        var blackout = day.blackouts.Length > gameState.GameState.BlackoutsToday ? day.blackouts[gameState.GameState.BlackoutsToday] : day.blackouts.Last();
+        return blackout.items;
     }
 }
