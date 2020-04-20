@@ -10,6 +10,8 @@ public class MindMapSetup3 : MonoBehaviour
     [SerializeField] private MapSpawnPoints[] maps;
     [SerializeField] private ItemSpawner3 itemSpawner;
     [SerializeField] private GameObject mapParent;
+    [SerializeField] private DaySpawnRules[] days;
+    [SerializeField] private CurrentGameState gameState;
 
     private void OnEnable()
     {
@@ -19,6 +21,16 @@ public class MindMapSetup3 : MonoBehaviour
         
         Debug.Log($"Number of Possible Character Start Locations {map.CharacterSpawningPoints.Length}");
         Message.Publish(new MapGenerated(map.CharacterSpawningPoints.Any() ? map.CharacterSpawningPoints.Random().position : defaultSpawn));
-        itemSpawner.Spawn(map.ItemSpawnPoints.Select(x => x.position).ToList());
+        var rules = GetRules();
+        itemSpawner.Spawn(map.ItemSpawnPoints.Select(x => x.position).ToList(), rules.items);
+        foreach (var demon in rules.demons)
+            if (demon.SpawnChance > Rng.Dbl())
+                Message.Publish(new ActivateDemon(demon.Demon));
+    }
+
+    private BlackoutSpawnRules GetRules()
+    {
+        var day = days.Length >= gameState.GameState.DayNumber ? days[gameState.GameState.DayNumber - 1] : days.Last();
+        return day.blackouts.Length > gameState.GameState.BlackoutsToday ? day.blackouts[gameState.GameState.BlackoutsToday] : day.blackouts.Last();
     }
 }

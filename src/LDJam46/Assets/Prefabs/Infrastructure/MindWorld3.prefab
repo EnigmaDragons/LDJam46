@@ -98,7 +98,6 @@ GameObject:
   - component: {fileID: 1595341513462219558}
   - component: {fileID: 7358094938512888647}
   - component: {fileID: 5297103669183486254}
-  - component: {fileID: 3178029521727789333}
   - component: {fileID: 6587502204363880213}
   m_Layer: 0
   m_Name: MindWorld3
@@ -142,6 +141,146 @@ MonoBehaviour:
   - {fileID: 1013479025086196655, guid: 71cbc3d522174d749ac33713aa2f6f69, type: 3}
   itemSpawner: {fileID: 8401037420671847780}
   mapParent: {fileID: 853916593613440575}
+  days:
+  - blackouts:
+    - items:
+      - NumberToSpawn: 1
+        Object: {fileID: 3817069723814122353, guid: 2a448df4b6750934d8dad190e70780fb,
+          type: 3}
+      - NumberToSpawn: 1
+        Object: {fileID: 533909007879346199, guid: c22809cf2a47fcc4092a4a350f481d27,
+          type: 3}
+      demons:
+      - Demon: 0
+        SpawnChance: 1
+      - Demon: 1
+        SpawnChance: 0
+      - Demon: 2
+        SpawnChance: 0
+    - items:
+      - NumberToSpawn: 1
+        Object: {fileID: 3817069723814122353, guid: 2a448df4b6750934d8dad190e70780fb,
+          type: 3}
+      - NumberToSpawn: 1
+        Object: {fileID: 533909007879346199, guid: c22809cf2a47fcc4092a4a350f481d27,
+          type: 3}
+      - NumberToSpawn: 1
+        Object: {fileID: 4506495074588965537, guid: 395015fd037ed724e978fa76038424c0,
+          type: 3}
+      - NumberToSpawn: 1
+        Object: {fileID: 1541991578732236586, guid: fb30c05d11868e84885b8d5438ca8134,
+          type: 3}
+      demons:
+      - Demon: 0
+        SpawnChance: 1
+      - Demon: 1
+        SpawnChance: 1
+      - Demon: 2
+        SpawnChance: 0
+  - blackouts:
+    - items:
+      - NumberToSpawn: 1
+        Object: {fileID: 3817069723814122353, guid: 2a448df4b6750934d8dad190e70780fb,
+          type: 3}
+      - NumberToSpawn: 1
+        Object: {fileID: 533909007879346199, guid: c22809cf2a47fcc4092a4a350f481d27,
+          type: 3}
+      - NumberToSpawn: 1
+        Object: {fileID: 4506495074588965537, guid: 395015fd037ed724e978fa76038424c0,
+          type: 3}
+      - NumberToSpawn: 1
+        Object: {fileID: 1541991578732236586, guid: fb30c05d11868e84885b8d5438ca8134,
+          type: 3}
+      demons:
+      - Demon: 0
+        SpawnChance: 1
+      - Demon: 1
+        SpawnChance: 0
+      - Demon: 2
+        SpawnChance: 0
+    - items:
+      - NumberToSpawn: 1
+        Object: {fileID: 3817069723814122353, guid: 2a448df4b6750934d8dad190e70780fb,
+          type: 3}
+      - NumberToSpawn: 1
+        Object: {fileID: 533909007879346199, guid: c22809cf2a47fcc4092a4a350f481d27,
+          type: 3}
+      - NumberToSpawn: 1
+        Object: {fileID: 4506495074588965537, guid: 395015fd037ed724e978fa76038424c0,
+          type: 3}
+      - NumberToSpawn: 1
+        Object: {fileID: 1541991578732236586, guid: fb30c05d11868e84885b8d5438ca8134,
+          type: 3}
+      - NumberToSpawn: 1
+        Object: {fileID: 7046467474168593522, guid: b560d012ac75f56479a663da3425dc47,
+          type: 3}
+      - NumberToSpawn: 1
+        Object: {fileID: 614160852467477022, guid: 006a747a21fb0ae49b6ac208c824fe36,
+          type: 3}
+      demons:
+      - Demon: 0
+        SpawnChance: 1
+      - Demon: 1
+        SpawnChance: 1
+      - Demon: 2
+        SpawnChance: 0
+  - blackouts:
+    - items:
+      - NumberToSpawn: 1
+        Object: {fileID: 3817069723814122353, guid: 2a448df4b6750934d8dad190e70780fb,
+          type: 3}
+      - NumberToSpawn: 1
+        Object: {fileID: 533909007879346199, guid: c22809cf2a47fcc4092a4a350f481d27,
+          type: 3}
+      - NumberToSpawn: 1
+        Object: {fileID: 4506495074588965537, guid: 395015fd037ed724e978fa76038424c0,
+          type: 3}
+      - NumberToSpawn: 1
+        Object: {fileID: 1541991578732236586, guid: fb30c05d11868e84885b8d5438ca8134,
+          type: 3}
+      - NumberToSpawn: 1
+        Object: {fileID: 7046467474168593522, guid: b560d012ac75f56479a663da3425dc47,
+          type: 3}
+      - NumberToSpawn: 1
+        Object: {fileID: 614160852467477022, guid: 006a747a21fb0ae49b6ac208c824fe36,
+          type: 3}
+      demons:
+      - Demon: 0
+        SpawnChance: 1
+      - Demon: 1
+        SpawnChance: 0
+      - Demon: 2
+        SpawnChance: 0
+    - items:
+      - NumberToSpawn: 1
+        Object: {fileID: 3817069723814122353, guid: 2a448df4b6750934d8dad190e70780fb,
+          type: 3}
+      - NumberToSpawn: 1
+        Object: {fileID: 533909007879346199, guid: c22809cf2a47fcc4092a4a350f481d27,
+          type: 3}
+      - NumberToSpawn: 1
+        Object: {fileID: 4506495074588965537, guid: 395015fd037ed724e978fa76038424c0,
+          type: 3}
+      - NumberToSpawn: 1
+        Object: {fileID: 1541991578732236586, guid: fb30c05d11868e84885b8d5438ca8134,
+          type: 3}
+      - NumberToSpawn: 1
+        Object: {fileID: 7046467474168593522, guid: b560d012ac75f56479a663da3425dc47,
+          type: 3}
+      - NumberToSpawn: 1
+        Object: {fileID: 614160852467477022, guid: 006a747a21fb0ae49b6ac208c824fe36,
+          type: 3}
+      - NumberToSpawn: 1
+        Object: {fileID: 6524118501536594272, guid: caea0490557eb8346ac3f76d02bd92fe,
+          type: 3}
+      demons:
+      - Demon: 0
+        SpawnChance: 1
+      - Demon: 1
+        SpawnChance: 1
+      - Demon: 2
+        SpawnChance: 0
+  gameState: {fileID: 11400000, guid: 6bb654c6d14f44349977173df0bb252b, type: 2}
 --- !u!114 &7358094938512888647
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -197,19 +336,6 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
---- !u!114 &3178029521727789333
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3579407353211073039}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36faf953c223e4b4d8ed4ffff562f3da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  demon: 0
 --- !u!114 &6587502204363880213
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -270,93 +396,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27f64eb8c21aab94593c457d9331fd80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  days:
-  - blackouts:
-    - items:
-      - NumberToSpawn: 4
-        Object: {fileID: 3817069723814122353, guid: 2a448df4b6750934d8dad190e70780fb,
-          type: 3}
-      - NumberToSpawn: 1
-        Object: {fileID: 4593936209108532073, guid: 143955b7eac99584dafecc2b6de98d11,
-          type: 3}
-    - items:
-      - NumberToSpawn: 2
-        Object: {fileID: 3817069723814122353, guid: 2a448df4b6750934d8dad190e70780fb,
-          type: 3}
-      - NumberToSpawn: 1
-        Object: {fileID: 4593936209108532073, guid: 143955b7eac99584dafecc2b6de98d11,
-          type: 3}
-      - NumberToSpawn: 2
-        Object: {fileID: 4506495074588965537, guid: 395015fd037ed724e978fa76038424c0,
-          type: 3}
-  - blackouts:
-    - items:
-      - NumberToSpawn: 1
-        Object: {fileID: 4593936209108532073, guid: 143955b7eac99584dafecc2b6de98d11,
-          type: 3}
-      - NumberToSpawn: 1
-        Object: {fileID: 3817069723814122353, guid: 2a448df4b6750934d8dad190e70780fb,
-          type: 3}
-      - NumberToSpawn: 1
-        Object: {fileID: 4506495074588965537, guid: 395015fd037ed724e978fa76038424c0,
-          type: 3}
-    - items:
-      - NumberToSpawn: 1
-        Object: {fileID: 3817069723814122353, guid: 2a448df4b6750934d8dad190e70780fb,
-          type: 3}
-      - NumberToSpawn: 1
-        Object: {fileID: 4593936209108532073, guid: 143955b7eac99584dafecc2b6de98d11,
-          type: 3}
-      - NumberToSpawn: 1
-        Object: {fileID: 4506495074588965537, guid: 395015fd037ed724e978fa76038424c0,
-          type: 3}
-      - NumberToSpawn: 1
-        Object: {fileID: 7046467474168593522, guid: b560d012ac75f56479a663da3425dc47,
-          type: 3}
-  - blackouts:
-    - items:
-      - NumberToSpawn: 1
-        Object: {fileID: 3817069723814122353, guid: 2a448df4b6750934d8dad190e70780fb,
-          type: 3}
-      - NumberToSpawn: 1
-        Object: {fileID: 4593936209108532073, guid: 143955b7eac99584dafecc2b6de98d11,
-          type: 3}
-      - NumberToSpawn: 1
-        Object: {fileID: 4506495074588965537, guid: 395015fd037ed724e978fa76038424c0,
-          type: 3}
-      - NumberToSpawn: 1
-        Object: {fileID: 7046467474168593522, guid: b560d012ac75f56479a663da3425dc47,
-          type: 3}
-    - items:
-      - NumberToSpawn: 1
-        Object: {fileID: 3817069723814122353, guid: 2a448df4b6750934d8dad190e70780fb,
-          type: 3}
-      - NumberToSpawn: 1
-        Object: {fileID: 4506495074588965537, guid: 395015fd037ed724e978fa76038424c0,
-          type: 3}
-      - NumberToSpawn: 1
-        Object: {fileID: 7046467474168593522, guid: b560d012ac75f56479a663da3425dc47,
-          type: 3}
-      - NumberToSpawn: 1
-        Object: {fileID: 4593936209108532073, guid: 143955b7eac99584dafecc2b6de98d11,
-          type: 3}
-      - NumberToSpawn: 1
-        Object: {fileID: 6524118501536594272, guid: caea0490557eb8346ac3f76d02bd92fe,
-          type: 3}
-    - items:
-      - NumberToSpawn: 1
-        Object: {fileID: 3817069723814122353, guid: 2a448df4b6750934d8dad190e70780fb,
-          type: 3}
-      - NumberToSpawn: 1
-        Object: {fileID: 4506495074588965537, guid: 395015fd037ed724e978fa76038424c0,
-          type: 3}
-      - NumberToSpawn: 1
-        Object: {fileID: 7046467474168593522, guid: b560d012ac75f56479a663da3425dc47,
-          type: 3}
-      - NumberToSpawn: 1
-        Object: {fileID: 4593936209108532073, guid: 143955b7eac99584dafecc2b6de98d11,
-          type: 3}
-      - NumberToSpawn: 1
-        Object: {fileID: 6524118501536594272, guid: caea0490557eb8346ac3f76d02bd92fe,
-          type: 3}
-  gameState: {fileID: 11400000, guid: 6bb654c6d14f44349977173df0bb252b, type: 2}

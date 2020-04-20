@@ -1,7 +1,6 @@
 ﻿using System;
 using Assets.Scripts.Demons;
 using UnityEngine;
-using UnityEngine.AI;
 
 public class ParanoiaDemon : MonoBehaviour
 {
@@ -11,11 +10,29 @@ public class ParanoiaDemon : MonoBehaviour
     [SerializeField] private float _secondsPerPercent;
     [SerializeField] private float _accelrationMultipier;
     [SerializeField] private float _minSpeed;
+    [SerializeField] private Transform[] spawnPoints;
 
     private float _speed;
     private Vector2 _playerLookDirection;
 
-    private void OnEnable() => _demonState.Activate();
+    private void Awake()
+    {
+        Message.Subscribe<ActivateDemon>(x =>
+        {
+            if (x.Demon == DemonName.Paranoia)
+            {
+                _demonState.Activate();
+                transform.position = spawnPoints.Random().position;
+                gameObject.SetActive(true);
+            }
+        }, this);
+        gameObject.SetActive(false);
+    }
+
+    private void OnDestroy()
+    {
+        Message.Unsubscribe(this);
+    }
 
     private void Update()
     {

@@ -26,7 +26,6 @@ public sealed class GameState
             BlackoutsToday++;
         }
     }
-
     private int _dayNumber = 0;
     public int DayNumber
     {
