@@ -10,4 +10,18 @@ public class DialogueLine
     public AudioClip SoundEffect;
     public DialogueEffect Effect;
     public string TriggerName;
+    public Sprite Image;
+
+    public DialogueLine Clone()
+    {
+        return new DialogueLine
+        {
+            Type = Type,
+            Text = Text,
+            SoundEffect = SoundEffect,
+            Effect = Effect,
+            TriggerName = TriggerName,
+            Image = Image
+        };
+    }
 }
