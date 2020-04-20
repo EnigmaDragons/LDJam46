@@ -470,6 +470,64 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.31, y: 2.92, z: 0.2}
   m_Center: {x: 0.03, y: -0.67, z: 0.000000014901161}
+--- !u!1 &8400562605366696757
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 291932034399001575}
+  - component: {fileID: 3096121869190386295}
+  - component: {fileID: 5709509517649481028}
+  m_Layer: 0
+  m_Name: Meeting-2-1-1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &291932034399001575
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8400562605366696757}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -9.91, y: -4.56, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8416328132749152906}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &3096121869190386295
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8400562605366696757}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.07, y: 1, z: 100}
+  m_Center: {x: 0, y: 0, z: -0.57}
+--- !u!114 &5709509517649481028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8400562605366696757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23f26909094c80645b287307d3cb8c5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: {fileID: 11400000, guid: 1d97010fc197a0143a2a10121815aede, type: 2}
 --- !u!1001 &462394277937618063
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -818,13 +876,13 @@ PrefabInstance:
     - target: {fileID: 1177082573145883806, guid: c51bb77d7084b04419ccadc9bd93e446,
         type: 3}
       propertyPath: triggers.Array.data[3].Name
-      value: Email 1
+      value: Meeting-2-1-1
       objectReference: {fileID: 0}
     - target: {fileID: 1177082573145883806, guid: c51bb77d7084b04419ccadc9bd93e446,
         type: 3}
       propertyPath: triggers.Array.data[3].Obj
       value: 
-      objectReference: {fileID: 1970627543936364549}
+      objectReference: {fileID: 8400562605366696757}
     - target: {fileID: 1177082573145883806, guid: c51bb77d7084b04419ccadc9bd93e446,
         type: 3}
       propertyPath: triggers.Array.data[4].Name
