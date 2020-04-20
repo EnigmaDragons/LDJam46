@@ -4,4 +4,5 @@
 public class BlackoutSpawnRules
 {
     public ItemSpawnRule[] items;
+    public DemonSpawnRule[] demons;
 }
