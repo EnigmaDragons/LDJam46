@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 5395395211178431833}
   - component: {fileID: 8828751186544730088}
   - component: {fileID: 35599754795372359}
-  - component: {fileID: 3947232424659045860}
   m_Layer: 0
   m_Name: MindForestCamera
   m_TagString: MainCamera
@@ -153,23 +152,6 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
---- !u!114 &3947232424659045860
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5395395211178431838}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f7a7244d122416459b6ce910e34ef7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeUntilMidpoint:
-    UseConstant: 1
-    ConstantValue: 2
-    FloatVariable: {fileID: 0}
-  transition: {fileID: 0}
 --- !u!1 &6467873714042255329
 GameObject:
   m_ObjectHideFlags: 0

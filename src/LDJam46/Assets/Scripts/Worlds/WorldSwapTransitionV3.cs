@@ -15,9 +15,11 @@ public class WorldSwapTransitionV3 : OnMessage<WorldSwapStarted>
     {
         anim.SetActive(true);
         yield return new WaitForSeconds(midDuration);
+        Debug.Log($"World Swap - Ready For Swap");
         Message.Publish(new ReadyForWorldSwapPeak());
         yield return new WaitForSeconds(fadeInDuration);
         anim.SetActive(false);
+        Debug.Log($"World Swap - Ready For Game");
         Message.Publish(new ReadyForWorldSwapFinished());
     }
 }
