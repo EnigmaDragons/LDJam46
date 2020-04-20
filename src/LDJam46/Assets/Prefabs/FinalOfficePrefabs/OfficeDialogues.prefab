@@ -55,20 +55,20 @@ MonoBehaviour:
     Day: 1
     DayBlackoutNumber: 3
   - Dialogue: {fileID: 11400000, guid: 24c1dc79254b51448be6a3a670290f95, type: 2}
-    Day: 1
-    DayBlackoutNumber: 3
+    Day: 2
+    DayBlackoutNumber: 1
   - Dialogue: {fileID: 11400000, guid: cf329485b1464fb4dbe86b669981b760, type: 2}
-    Day: 1
-    DayBlackoutNumber: 3
+    Day: 2
+    DayBlackoutNumber: 2
   - Dialogue: {fileID: 11400000, guid: 33d64c399a13f1d45946167e7122c0f7, type: 2}
-    Day: 1
+    Day: 2
     DayBlackoutNumber: 3
   - Dialogue: {fileID: 11400000, guid: 4fc4925a0f0cf3545b2c753e53a87c07, type: 2}
-    Day: 1
-    DayBlackoutNumber: 3
+    Day: 3
+    DayBlackoutNumber: 1
   - Dialogue: {fileID: 11400000, guid: 8aae7ce3997e7d649923456ca9885f2b, type: 2}
-    Day: 1
-    DayBlackoutNumber: 3
+    Day: 3
+    DayBlackoutNumber: 2
   - Dialogue: {fileID: 11400000, guid: 5db2d1cb0a96f6a47b23fdd0ef4abd94, type: 2}
-    Day: 1
+    Day: 3
     DayBlackoutNumber: 3

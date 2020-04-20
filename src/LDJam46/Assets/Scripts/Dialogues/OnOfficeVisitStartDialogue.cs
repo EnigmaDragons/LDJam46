@@ -11,7 +11,7 @@ public class OnOfficeVisitStartDialogue : OnMessage<NewDayStarted, WorldSwapFini
 
     protected override void Execute(WorldSwapFinished msg)
     {
-        if (game.CurrentWorld == CurrentWorld.Real)
+        if (msg.World == CurrentWorld.Real && !game.GameState.HadPanicAttackToday)
             StartDialogueIfApplicable();
     }
 
@@ -24,6 +24,6 @@ public class OnOfficeVisitStartDialogue : OnMessage<NewDayStarted, WorldSwapFini
         if (possibleDialogues.Any())
             Message.Publish(new StartConversation(possibleDialogues.First().Dialogue));
         else
-            Debug.Log($"No Dialogues for {g.DayNumber}-{g.NumBlackouts + 1}");
+            Debug.Log($"No Dialogues for {g.DayNumber}-{g.BlackoutsToday + 1}");
     }
 }
