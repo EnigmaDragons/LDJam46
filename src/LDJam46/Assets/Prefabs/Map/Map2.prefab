@@ -995,6 +995,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CharacterSpawningPoints:
+  - {fileID: 7479244918285315601}
+  - {fileID: 8825002328864597212}
+  - {fileID: 8043170137427631050}
+  ItemSpawnPoints:
   - {fileID: 1930417857943256768}
   - {fileID: 607774110717891359}
   - {fileID: 2900218900558705952}
@@ -1030,33 +1034,6 @@ MonoBehaviour:
   - {fileID: 8903320123780901251}
   - {fileID: 7023706135958250824}
   - {fileID: 984917324691568335}
-  ItemSpawnPoints:
-  - {fileID: 1930417857943256768}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!1001 &17652404940171985
 PrefabInstance:
   m_ObjectHideFlags: 0
