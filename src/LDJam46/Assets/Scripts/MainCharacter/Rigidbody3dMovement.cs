@@ -49,6 +49,7 @@ public class Rigidbody3dMovement : MonoBehaviour {
             _isThinking = true;            
             _animator.ResetTrigger("Exit");
             _animator.SetTrigger("toTHINKING");
+            Debug.Log("Move - Thinking");
         }
     }
 
@@ -106,6 +107,8 @@ public class Rigidbody3dMovement : MonoBehaviour {
             Idle();
         else
         {
+            _animator.ResetTrigger("toTHINKING");
+            _animator.ResetTrigger("Exit");
             _animator.ResetTrigger("toRUN");
             _animator.SetTrigger("toWALK");
             footsteps.StartWalking();
@@ -118,6 +121,8 @@ public class Rigidbody3dMovement : MonoBehaviour {
             Idle();
         else
         {
+            _animator.ResetTrigger("toTHINKING");
+            _animator.ResetTrigger("Exit");
             _animator.ResetTrigger("toWALK");
             _animator.SetTrigger("toRUN");
             footsteps.StartRunning();
