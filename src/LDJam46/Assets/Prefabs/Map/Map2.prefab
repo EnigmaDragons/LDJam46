@@ -22287,13 +22287,28 @@ PrefabInstance:
     - target: {fileID: 59384500801006762, guid: 9b77227fe08fbcb42a4a83cce683458f,
         type: 3}
       propertyPath: spawnPoints.Array.size
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 59384500801006762, guid: 9b77227fe08fbcb42a4a83cce683458f,
         type: 3}
       propertyPath: spawnPoints.Array.data[0]
       value: 
       objectReference: {fileID: 6547485161768308266}
+    - target: {fileID: 59384500801006762, guid: 9b77227fe08fbcb42a4a83cce683458f,
+        type: 3}
+      propertyPath: spawnPoints.Array.data[1]
+      value: 
+      objectReference: {fileID: 8542286879686655818}
+    - target: {fileID: 59384500801006762, guid: 9b77227fe08fbcb42a4a83cce683458f,
+        type: 3}
+      propertyPath: spawnPoints.Array.data[2]
+      value: 
+      objectReference: {fileID: 6123557339657172340}
+    - target: {fileID: 59384500801006762, guid: 9b77227fe08fbcb42a4a83cce683458f,
+        type: 3}
+      propertyPath: spawnPoints.Array.data[3]
+      value: 
+      objectReference: {fileID: 3837761563602366556}
     - target: {fileID: 2347931390286617893, guid: 9b77227fe08fbcb42a4a83cce683458f,
         type: 3}
       propertyPath: m_LocalPosition.x

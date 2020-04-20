@@ -15,6 +15,7 @@ public sealed class GameState
     public List<Item> Items { get; set; } = new List<Item>();
     public List<JournalEntry> UnlockedJournalEntries = new List<JournalEntry>();
     public bool isInDialogue = false;
+    public bool IsTransitioningDays = false;
     public int NumPanicAttacks { get; set; } = 0;
     
     private int _numBlackouts = 0;

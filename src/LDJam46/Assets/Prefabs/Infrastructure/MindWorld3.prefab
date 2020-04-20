@@ -138,7 +138,7 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: 7079b948dc75d2246a8ef03bf8f7b636, type: 2}
   defaultSpawn: {x: 20, y: 20, z: 0}
   maps:
-  - {fileID: 4956565438613134418, guid: 169399939ec199d469a53043facbe423, type: 3}
+  - {fileID: 459567925234738886, guid: 52703709f1653b04e99a21a7410bf550, type: 3}
   itemSpawner: {fileID: 8401037420671847780}
   mapParent: {fileID: 853916593613440575}
   days:

@@ -85,12 +85,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 572a50669a856224197d73a1486a76ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _player: {fileID: 11400000, guid: 7079b948dc75d2246a8ef03bf8f7b636, type: 2}
-  _demonState: {fileID: 11400000, guid: 0ef2d429b4140794cb62d30fc59555e5, type: 2}
-  _freezeAngle: 90
-  _secondsPerPercent: 1
-  _accelrationMultipier: 0.1
-  _minSpeed: 1
+  player: {fileID: 11400000, guid: 7079b948dc75d2246a8ef03bf8f7b636, type: 2}
+  demonState: {fileID: 11400000, guid: 0ef2d429b4140794cb62d30fc59555e5, type: 2}
+  freezeAngle: 90
+  freezeDistance: 5
+  fadeSeconds: 3
+  secondsLookingPercent: 0.02
+  fadeBonusPercent: 0.06
+  maxedOutBonusSpeed: 7.5
+  accelerationMultipier: 5
+  minSpeed: 2.5
   spawnPoints: []
   image: {fileID: 9017359658345469964}
 --- !u!54 &524693721708564241

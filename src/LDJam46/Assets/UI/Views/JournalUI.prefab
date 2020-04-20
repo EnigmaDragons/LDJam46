@@ -73,7 +73,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   journalView: {fileID: 8562983193600639556}
-  dismiss: {fileID: 4010862601501306097}
+  game: {fileID: 11400000, guid: 6bb654c6d14f44349977173df0bb252b, type: 2}
 --- !u!1001 &1635058307066598050
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -210,15 +210,3 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1635058307066598050}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &4010862601501306097 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2385103053333462611, guid: f4fa45929947ae047bdf7f17b29c2ee9,
-    type: 3}
-  m_PrefabInstance: {fileID: 1635058307066598050}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

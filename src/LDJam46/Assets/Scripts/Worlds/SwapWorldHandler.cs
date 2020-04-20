@@ -25,12 +25,14 @@ public class SwapWorldHandler : OnMessage<SwapWorld, ReadyForWorldSwapPeak, Read
 
     private void Activate(CurrentWorld targetWorld)
     {
+        Debug.Log($"World Swap - Activating {targetWorld}");
         mindWorld.SetActive(targetWorld == CurrentWorld.Mind);
         realWorld.SetActive(targetWorld == CurrentWorld.Real);
     }
 
     private void NotifyFinished(CurrentWorld nowActive)
     {
+        Debug.Log($"World Swap - Finished Swapping to {nowActive}");
         game.UpdateState(gs => gs.CurrentWorld = nowActive);
         Message.Publish(new WorldSwapFinished(nowActive));
     }

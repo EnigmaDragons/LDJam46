@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 5073845392503562279}
   - component: {fileID: 888673251084009852}
   - component: {fileID: 431745915514255967}
-  - component: {fileID: 5605150661439881768}
   m_Layer: 0
   m_Name: GameWorldsV2
   m_TagString: Untagged
@@ -65,18 +64,6 @@ MonoBehaviour:
   uiSounds: {fileID: 11400000, guid: bfe56e3518f684c4387de97bd5db348d, type: 2}
   clip: {fileID: 8300000, guid: 7fef0a5ae8190ef4ba1d91a27f1b5027, type: 3}
   volume: 1
---- !u!114 &5605150661439881768
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1495828295431378908}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f36de5305cf41184ea68a013a5cec786, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &5897659323056539826
 PrefabInstance:
   m_ObjectHideFlags: 0
