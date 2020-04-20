@@ -273,20 +273,20 @@ MonoBehaviour:
   days:
   - blackouts:
     - items:
-      - NumberToSpawn: 1
+      - NumberToSpawn: 4
         Object: {fileID: 3817069723814122353, guid: 2a448df4b6750934d8dad190e70780fb,
           type: 3}
       - NumberToSpawn: 1
         Object: {fileID: 4593936209108532073, guid: 143955b7eac99584dafecc2b6de98d11,
           type: 3}
     - items:
-      - NumberToSpawn: 1
+      - NumberToSpawn: 2
         Object: {fileID: 3817069723814122353, guid: 2a448df4b6750934d8dad190e70780fb,
           type: 3}
       - NumberToSpawn: 1
         Object: {fileID: 4593936209108532073, guid: 143955b7eac99584dafecc2b6de98d11,
           type: 3}
-      - NumberToSpawn: 1
+      - NumberToSpawn: 2
         Object: {fileID: 4506495074588965537, guid: 395015fd037ed724e978fa76038424c0,
           type: 3}
   - blackouts:
