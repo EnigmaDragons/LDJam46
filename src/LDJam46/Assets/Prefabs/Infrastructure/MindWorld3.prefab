@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 1595341513462219558}
   - component: {fileID: 5297103669183486254}
   - component: {fileID: 6587502204363880213}
-  - component: {fileID: 7986811953469013474}
+  - component: {fileID: 1933994133078185648}
   m_Layer: 0
   m_Name: MindWorld3
   m_TagString: Untagged
@@ -445,7 +445,7 @@ MonoBehaviour:
     UseConstant: 1
     ConstantValue: 1
     FloatVariable: {fileID: 0}
---- !u!114 &7986811953469013474
+--- !u!114 &1933994133078185648
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -454,10 +454,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 3579407353211073039}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6415ea6aa5187f147bd93300e623e6df, type: 3}
+  m_Script: {fileID: 11500000, guid: 6452beafd0f823d4c921afe639a37eaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  music: {fileID: 8300000, guid: 405e72e9ed131db4dbabdcea715ecbbd, type: 3}
+  musics:
+  - {fileID: 8300000, guid: 405e72e9ed131db4dbabdcea715ecbbd, type: 3}
+  - {fileID: 8300000, guid: b941124a15eae8940817d99054d83d7a, type: 3}
   musicPlayer: {fileID: 11400000, guid: bff4472ff6b738f4b94ef00c955e84f3, type: 2}
   shouldLoop: 1
 --- !u!1 &7804619010947394001
