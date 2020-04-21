@@ -236,7 +236,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   navigator: {fileID: 11400000, guid: 5cd12f4de267ef0409d7805a62e445f2, type: 2}
   image: {fileID: 221444720}
-  secondSprite: {fileID: 21300000, guid: d0e235a576af90d41a19b33348648a30, type: 3}
+  secondSprite: {fileID: 21300000, guid: 369fe3f6a7476c24098e7ea1e11b62e5, type: 3}
   showDuration: 2
   transitionDuration: 0.75
 --- !u!1 &221444718
@@ -294,7 +294,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 37050798d748f4c429a3a69f7c9e99d5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 621baa5202161aa4085a22787bea0c5b, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1

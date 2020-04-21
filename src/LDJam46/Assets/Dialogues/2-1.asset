@@ -13,8 +13,28 @@ MonoBehaviour:
   m_Name: 2-1
   m_EditorClassIdentifier: 
   Lines:
-  - Type: 4
-    Text: 
+  - Type: 0
+    Text: Ekk that was close!
+    SoundEffect: {fileID: 0}
+    Effect: 0
+    TriggerName: 
+    Image: {fileID: 0}
+  - Type: 0
+    Text: ' Everyone in here seems so off with me today.'
+    SoundEffect: {fileID: 0}
+    Effect: 0
+    TriggerName: 
+    Image: {fileID: 0}
+  - Type: 0
+    Text: "Maybe they didn\u2019t like my comments in yesterday\u2019s meeting? Maybe
+      I didn\u2019t speak enough?"
+    SoundEffect: {fileID: 0}
+    Effect: 0
+    TriggerName: 
+    Image: {fileID: 0}
+  - Type: 0
+    Text: That reminds me, I need to look at the meeting notes that I think I left
+      by the bean bags.
     SoundEffect: {fileID: 0}
     Effect: 0
     TriggerName: 
