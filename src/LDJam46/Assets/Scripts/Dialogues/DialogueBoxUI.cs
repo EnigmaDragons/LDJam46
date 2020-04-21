@@ -91,8 +91,12 @@ public class DialogueBoxUI : OnMessage<StartConversation>
         }
         else if (_dialogue.Lines[_index].Type == DialogueLineType.ShowImage)
         {
-            image.sprite = _dialogue.Lines[_index].Image;
-            image.gameObject.SetActive(true);
+            var sprite = _dialogue.Lines[_index].Image;
+            if (sprite != null)
+            {
+                image.sprite = sprite; 
+                image.gameObject.SetActive(true);
+            }
             _index++;
         }
     }
