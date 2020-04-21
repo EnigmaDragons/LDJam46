@@ -13,6 +13,18 @@ MonoBehaviour:
   m_Name: 2-1
   m_EditorClassIdentifier: 
   Lines:
+  - Type: 0
+    Text: "Eek, glad that\u2019s over."
+    SoundEffect: {fileID: 0}
+    Effect: 0
+    TriggerName: 
+    Image: {fileID: 0}
+  - Type: 5
+    Text: 
+    SoundEffect: {fileID: 0}
+    Effect: 0
+    TriggerName: 
+    Image: {fileID: 21300000, guid: 60bc0aa229ebf9f48becc09dfdc9fe06, type: 3}
   - Type: 4
     Text: 
     SoundEffect: {fileID: 0}
