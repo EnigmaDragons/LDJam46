@@ -32,7 +32,7 @@ public class MindMapSetup3 : MonoBehaviour
         {
             var chance = demon.SpawnChance;
             foreach (var comfort in gameState.GameState.ComfortsConsumedLastBlackoutToday)
-                demon.SpawnChance += comfort.Penalties.FirstOrDefault(x => x.Demon == demon.Demon)?.Penalty ?? 0;
+                chance += comfort.Penalties.FirstOrDefault(x => x.Demon == demon.Demon)?.Penalty ?? 0;
             if (chance > Rng.Dbl())
                 Message.Publish(new ActivateDemon(demon.Demon));
         }
