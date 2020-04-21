@@ -13,8 +13,27 @@ MonoBehaviour:
   m_Name: 3-1
   m_EditorClassIdentifier: 
   Lines:
+  - Type: 0
+    Text: 'My headspace is just so full of stressful stuff I need to do. I feel so
+      alone with making these decisions. '
+    SoundEffect: {fileID: 0}
+    Effect: 0
+    TriggerName: 
+    Image: {fileID: 0}
+  - Type: 0
+    Text: 'I feel like we are getting close to finding out what I need in my journal. '
+    SoundEffect: {fileID: 0}
+    Effect: 0
+    TriggerName: 
+    Image: {fileID: 0}
+  - Type: 0
+    Text: Sometimes things have a negative effect on me. I need to find them all!
+    SoundEffect: {fileID: 0}
+    Effect: 0
+    TriggerName: 
+    Image: {fileID: 0}
   - Type: 4
-    Text: 
+    Text: 'Everyone in here seems so off with me today. '
     SoundEffect: {fileID: 0}
     Effect: 0
     TriggerName: 

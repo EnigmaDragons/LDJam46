@@ -13,8 +13,21 @@ MonoBehaviour:
   m_Name: 3-2
   m_EditorClassIdentifier: 
   Lines:
+  - Type: 0
+    Text: 'Everyone in here seems so off with me today. '
+    SoundEffect: {fileID: 0}
+    Effect: 0
+    TriggerName: 
+    Image: {fileID: 0}
+  - Type: 0
+    Text: "Maybe they didn\u2019t like my comments in yesterday\u2019s meeting? Maybe
+      I didn\u2019t speak enough? "
+    SoundEffect: {fileID: 0}
+    Effect: 0
+    TriggerName: 
+    Image: {fileID: 0}
   - Type: 4
-    Text: 
+    Text: 'Everyone in here seems so off with me today. '
     SoundEffect: {fileID: 0}
     Effect: 0
     TriggerName: 

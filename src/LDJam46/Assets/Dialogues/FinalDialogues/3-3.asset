@@ -13,8 +13,16 @@ MonoBehaviour:
   m_Name: 3-3
   m_EditorClassIdentifier: 
   Lines:
-  - Type: 4
-    Text: 
+  - Type: 0
+    Text: That reminds me, I need to look at the meeting notes that I think I left
+      by the bean bags.
+    SoundEffect: {fileID: 0}
+    Effect: 0
+    TriggerName: 
+    Image: {fileID: 0}
+  - Type: 0
+    Text: "I just can\u2019t concentrate on these notes. That group over there keep
+      looking over. Why? It\u2019s getting too much\u2026"
     SoundEffect: {fileID: 0}
     Effect: 0
     TriggerName: 
