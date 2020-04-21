@@ -45,7 +45,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   demonState: {fileID: 11400000, guid: 132b5da709a2a5644b7364fb9115976e, type: 2}
   spawnPoints: []
-  startingSpawnPercentage: 0.05
+  startingSpawnPercentage: 0.1
   spawnPercentageBasedOnPercent: 0.3
   impPrefab: {fileID: 996364293877036759, guid: 90cf9766b908a794191e237ec92aa187,
     type: 3}
