@@ -181,3 +181,8 @@ MonoBehaviour:
   itemCollected:
     Clip: {fileID: 8300000, guid: 38b98b2b6991dc740ad935909c9efb9c, type: 3}
     Volume: 0.5
+  headphonesFanfares:
+  - Clip: {fileID: 8300000, guid: ebab29d032cacb249b08c73171274b44, type: 3}
+    Volume: 0.5
+  - Clip: {fileID: 8300000, guid: ddc7c10d7ff81c846a9ea5886cf0094c, type: 3}
+    Volume: 0.5
