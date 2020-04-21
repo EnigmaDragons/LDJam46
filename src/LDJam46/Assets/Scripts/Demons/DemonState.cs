@@ -28,7 +28,7 @@ public class DemonState : ScriptableObject
     
     public void Setback(float amount)
     {
-        if (!IsActive)
+        if (!IsActive || amount <= 0)
             return;
         
         progressPercent -= amount;
