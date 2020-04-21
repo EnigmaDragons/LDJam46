@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class InventoryUI : OnMessage<GainItem, WorldSwapPeaked, UseItem>
@@ -21,7 +22,7 @@ public class InventoryUI : OnMessage<GainItem, WorldSwapPeaked, UseItem>
 
     protected override void Execute(WorldSwapPeaked msg)
     {
-        foreach (var item in _items)
+        foreach (var item in _items.ToList())
         {
             if (!state.GameState.Items.Contains(item.Key))
             {
