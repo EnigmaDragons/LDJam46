@@ -44,6 +44,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   game: {fileID: 11400000, guid: 6bb654c6d14f44349977173df0bb252b, type: 2}
+  randomDefaultDialogues:
+  - {fileID: 11400000, guid: 7e7a9c60027e43b4b9a1c599a27e9822, type: 2}
+  - {fileID: 11400000, guid: 1c9d2dcecb2870e4b999b57cfcf878ba, type: 2}
   dialogues:
   - Dialogue: {fileID: 11400000, guid: 964aaeed23c01ba4daabdf8759b5cc82, type: 2}
     Day: 1

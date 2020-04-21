@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class OnOfficeVisitStartDialogue : OnMessage<NewDayStarted, WorldSwapFinished>
 {
-    [SerializeField] private CurrentGameState game;   
+    [SerializeField] private CurrentGameState game;
+    [SerializeField] private Dialogue[] randomDefaultDialogues;
     [SerializeField] private TimeTriggeredDialogue[] dialogues;
     
     protected override void Execute(NewDayStarted msg) => StartDialogueIfApplicable();
@@ -24,6 +25,6 @@ public class OnOfficeVisitStartDialogue : OnMessage<NewDayStarted, WorldSwapFini
         if (possibleDialogues.Any())
             Message.Publish(new StartConversation(possibleDialogues.First().Dialogue));
         else
-            Debug.Log($"No Dialogues for {g.DayNumber}-{g.BlackoutsToday + 1}");
+            Message.Publish(new StartConversation(randomDefaultDialogues.Random()));
     }
 }
