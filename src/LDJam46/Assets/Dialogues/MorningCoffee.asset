@@ -15,22 +15,26 @@ MonoBehaviour:
   Lines:
   - Type: 1
     Text: 
-    SoundEffect: {fileID: 8300000, guid: 1ca064b2f332a6e4cb3cc0a123bf7642, type: 3}
+    SoundEffect: {fileID: 8300000, guid: 6351975687510ca4aa3cb6d3d3ad3081, type: 3}
     Effect: 0
     TriggerName: 
+    Image: {fileID: 0}
   - Type: 0
     Text: 'Hmmm, that''s better. I needed that. '
     SoundEffect: {fileID: 0}
     Effect: 0
     TriggerName: Desk
+    Image: {fileID: 0}
   - Type: 0
     Text: I should probably get back to my desk, this next meeting is going to be
       tricky.
     SoundEffect: {fileID: 0}
     Effect: 0
     TriggerName: Desk
+    Image: {fileID: 0}
   - Type: 3
     Text: 
     SoundEffect: {fileID: 8300000, guid: 38b98b2b6991dc740ad935909c9efb9c, type: 3}
     Effect: 0
     TriggerName: Desk
+    Image: {fileID: 0}

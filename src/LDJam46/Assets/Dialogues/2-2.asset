@@ -13,8 +13,14 @@ MonoBehaviour:
   m_Name: 2-2
   m_EditorClassIdentifier: 
   Lines:
-  - Type: 4
-    Text: 
+  - Type: 0
+    Text: How'd I get here?!
+    SoundEffect: {fileID: 0}
+    Effect: 0
+    TriggerName: 
+    Image: {fileID: 0}
+  - Type: 0
+    Text: Better get back to work, I guess...
     SoundEffect: {fileID: 0}
     Effect: 0
     TriggerName: 

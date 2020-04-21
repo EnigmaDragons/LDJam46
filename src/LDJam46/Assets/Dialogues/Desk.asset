@@ -14,18 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Lines:
   - Type: 0
-    Text: 'Manager: Hey Pauline, I really do need that report now or we''re going
-      to need to have a talk!!'
+    Text: 'Manager: Stop messing around! is that report ready or what?'
     SoundEffect: {fileID: 0}
     Effect: 0
     TriggerName: 
+    Image: {fileID: 0}
   - Type: 1
     Text: 
     SoundEffect: {fileID: 8300000, guid: 516f93333991e8648b1caffdd57745aa, type: 3}
     Effect: 0
     TriggerName: 
+    Image: {fileID: 0}
   - Type: 4
     Text: 
     SoundEffect: {fileID: 0}
     Effect: 0
     TriggerName: 
+    Image: {fileID: 0}
