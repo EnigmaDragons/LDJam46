@@ -9,6 +9,7 @@ public class GameOverView : MonoBehaviour
     {
         nextDayButton.onClick.AddListener(() =>
         {
+            Debug.Log($"GameOverView - Clicked Proceed", gameObject);
             gameObject.SetActive(false);
             Message.Publish(new StartNextDay());
         });

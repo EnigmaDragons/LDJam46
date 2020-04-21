@@ -9,9 +9,24 @@ public class WorldSwapTransitionV3 : OnMessage<WorldSwapStarted>
 
     private void Awake() => anim.SetActive(false);
 
-    protected override void Execute(WorldSwapStarted msg) => StartCoroutine(Go());
+    protected override void Execute(WorldSwapStarted msg)
+    {
+        if (msg.Instantly)
+            StartCoroutine(Instantly());
+        else
+            StartCoroutine(WithAnim());
+    }
 
-    private IEnumerator Go()
+    private IEnumerator Instantly()
+    {
+        Debug.Log($"World Swap - Instant Ready For Swap");
+        Message.Publish(new ReadyForWorldSwapPeak());
+        yield return new WaitForSeconds(0.1f);
+        Message.Publish(new ReadyForWorldSwapFinished());
+        Debug.Log($"World Swap - Instant - Ready For Game");
+    }
+    
+    private IEnumerator WithAnim()
     {
         anim.SetActive(true);
         yield return new WaitForSeconds(midDuration);

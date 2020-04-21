@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class SwapWorldHandler : OnMessage<SwapWorld, ReadyForWorldSwapPeak, ReadyForWorldSwapFinished>
+public class SwapWorldHandler : OnMessage<SwapWorld, ReadyForWorldSwapPeak, ReadyForWorldSwapFinished, GotoWorldInstantly>
 {
     [SerializeField] private GameObject realWorld;
     [SerializeField] private GameObject mindWorld;
@@ -11,7 +11,7 @@ public class SwapWorldHandler : OnMessage<SwapWorld, ReadyForWorldSwapPeak, Read
     protected override void Execute(SwapWorld msg)
     {
         _newWorld = game.CurrentWorld == CurrentWorld.Mind ? CurrentWorld.Real : CurrentWorld.Mind;
-        Message.Publish(new WorldSwapStarted(_newWorld));
+        Message.Publish(new WorldSwapStarted(_newWorld, false));
     }
 
     protected override void Execute(ReadyForWorldSwapPeak msg)
@@ -22,6 +22,12 @@ public class SwapWorldHandler : OnMessage<SwapWorld, ReadyForWorldSwapPeak, Read
 
     protected override void Execute(ReadyForWorldSwapFinished msg)
         => NotifyFinished(_newWorld);
+
+    protected override void Execute(GotoWorldInstantly msg)
+    {
+        _newWorld = game.CurrentWorld == CurrentWorld.Mind ? CurrentWorld.Real : CurrentWorld.Mind;
+        Message.Publish(new WorldSwapStarted(_newWorld, true));
+    }
 
     private void Activate(CurrentWorld targetWorld)
     {
