@@ -333,5 +333,5 @@ MonoBehaviour:
     FloatVariable: {fileID: 0}
   fadeInDuration:
     UseConstant: 1
-    ConstantValue: 8
+    ConstantValue: 4.4
     FloatVariable: {fileID: 0}
