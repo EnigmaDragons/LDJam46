@@ -20,7 +20,21 @@ MonoBehaviour:
     Effect: 0
     TriggerName: 
     Image: {fileID: 0}
+  - Type: 5
+    Text: "I just can\u2019t concentrate on these notes. That group over there keep
+      looking over. Why? It\u2019s getting too much\u2026"
+    SoundEffect: {fileID: 0}
+    Effect: 0
+    TriggerName: 
+    Image: {fileID: 21300000, guid: 770b43ed12961ef4c9d4c3950ab8b8ba, type: 3}
   - Type: 0
+    Text: "I just can\u2019t concentrate on these notes. That group over there keep
+      looking over. Why? It\u2019s getting too much\u2026"
+    SoundEffect: {fileID: 0}
+    Effect: 0
+    TriggerName: 
+    Image: {fileID: 0}
+  - Type: 4
     Text: "I just can\u2019t concentrate on these notes. That group over there keep
       looking over. Why? It\u2019s getting too much\u2026"
     SoundEffect: {fileID: 0}
