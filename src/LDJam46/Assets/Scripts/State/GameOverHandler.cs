@@ -16,7 +16,7 @@ public class GameOverHandler : OnMessage<ReportGameOver>
                 x.NumPanicAttacks++;
             });
             activate.SetActive(true);
-            Message.Publish(new SwapWorld());
+            Message.Publish(new GotoWorldInstantly(CurrentWorld.Real));;
         }
     }
 }

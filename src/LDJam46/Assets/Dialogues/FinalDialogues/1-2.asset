@@ -13,6 +13,25 @@ MonoBehaviour:
   m_Name: 1-2
   m_EditorClassIdentifier: 
   Lines:
+  - Type: 0
+    Text: I hate it when that happens. I need to find a way to stop this from happening
+      so often.
+    SoundEffect: {fileID: 0}
+    Effect: 0
+    TriggerName: 
+    Image: {fileID: 0}
+  - Type: 0
+    Text: 'I can use my journal to keep track of how to deal with my anxiety. '
+    SoundEffect: {fileID: 0}
+    Effect: 0
+    TriggerName: 
+    Image: {fileID: 0}
+  - Type: 0
+    Text: I'll start by filling what i know about my pills and coffee
+    SoundEffect: {fileID: 0}
+    Effect: 0
+    TriggerName: 
+    Image: {fileID: 0}
   - Type: 4
     Text: 
     SoundEffect: {fileID: 0}
