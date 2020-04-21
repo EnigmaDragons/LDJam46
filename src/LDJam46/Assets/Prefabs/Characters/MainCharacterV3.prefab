@@ -101,12 +101,12 @@ PrefabInstance:
     - target: {fileID: 8525155298609227562, guid: c78fb178f72c5d34c8150fd81c9cdf2e,
         type: 3}
       propertyPath: m_Bounds.m_Center.x
-      value: -0.7748678
+      value: -0.77486753
       objectReference: {fileID: 0}
     - target: {fileID: 8525155298609227562, guid: c78fb178f72c5d34c8150fd81c9cdf2e,
         type: 3}
       propertyPath: m_Bounds.m_Center.y
-      value: 4.716409
+      value: 4.71641
       objectReference: {fileID: 0}
     - target: {fileID: 8525155298609227562, guid: c78fb178f72c5d34c8150fd81c9cdf2e,
         type: 3}

@@ -35,4 +35,9 @@ public class DemonState : ScriptableObject
         if (progressPercent <= 0)
             IsActive = false;
     }
+
+    public void Disable()
+    {
+        IsActive = false;
+    }
 }
