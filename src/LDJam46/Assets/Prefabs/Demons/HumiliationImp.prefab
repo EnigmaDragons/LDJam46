@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2324056045816534673}
   - component: {fileID: 996364293877036759}
+  - component: {fileID: 680859716859886496}
   m_Layer: 0
   m_Name: HumiliationImp
   m_TagString: Untagged
@@ -53,6 +54,19 @@ MonoBehaviour:
   collider: {fileID: 2262952170012464307}
   demonState: {fileID: 11400000, guid: 132b5da709a2a5644b7364fb9115976e, type: 2}
   percentPerSecond: 0.01
+--- !u!114 &680859716859886496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4801754749821732055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19d15246e1ca164d882778053367d8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  entry: 3
 --- !u!136 &2262952170012464307
 CapsuleCollider:
   m_ObjectHideFlags: 0
