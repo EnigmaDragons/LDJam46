@@ -55,7 +55,7 @@ public class Rigidbody3dMovement : MonoBehaviour {
 
     void FixedUpdate()
     {
-        if (!state.GameState.isInDialogue) {
+        if (!state.GameState.isInDialogue && !state.GameState.IsTransitioning) {
             if (Input.GetButton("Sprint"))
             {
                 if (_currentSprintTime > 0)

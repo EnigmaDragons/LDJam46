@@ -43,4 +43,5 @@ public sealed class GameState
     public bool HadPanicAttackToday { get; set; } = false;
     public int BlackoutsToday { get; set; } = 0;
     public List<Comfort> ComfortsConsumedLastBlackoutToday { get; set; } = new List<Comfort>();
+    public bool IsTransitioning;
 }
