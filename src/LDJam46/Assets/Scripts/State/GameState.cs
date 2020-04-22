@@ -14,6 +14,7 @@ public sealed class GameState
     public CurrentWorld CurrentWorld { get; set; } = CurrentWorld.Real;
     public List<Item> Items { get; set; } = new List<Item>();
     public List<JournalEntry> UnlockedJournalEntries = new List<JournalEntry>();
+    public List<DialogueKey> CompletedDialogueKeys = new List<DialogueKey>();
     public bool isInDialogue = false;
     public bool IsTransitioningDays = false;
     public int NumPanicAttacks { get; set; } = 0;
