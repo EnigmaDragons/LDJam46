@@ -17,6 +17,7 @@ public sealed class GameState
     public List<DialogueKey> CompletedDialogueKeys = new List<DialogueKey>();
     public bool isInDialogue = false;
     public bool IsTransitioningDays = false;
+    public bool IsShowingGameOverScreen = false;
     public int NumPanicAttacks { get; set; } = 0;
     
     private int _numBlackouts = 0;

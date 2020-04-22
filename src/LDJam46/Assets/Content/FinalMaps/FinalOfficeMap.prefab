@@ -122,8 +122,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7811146613290401183}
   - component: {fileID: 1805944678313826936}
-  - component: {fileID: 7727989020406450297}
   - component: {fileID: 1708347299962842757}
+  - component: {fileID: 4733923845183442996}
   m_Layer: 0
   m_Name: FinalOfficeMap
   m_TagString: Untagged
@@ -192,21 +192,6 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
---- !u!114 &7727989020406450297
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5869106214488537683}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6415ea6aa5187f147bd93300e623e6df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  music: {fileID: 8300000, guid: d09d9ed3dd03a404ea245bf5908049b8, type: 3}
-  musicPlayer: {fileID: 11400000, guid: bff4472ff6b738f4b94ef00c955e84f3, type: 2}
-  shouldLoop: 1
 --- !u!114 &1708347299962842757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -219,6 +204,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d58edd1b4e10af4d94073b5556d7ca8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4733923845183442996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5869106214488537683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dd76e9e323c60d40b7c2d198a320ef9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  music: {fileID: 8300000, guid: d09d9ed3dd03a404ea245bf5908049b8, type: 3}
+  musicPlayer: {fileID: 11400000, guid: bff4472ff6b738f4b94ef00c955e84f3, type: 2}
+  shouldLoop: 1
+  game: {fileID: 11400000, guid: 6bb654c6d14f44349977173df0bb252b, type: 2}
 --- !u!1 &6387303596498398175
 GameObject:
   m_ObjectHideFlags: 0
@@ -778,6 +779,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7811146613290401183}
     m_Modifications:
+    - target: {fileID: 1712930264004986925, guid: 6a4db6e59f0cdb24db64f7504c0d2fa2,
+        type: 3}
+      propertyPath: m_Bounds.m_Center.x
+      value: -0.5063069
+      objectReference: {fileID: 0}
+    - target: {fileID: 1712930264004986925, guid: 6a4db6e59f0cdb24db64f7504c0d2fa2,
+        type: 3}
+      propertyPath: m_Bounds.m_Center.y
+      value: 0.018004656
+      objectReference: {fileID: 0}
     - target: {fileID: 2344028334152647752, guid: 6a4db6e59f0cdb24db64f7504c0d2fa2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -837,6 +848,41 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: AllOfficeCoworkerGroups
+      objectReference: {fileID: 0}
+    - target: {fileID: 4499342511269265485, guid: 6a4db6e59f0cdb24db64f7504c0d2fa2,
+        type: 3}
+      propertyPath: m_Bounds.m_Center.x
+      value: 0.82494223
+      objectReference: {fileID: 0}
+    - target: {fileID: 4499342511269265485, guid: 6a4db6e59f0cdb24db64f7504c0d2fa2,
+        type: 3}
+      propertyPath: m_Bounds.m_Center.y
+      value: 4.9961734
+      objectReference: {fileID: 0}
+    - target: {fileID: 4499342511269265485, guid: 6a4db6e59f0cdb24db64f7504c0d2fa2,
+        type: 3}
+      propertyPath: m_Bounds.m_Extent.y
+      value: 3.5461745
+      objectReference: {fileID: 0}
+    - target: {fileID: 5928664096281896022, guid: 6a4db6e59f0cdb24db64f7504c0d2fa2,
+        type: 3}
+      propertyPath: m_Bounds.m_Center.x
+      value: -0.38945627
+      objectReference: {fileID: 0}
+    - target: {fileID: 5928664096281896022, guid: 6a4db6e59f0cdb24db64f7504c0d2fa2,
+        type: 3}
+      propertyPath: m_Bounds.m_Extent.x
+      value: 2.359457
+      objectReference: {fileID: 0}
+    - target: {fileID: 6290643446004434932, guid: 6a4db6e59f0cdb24db64f7504c0d2fa2,
+        type: 3}
+      propertyPath: m_Bounds.m_Center.x
+      value: 0.21195579
+      objectReference: {fileID: 0}
+    - target: {fileID: 6290643446004434932, guid: 6a4db6e59f0cdb24db64f7504c0d2fa2,
+        type: 3}
+      propertyPath: m_Bounds.m_Extent.y
+      value: 3.5457067
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a4db6e59f0cdb24db64f7504c0d2fa2, type: 3}

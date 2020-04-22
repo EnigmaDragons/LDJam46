@@ -171,6 +171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e901e077d4c6ec41930002fe380c5f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  game: {fileID: 11400000, guid: 6bb654c6d14f44349977173df0bb252b, type: 2}
   nextDayButton: {fileID: 3114740423436750201}
 --- !u!114 &8086514772742700510
 MonoBehaviour:

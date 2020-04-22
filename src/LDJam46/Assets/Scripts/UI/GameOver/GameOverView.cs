@@ -3,6 +3,7 @@ using UnityEngine.UI;
 
 public class GameOverView : MonoBehaviour
 {
+    [SerializeField] private CurrentGameState game;
     [SerializeField] private Button nextDayButton;
 
     private void Awake()
@@ -14,4 +15,7 @@ public class GameOverView : MonoBehaviour
             Message.Publish(new StartNextDay());
         });
     }
+
+    private void OnEnable() => game.UpdateState(g => g.IsShowingGameOverScreen = true);
+    private void OnDisable() => game.UpdateState(g => g.IsShowingGameOverScreen = false);
 }
