@@ -14,8 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Lines:
   - Type: 0
-    Text: "Quite a bit of time has passed since I last checked my emails. I better
-      go and see if I\u2019m needed for anything. "
+    Text: Quite a bit of time has passed since I last checked my emails
+    SoundEffect: {fileID: 0}
+    Effect: 0
+    TriggerName: 
+    Image: {fileID: 0}
+  - Type: 0
+    Text: "I better go and see if I\u2019m needed for anything. "
     SoundEffect: {fileID: 0}
     Effect: 0
     TriggerName: 

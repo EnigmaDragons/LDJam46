@@ -28,8 +28,14 @@ MonoBehaviour:
     TriggerName: 
     Image: {fileID: 21300000, guid: f072914b51fce904a9dbb01748171d69, type: 3}
   - Type: 0
-    Text: "I just can\u2019t concentrate on these notes. That group over there keep
-      looking over. Why? It\u2019s getting too much\u2026"
+    Text: "I just can\u2019t concentrate on these notes. "
+    SoundEffect: {fileID: 0}
+    Effect: 0
+    TriggerName: 
+    Image: {fileID: 0}
+  - Type: 0
+    Text: "That group over there keep looking over. Why? It\u2019s getting to be
+      too much!"
     SoundEffect: {fileID: 0}
     Effect: 0
     TriggerName: 
