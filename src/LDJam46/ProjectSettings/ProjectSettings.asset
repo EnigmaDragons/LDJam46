@@ -669,6 +669,7 @@ PlayerSettings:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
   cloudServicesEnabled:
+    Build: 1
     UNet: 1
   luminIcon:
     m_Name: 
@@ -682,10 +683,10 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  cloudProjectId: 
+  cloudProjectId: 0b98dd1e-4ed3-4921-889d-5f1c1b2a2d9e
   framebufferDepthMemorylessMode: 0
-  projectName: 
-  organizationId: 
+  projectName: Angst
+  organizationId: enigma-dragons
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
