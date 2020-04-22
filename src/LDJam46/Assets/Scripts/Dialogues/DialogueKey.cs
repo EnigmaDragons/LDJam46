@@ -1,4 +1,5 @@
 ﻿public enum DialogueKey
 {
-    FirstParanoiaEncounter
+    FirstParanoiaEncounter,
+    FirstHumiliationEncounter
 }

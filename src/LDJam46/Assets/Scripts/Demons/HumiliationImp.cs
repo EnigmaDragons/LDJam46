@@ -43,5 +43,6 @@ public class HumiliationImp : MonoBehaviour
             var currentSpeed = demonState.ProgressPercent >= 1 ? maxedOutSpeed : this.speed;
             transform.position += direction * (currentSpeed * Time.deltaTime);
         }
+        Message.Publish(new HumiliationImpDistance(Vector2.Distance(transform.position, player.PlayerCharacter.transform.position)));
     }
 }

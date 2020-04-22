@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 920556412980616661}
   - component: {fileID: 1563141587725127564}
+  - component: {fileID: 7021589804656372472}
   m_Layer: 0
   m_Name: Humiliation
   m_TagString: Untagged
@@ -49,4 +50,19 @@ MonoBehaviour:
   spawnPercentageBasedOnPercent: 0.3
   impPrefab: {fileID: 996364293877036759, guid: 90cf9766b908a794191e237ec92aa187,
     type: 3}
+  game: {fileID: 11400000, guid: 6bb654c6d14f44349977173df0bb252b, type: 2}
+--- !u!114 &7021589804656372472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6633200341999324936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b58e6092442702418fecb6562a16d81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  encounterDistance: 5
+  dialogue: {fileID: 11400000, guid: 941cb57fb3043734aa416cf0364ec05e, type: 2}
   game: {fileID: 11400000, guid: 6bb654c6d14f44349977173df0bb252b, type: 2}
