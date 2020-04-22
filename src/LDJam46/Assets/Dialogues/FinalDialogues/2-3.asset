@@ -13,6 +13,30 @@ MonoBehaviour:
   m_Name: 2-3
   m_EditorClassIdentifier: 
   Lines:
+  - Type: 0
+    Text: The work day is almost finished!
+    SoundEffect: {fileID: 0}
+    Effect: 0
+    TriggerName: 
+    Image: {fileID: 0}
+  - Type: 0
+    Text: 'Manager: Paulie, I need you to stay late and help troubleshoot.'
+    SoundEffect: {fileID: 0}
+    Effect: 0
+    TriggerName: 
+    Image: {fileID: 0}
+  - Type: 0
+    Text: 'Manager: We''re having a crazy outage, and no one can fix it.'
+    SoundEffect: {fileID: 0}
+    Effect: 0
+    TriggerName: 
+    Image: {fileID: 0}
+  - Type: 0
+    Text: Oh no! I had important dinner plans!
+    SoundEffect: {fileID: 0}
+    Effect: 0
+    TriggerName: 
+    Image: {fileID: 0}
   - Type: 4
     Text: 
     SoundEffect: {fileID: 0}

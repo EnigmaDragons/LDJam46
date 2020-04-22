@@ -332,9 +332,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 764141558722924278}
-  - component: {fileID: 5412417396980030055}
   m_Layer: 5
-  m_Name: DemonUI (1)
+  m_Name: ParanoiaBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -361,20 +360,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 52}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &5412417396980030055
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1658799658639015942}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4ee1432ef902c04abd89a8118723fc4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  demonState: {fileID: 11400000, guid: 0ef2d429b4140794cb62d30fc59555e5, type: 2}
-  slider: {fileID: 6826751165420967694}
 --- !u!1 &1780234657378400336
 GameObject:
   m_ObjectHideFlags: 0
@@ -805,9 +790,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6276438501115629332}
-  - component: {fileID: 417416037197569816}
   m_Layer: 5
-  m_Name: DemonUI
+  m_Name: StressBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -834,20 +818,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 52}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &417416037197569816
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2528485016075980754}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4ee1432ef902c04abd89a8118723fc4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  demonState: {fileID: 11400000, guid: fe415bd35e169db449f7404925ebbaf2, type: 2}
-  slider: {fileID: 4397138320360776184}
 --- !u!1 &3252647405651541227
 GameObject:
   m_ObjectHideFlags: 0
@@ -931,6 +901,9 @@ GameObject:
   m_Component:
   - component: {fileID: 405297611990891860}
   - component: {fileID: 9015398314454286168}
+  - component: {fileID: 4252848628755918482}
+  - component: {fileID: 4908724931046990536}
+  - component: {fileID: 2703747579575679557}
   m_Layer: 5
   m_Name: DemonsUI
   m_TagString: Untagged
@@ -985,6 +958,51 @@ MonoBehaviour:
   m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
+--- !u!114 &4252848628755918482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3963914563649489712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4ee1432ef902c04abd89a8118723fc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  demonState: {fileID: 11400000, guid: fe415bd35e169db449f7404925ebbaf2, type: 2}
+  slider: {fileID: 4397138320360776184}
+  target: {fileID: 2528485016075980754}
+--- !u!114 &4908724931046990536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3963914563649489712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4ee1432ef902c04abd89a8118723fc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  demonState: {fileID: 11400000, guid: 0ef2d429b4140794cb62d30fc59555e5, type: 2}
+  slider: {fileID: 6826751165420967694}
+  target: {fileID: 1658799658639015942}
+--- !u!114 &2703747579575679557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3963914563649489712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4ee1432ef902c04abd89a8118723fc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  demonState: {fileID: 11400000, guid: 132b5da709a2a5644b7364fb9115976e, type: 2}
+  slider: {fileID: 8652843636046688264}
+  target: {fileID: 8654424130474920460}
 --- !u!1 &4074600164243584902
 GameObject:
   m_ObjectHideFlags: 0
@@ -1749,7 +1767,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2767113817182060231}
-  - component: {fileID: 3712708225198869155}
   m_Layer: 5
   m_Name: DemonUI (2)
   m_TagString: Untagged
@@ -1778,20 +1795,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 52}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &3712708225198869155
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8654424130474920460}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4ee1432ef902c04abd89a8118723fc4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  demonState: {fileID: 11400000, guid: 132b5da709a2a5644b7364fb9115976e, type: 2}
-  slider: {fileID: 8652843636046688264}
 --- !u!1 &8672695164320967978
 GameObject:
   m_ObjectHideFlags: 0
