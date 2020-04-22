@@ -30,7 +30,7 @@ RectTransform:
   m_GameObject: {fileID: 8635645975467957782}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 13.237189, y: 13.237189, z: 1}
+  m_LocalScale: {x: 13.456, y: 13.456, z: 1}
   m_Children: []
   m_Father: {fileID: 8635645975715909787}
   m_RootOrder: 0
@@ -94,6 +94,7 @@ MonoBehaviour:
   closeSpeed: 0.01
   state: {fileID: 11400000, guid: fe415bd35e169db449f7404925ebbaf2, type: 2}
   voices: {fileID: 2623819325571256096}
+  game: {fileID: 11400000, guid: 6bb654c6d14f44349977173df0bb252b, type: 2}
 --- !u!82 &2623819325571256096
 AudioSource:
   m_ObjectHideFlags: 0

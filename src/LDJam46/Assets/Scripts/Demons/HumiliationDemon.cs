@@ -11,6 +11,7 @@ public class HumiliationDemon : MonoBehaviour
     [SerializeField] private float startingSpawnPercentage;
     [SerializeField] private float spawnPercentageBasedOnPercent;
     [SerializeField] private HumiliationImp impPrefab;
+    [SerializeField] private CurrentGameState game;
 
     private Dictionary<Transform, HumiliationImp> _imps = new Dictionary<Transform, HumiliationImp>();
 
@@ -27,7 +28,7 @@ public class HumiliationDemon : MonoBehaviour
 
     private void Update()
     {
-        if (!demonState.IsActive)
+        if (!demonState.IsActive || game.GameState.isInDialogue)
             return;
         var spawnPercent = demonState.ProgressPercent >= 1
             ? spawnPoints.Length

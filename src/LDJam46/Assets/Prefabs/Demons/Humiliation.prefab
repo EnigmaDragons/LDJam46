@@ -49,3 +49,4 @@ MonoBehaviour:
   spawnPercentageBasedOnPercent: 0.3
   impPrefab: {fileID: 996364293877036759, guid: 90cf9766b908a794191e237ec92aa187,
     type: 3}
+  game: {fileID: 11400000, guid: 6bb654c6d14f44349977173df0bb252b, type: 2}

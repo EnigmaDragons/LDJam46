@@ -11,11 +11,15 @@ public class PressureCloseIn : MonoBehaviour
     [SerializeField] private float closeSpeed = 0.5f;
     [SerializeField] private DemonState state;
     [SerializeField] private AudioSource voices;
+    [SerializeField] private CurrentGameState game;
 
     private void OnEnable() => state.Activate();
     
     private void Update()
     {
+        if (game.GameState.isInDialogue)
+            return;
+        
         state.Increment(closeSpeed * Time.deltaTime);
         var amount = Mathf.Lerp(fullyOpenScale, fullyClosedScale, state.ProgressPercent);
         image.rectTransform.localScale = new Vector3(amount, amount, 1);

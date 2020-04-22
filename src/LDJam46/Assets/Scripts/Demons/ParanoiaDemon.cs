@@ -18,7 +18,8 @@ public class ParanoiaDemon : MonoBehaviour
     [SerializeField] private float minSpeed = 2.5f;
     [SerializeField] private Transform[] spawnPoints;
     [SerializeField] private SpriteRenderer image;
-
+    [SerializeField] private CurrentGameState game;
+    
     private void Awake()
     {
         Message.Subscribe<ActivateDemon>(x =>
@@ -42,6 +43,8 @@ public class ParanoiaDemon : MonoBehaviour
     {
         if (demonState.IsActive == false)
             gameObject.SetActive(false);
+        if (game.GameState.isInDialogue)
+            return;
         if (IsPlayerLooking())
         {
             image.color = new Color(1, 1, 1, Math.Max(0, image.color.a - Time.deltaTime / fadeSeconds));
