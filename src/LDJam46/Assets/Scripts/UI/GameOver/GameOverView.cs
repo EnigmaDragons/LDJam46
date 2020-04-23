@@ -6,14 +6,13 @@ public class GameOverView : MonoBehaviour
     [SerializeField] private CurrentGameState game;
     [SerializeField] private Button nextDayButton;
 
-    private void Awake()
+    private void Awake() => nextDayButton.onClick.AddListener(GoToNextDay);
+
+    public void GoToNextDay()
     {
-        nextDayButton.onClick.AddListener(() =>
-        {
-            Debug.Log($"GameOverView - Clicked Proceed", gameObject);
-            gameObject.SetActive(false);
-            Message.Publish(new StartNextDay());
-        });
+        Debug.Log($"GameOverView - User Confirmed Go To Next Day", gameObject);
+        gameObject.SetActive(false);
+        Message.Publish(new StartNextDay());
     }
 
     private void OnEnable() => game.UpdateState(g => g.IsShowingGameOverScreen = true);
