@@ -27,6 +27,7 @@ public class JournalView : OnMessage<ShowJournal>
     public void Show()
     {
         journalView.SetActive(true);
+        Message.Publish(new JournalShowed());
     }
 
     public void Hide()
