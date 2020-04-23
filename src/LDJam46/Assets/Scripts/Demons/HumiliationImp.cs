@@ -14,11 +14,14 @@ public class HumiliationImp : MonoBehaviour
 
     [SerializeField] private DemonState demonState;
     [SerializeField] private float percentPerSecond;
+    [SerializeField] private CurrentGameState game;
 
     public bool IsDying { get; set; }
 
     private void Update()
     {
+        if (game.GameState.isInDialogue)
+            return;
         if (IsDying)
         {
             collider.enabled = false;
