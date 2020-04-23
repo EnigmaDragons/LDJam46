@@ -22,7 +22,10 @@ public class MindMapSetup3 : MonoBehaviour
 
         foreach (Transform child in mapParent.transform)
             Destroy(child.gameObject);
-        var map = Instantiate(maps.Random(), mapParent.transform);
+
+        var dayIndex = gameState.GameState.DayNumber - 1;
+        var mapForDay = dayIndex < maps.Length ? maps[dayIndex] : maps[maps.Length - 1];
+        var map = Instantiate(mapForDay, mapParent.transform);
         
         Debug.Log($"Number of Possible Character Start Locations {map.CharacterSpawningPoints.Length}");
         Message.Publish(new MapGenerated(map.CharacterSpawningPoints.Any() ? map.CharacterSpawningPoints.Random().position : defaultSpawn));
