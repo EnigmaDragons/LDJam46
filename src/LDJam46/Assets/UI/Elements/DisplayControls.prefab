@@ -314,6 +314,7 @@ GameObject:
   - component: {fileID: 1195119234873069168}
   - component: {fileID: 7472229487570882698}
   - component: {fileID: 4275253858172517701}
+  - component: {fileID: 6001808151342080330}
   m_Layer: 5
   m_Name: DisplayControls
   m_TagString: Untagged
@@ -390,6 +391,19 @@ MonoBehaviour:
   dropdownMenu: {fileID: 0}
   minScreenWidth: 800
   screenRatio: {x: 16, y: 9}
+--- !u!114 &6001808151342080330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6273048607803627293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e70af77ff4ceab4790f562d41ac1232, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 6273048607803627293}
 --- !u!1 &6346948886601294047
 GameObject:
   m_ObjectHideFlags: 0
