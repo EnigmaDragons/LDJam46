@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Lines:
   - Type: 0
-    Text: I know I can go it this time.
+    Text: I know I can do it this time.
     SoundEffect: {fileID: 0}
     Effect: 0
     TriggerName: 
