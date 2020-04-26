@@ -1,25 +1,31 @@
-﻿
-using UnityEngine;
+﻿using UnityEngine;
 
-public class OfficeTimeSpawnRule : OnMessage<GameStateChanged>
+public class OfficeTimeSpawnRule : OnMessage<GameStateChanged, WorldSwapPeaked>
 {
     [SerializeField] private int DayNumber;
     [SerializeField] private int NumDayBlackouts;
     [SerializeField] private GameObject target;
+    [SerializeField] private bool IsFinalContent;
 
-    private void Awake()
-    {
-        target.SetActive(false);
-    }
+    private GameState currentState;
+    
+    private void Awake() => target.SetActive(false);
 
     protected override void Execute(GameStateChanged msg)
     {
-        Process(msg);
+        currentState = msg.State;
+        Process();
     }
 
-    private void Process(GameStateChanged msg)
+    protected override void Execute(WorldSwapPeaked msg) => Process();
+
+    private void Process()
     {
-        Debug.Log($"Day {msg.State.DayNumber} - Blackouts {msg.State.BlackoutsToday}");
-        target.SetActive(msg.State.DayNumber == DayNumber && msg.State.BlackoutsToday == NumDayBlackouts);
+        var day = currentState.DayNumber;
+        var numBlackouts = currentState.BlackoutsToday;
+        if (IsFinalContent)
+            target.SetActive(day > DayNumber || day == DayNumber && numBlackouts >= NumDayBlackouts);
+        else
+            target.SetActive(day == DayNumber && numBlackouts == NumDayBlackouts);
     }
 }
