@@ -275,6 +275,21 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5363658237668756730, guid: 79260ee276120004d8b3bf765812b5a1,
+        type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.1981132
+      objectReference: {fileID: 0}
+    - target: {fileID: 5363658237668756730, guid: 79260ee276120004d8b3bf765812b5a1,
+        type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.1981132
+      objectReference: {fileID: 0}
+    - target: {fileID: 5363658237668756730, guid: 79260ee276120004d8b3bf765812b5a1,
+        type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.1981132
+      objectReference: {fileID: 0}
     - target: {fileID: 6056071312093150119, guid: 79260ee276120004d8b3bf765812b5a1,
         type: 3}
       propertyPath: m_LocalPosition.x
