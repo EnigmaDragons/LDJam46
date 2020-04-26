@@ -19,7 +19,7 @@ public class OfficeTimeSpawnRule : OnMessage<GameStateChanged>
 
     private void Process(GameStateChanged msg)
     {
-        //Debug.Log($"Day {msg.State.DayNumber} - Blackouts {msg.State.BlackoutsToday}");
+        Debug.Log($"Day {msg.State.DayNumber} - Blackouts {msg.State.BlackoutsToday}");
         target.SetActive(msg.State.DayNumber == DayNumber && msg.State.BlackoutsToday == NumDayBlackouts);
     }
 }
