@@ -10,48 +10,30 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c5c7a4a9e5e821e4d8c01ebf9cb5f11c, type: 3}
-  m_Name: 1-3
+  m_Name: 1-3-AwakeAtDesk
   m_EditorClassIdentifier: 
   Lines:
   - Type: 0
-    Text: Quite a bit of time has passed since I last checked my emails
+    Text: 'Everyone in here seems so off with me today. '
     SoundEffect: {fileID: 0}
     Effect: 0
     TriggerName: 
     Image: {fileID: 0}
   - Type: 0
-    Text: "I better go and see if I\u2019m needed for anything. "
-    SoundEffect: {fileID: 0}
-    Effect: 0
-    TriggerName: 
-    Image: {fileID: 0}
-  - Type: 5
-    Text: 
-    SoundEffect: {fileID: 0}
-    Effect: 0
-    TriggerName: 
-    Image: {fileID: 21300000, guid: 2f2950964f92f1f4e98ca9a0acf0a7cf, type: 3}
-  - Type: 0
-    Text: Ah how sweet! Let me check my diary...
+    Text: "Maybe they didn\u2019t like my comments in yesterday\u2019s meeting? "
     SoundEffect: {fileID: 0}
     Effect: 0
     TriggerName: 
     Image: {fileID: 0}
   - Type: 0
-    Text: "Oh god I can\u2019t! I have so much work to do and I can see my manager
-      watching me. "
+    Text: "Maybe I didn\u2019t speak enough? "
     SoundEffect: {fileID: 0}
     Effect: 0
     TriggerName: 
     Image: {fileID: 0}
   - Type: 0
-    Text: I have so much to do and no time left for me!
-    SoundEffect: {fileID: 0}
-    Effect: 0
-    TriggerName: 
-    Image: {fileID: 0}
-  - Type: 4
-    Text: 
+    Text: That reminds me, I need to look at the meeting notes that I think I left
+      by the bean bags.
     SoundEffect: {fileID: 0}
     Effect: 0
     TriggerName: 
