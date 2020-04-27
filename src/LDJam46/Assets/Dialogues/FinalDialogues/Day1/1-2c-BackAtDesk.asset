@@ -10,22 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c5c7a4a9e5e821e4d8c01ebf9cb5f11c, type: 3}
-  m_Name: 1-3-BeanbagNotes
+  m_Name: 1-2c-BackAtDesk
   m_EditorClassIdentifier: 
   Lines:
   - Type: 0
-    Text: Ergh! I can't find them!
+    Text: Ah, what is this on my desk?
     SoundEffect: {fileID: 0}
     Effect: 0
     TriggerName: 
     Image: {fileID: 0}
-  - Type: 0
-    Text: I just can't concentrate, there is so much going on at the moment. It's
-      just a blur.
+  - Type: 5
+    Text: 
     SoundEffect: {fileID: 0}
     Effect: 0
     TriggerName: 
-    Image: {fileID: 0}
+    Image: {fileID: 21300000, guid: 035e844aceedb7c4bb0f460903c3f43f, type: 3}
   - Type: 4
     Text: 
     SoundEffect: {fileID: 0}
