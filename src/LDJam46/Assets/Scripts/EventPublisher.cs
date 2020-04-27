@@ -23,4 +23,5 @@ public class EventPublisher : ScriptableObject
     public void HumiliationGameOver() => Message.Publish(new ReportGameOver(DemonName.Humiliation));
     public void StartNextDay() => Message.Publish(new StartNextDay());
     public void TestThought() => Message.Publish(new ShowThought("I am thinking a thought."));
+    public void ShowJournal() => Message.Publish(new ShowJournal());
 }

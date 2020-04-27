@@ -335,3 +335,7 @@ MonoBehaviour:
     UseConstant: 1
     ConstantValue: 4.4
     FloatVariable: {fileID: 0}
+  sound:
+    Clip: {fileID: 8300000, guid: df8c4091eb89b6f4babcb44c3b43a60d, type: 3}
+    Volume: 1
+  soundPlayer: {fileID: 11400000, guid: bfe56e3518f684c4387de97bd5db348d, type: 2}

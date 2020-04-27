@@ -6,6 +6,8 @@ public class WorldSwapTransitionV3 : OnMessage<WorldSwapStarted>
     [SerializeField] private GameObject anim;
     [SerializeField] private FloatReference midDuration;
     [SerializeField] private FloatReference fadeInDuration;
+    [SerializeField] private AudioClipWithVolume sound;
+    [SerializeField] private UiSfxPlayer soundPlayer;
 
     private void Awake() => anim.SetActive(false);
 
@@ -14,7 +16,7 @@ public class WorldSwapTransitionV3 : OnMessage<WorldSwapStarted>
         if (msg.Instantly)
             StartCoroutine(Instantly());
         else
-            StartCoroutine(WithAnim());
+            StartCoroutine(WithAnim(msg.NewWorld));
     }
 
     private IEnumerator Instantly()
@@ -26,8 +28,10 @@ public class WorldSwapTransitionV3 : OnMessage<WorldSwapStarted>
         Debug.Log($"World Swap - Instant - Ready For Game");
     }
     
-    private IEnumerator WithAnim()
+    private IEnumerator WithAnim(CurrentWorld targetWorld)
     {
+        if (targetWorld == CurrentWorld.Mind)
+            soundPlayer.Play(sound.Clip, sound.Volume);
         anim.SetActive(true);
         yield return new WaitForSeconds(midDuration);
         Debug.Log($"World Swap - Ready For Swap");

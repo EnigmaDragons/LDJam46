@@ -86,11 +86,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: JournalView
       objectReference: {fileID: 0}
-    - target: {fileID: 6946018501814735078, guid: f4fa45929947ae047bdf7f17b29c2ee9,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6946018501814735082, guid: f4fa45929947ae047bdf7f17b29c2ee9,
         type: 3}
       propertyPath: m_LocalPosition.x

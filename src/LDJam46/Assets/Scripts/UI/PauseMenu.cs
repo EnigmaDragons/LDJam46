@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 
 
-public class PauseMenu : MonoBehaviour
+public class PauseMenu : OnMessage<JournalShowed>
 {
 	[SerializeField] private GameObject overlay;
 	[SerializeField] private GameObject optionsPanel;
@@ -84,4 +84,6 @@ public class PauseMenu : MonoBehaviour
     {
 		_enablePausing = enable;
     }
+
+    protected override void Execute(JournalShowed msg) => Resume();
 }

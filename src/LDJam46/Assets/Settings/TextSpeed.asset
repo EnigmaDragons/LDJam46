@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: TextSpeed
   m_EditorClassIdentifier: 
   DeveloperDescription: Smaller is faster
-  Value: 0.045
+  Value: 0.06
