@@ -1,19 +1,24 @@
-using UnityEngine;
+using UnityEngine; 
 
-public class OfficeLight : MonoBehaviour
+public class OfficeDayCycle : OnMessage<WorldSwapPeaked>
 {
-	Light light2d;
-	Color color1 = Color.red;
-	Color color2 = Color.blue;
-	Color color3 = Color.green;
+	[SerializeField] private CurrentGameState game;
+	[SerializeField] private GameObject morningLight;
+	[SerializeField] private GameObject afternoonLight;
+	[SerializeField] private GameObject eveningLight;
 
-	void Start()
+	private void Awake()
 	{
-		light2d = GetComponent<Light>();
+		afternoonLight.SetActive(false);
+		eveningLight.SetActive(false);
+		morningLight.SetActive(true);
 	}
 
-	void Update()
+	protected override void Execute(WorldSwapPeaked msg)
 	{
-		light2d.color = color1;
+		var numBlackouts = game.GameState.BlackoutsToday;
+		morningLight.SetActive(numBlackouts == 0);
+		afternoonLight.SetActive(numBlackouts == 1);
+		eveningLight.SetActive(numBlackouts > 1);
 	}
 }
