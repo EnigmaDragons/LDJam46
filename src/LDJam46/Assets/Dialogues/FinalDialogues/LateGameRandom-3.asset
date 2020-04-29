@@ -12,4 +12,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5c7a4a9e5e821e4d8c01ebf9cb5f11c, type: 3}
   m_Name: LateGameRandom-3
   m_EditorClassIdentifier: 
-  Lines: []
+  Lines:
+  - Type: 0
+    Text: These past days have been tough.
+    SoundEffect: {fileID: 0}
+    Effect: 0
+    TriggerName: 
+    Image: {fileID: 0}
+  - Type: 0
+    Text: ' If I can just make it through one whole work day, I''ll be in control
+      of my emotions again.'
+    SoundEffect: {fileID: 0}
+    Effect: 0
+    TriggerName: 
+    Image: {fileID: 0}
+  - Type: 4
+    Text: 
+    SoundEffect: {fileID: 0}
+    Effect: 0
+    TriggerName: 
+    Image: {fileID: 0}

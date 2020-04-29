@@ -12,4 +12,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5c7a4a9e5e821e4d8c01ebf9cb5f11c, type: 3}
   m_Name: LateGameRandom-5
   m_EditorClassIdentifier: 
-  Lines: []
+  Lines:
+  - Type: 0
+    Text: ' My demons are tough. '
+    SoundEffect: {fileID: 0}
+    Effect: 0
+    TriggerName: 
+    Image: {fileID: 0}
+  - Type: 0
+    Text: ' But I can be tougher.'
+    SoundEffect: {fileID: 0}
+    Effect: 0
+    TriggerName: 
+    Image: {fileID: 0}
+  - Type: 0
+    Text: ' This is the day I will keep calm and find my way.'
+    SoundEffect: {fileID: 0}
+    Effect: 0
+    TriggerName: 
+    Image: {fileID: 0}
+  - Type: 4
+    Text: 
+    SoundEffect: {fileID: 0}
+    Effect: 0
+    TriggerName: 
+    Image: {fileID: 0}
