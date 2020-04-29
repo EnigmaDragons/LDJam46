@@ -75,9 +75,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   standardThoughts:
   - I need to get out
-  - " There\u2019s just too much going on"
+  - "There\u2019s just too much going on"
   - My headspace is so full
-  - "I can\u2019t escape"
+  - "I fell like I can\u2019t escape"
+  - Come on, Pauline! Get it together!
+  - How can I get out of here?
+  - My doctor told me I can manage my stress
+  - I wish work wasn't so crazy
+  - Am I going the right way?
+  - I feel like I'm not in control of my thoughts
+  - People expect so much from me
+  - There must be a way to deal with my demons
   maxTime:
     UseConstant: 0
     ConstantValue: 22
