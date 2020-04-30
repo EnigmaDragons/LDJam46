@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: MaxTimeBetweenThoughts
   m_EditorClassIdentifier: 
   DeveloperDescription: Max Number of Seconds Between Thoughts
-  Value: 22
+  Value: 50

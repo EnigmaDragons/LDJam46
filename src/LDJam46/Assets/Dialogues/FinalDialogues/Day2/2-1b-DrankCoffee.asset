@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5c7a4a9e5e821e4d8c01ebf9cb5f11c, type: 3}
+  m_Name: 2-1b-DrankCoffee
+  m_EditorClassIdentifier: 
+  Lines:
+  - Type: 1
+    Text: 
+    SoundEffect: {fileID: 8300000, guid: 6351975687510ca4aa3cb6d3d3ad3081, type: 3}
+    Effect: 0
+    TriggerName: 
+    Image: {fileID: 0}
+  - Type: 0
+    Text: Mmmmmm.... Hazelnut mocha, my favorite!
+    SoundEffect: {fileID: 0}
+    Effect: 0
+    TriggerName: 
+    Image: {fileID: 0}
+  - Type: 1
+    Text: 
+    SoundEffect: {fileID: 8300000, guid: 6351975687510ca4aa3cb6d3d3ad3081, type: 3}
+    Effect: 0
+    TriggerName: 
+    Image: {fileID: 0}
+  - Type: 0
+    Text: Time to get started on work! Off to my desk I go.
+    SoundEffect: {fileID: 0}
+    Effect: 0
+    TriggerName: 
+    Image: {fileID: 0}
+  - Type: 3
+    Text: Time to get started on work! Off to my desk I go.
+    SoundEffect: {fileID: 0}
+    Effect: 0
+    TriggerName: Desk
+    Image: {fileID: 0}

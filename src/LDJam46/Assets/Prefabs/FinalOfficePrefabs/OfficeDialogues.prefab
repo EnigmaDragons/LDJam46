@@ -47,6 +47,9 @@ MonoBehaviour:
   randomDefaultDialogues:
   - {fileID: 11400000, guid: 7e7a9c60027e43b4b9a1c599a27e9822, type: 2}
   - {fileID: 11400000, guid: 1c9d2dcecb2870e4b999b57cfcf878ba, type: 2}
+  - {fileID: 11400000, guid: e35810f81ab077e42b01099ef7ecf9e7, type: 2}
+  - {fileID: 11400000, guid: d55eedc0da6b8474f8b61b13e3271238, type: 2}
+  - {fileID: 11400000, guid: 6ffcd85106c64454681837ef696f39cb, type: 2}
   dialogues:
   - Dialogue: {fileID: 11400000, guid: 964aaeed23c01ba4daabdf8759b5cc82, type: 2}
     Day: 1
@@ -72,6 +75,6 @@ MonoBehaviour:
   - Dialogue: {fileID: 11400000, guid: 8735a3a7dfd02a14682eaff776d4cca8, type: 2}
     Day: 3
     DayBlackoutNumber: 2
-  - Dialogue: {fileID: 11400000, guid: 2b96e17585fc5e74e895189fdc3f6ebf, type: 2}
+  - Dialogue: {fileID: 11400000, guid: 7d1452cddd1368b4faf8ce1d7b7c23b1, type: 2}
     Day: 3
     DayBlackoutNumber: 3

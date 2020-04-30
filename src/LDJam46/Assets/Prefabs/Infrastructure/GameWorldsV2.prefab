@@ -81,6 +81,56 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4996649465758117412, guid: 748ad6d8a057f2449977f737dc10bc54,
+        type: 3}
+      propertyPath: standardThoughts.Array.data[1]
+      value: " There\u2019s just too much going on"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4996649465758117412, guid: 748ad6d8a057f2449977f737dc10bc54,
+        type: 3}
+      propertyPath: standardThoughts.Array.data[3]
+      value: "I can\u2019t escape"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4996649465758117412, guid: 748ad6d8a057f2449977f737dc10bc54,
+        type: 3}
+      propertyPath: standardThoughts.Array.data[4]
+      value: "I can\u2019t escape"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4996649465758117412, guid: 748ad6d8a057f2449977f737dc10bc54,
+        type: 3}
+      propertyPath: standardThoughts.Array.data[5]
+      value: "I can\u2019t escape"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4996649465758117412, guid: 748ad6d8a057f2449977f737dc10bc54,
+        type: 3}
+      propertyPath: standardThoughts.Array.data[6]
+      value: "I can\u2019t escape"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4996649465758117412, guid: 748ad6d8a057f2449977f737dc10bc54,
+        type: 3}
+      propertyPath: standardThoughts.Array.data[7]
+      value: "I can\u2019t escape"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4996649465758117412, guid: 748ad6d8a057f2449977f737dc10bc54,
+        type: 3}
+      propertyPath: standardThoughts.Array.data[8]
+      value: "I can\u2019t escape"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4996649465758117412, guid: 748ad6d8a057f2449977f737dc10bc54,
+        type: 3}
+      propertyPath: standardThoughts.Array.data[9]
+      value: "I can\u2019t escape"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4996649465758117412, guid: 748ad6d8a057f2449977f737dc10bc54,
+        type: 3}
+      propertyPath: standardThoughts.Array.data[10]
+      value: "I can\u2019t escape"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4996649465758117412, guid: 748ad6d8a057f2449977f737dc10bc54,
+        type: 3}
+      propertyPath: standardThoughts.Array.data[11]
+      value: "I can\u2019t escape"
+      objectReference: {fileID: 0}
     - target: {fileID: 8303751209135254113, guid: 748ad6d8a057f2449977f737dc10bc54,
         type: 3}
       propertyPath: m_LocalPosition.x
