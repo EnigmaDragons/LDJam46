@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c5c7a4a9e5e821e4d8c01ebf9cb5f11c, type: 3}
-  m_Name: 2-3
+  m_Name: 2-3-AwakeAtDesk
   m_EditorClassIdentifier: 
   Lines:
   - Type: 0
@@ -20,25 +20,7 @@ MonoBehaviour:
     TriggerName: 
     Image: {fileID: 0}
   - Type: 0
-    Text: 'Manager: Paulie, I need you to stay late and help troubleshoot.'
-    SoundEffect: {fileID: 0}
-    Effect: 0
-    TriggerName: 
-    Image: {fileID: 0}
-  - Type: 0
-    Text: 'Manager: We''re having a crazy outage, and no one can fix it.'
-    SoundEffect: {fileID: 0}
-    Effect: 0
-    TriggerName: 
-    Image: {fileID: 0}
-  - Type: 0
-    Text: Oh no! I had important dinner plans!
-    SoundEffect: {fileID: 0}
-    Effect: 0
-    TriggerName: 
-    Image: {fileID: 0}
-  - Type: 4
-    Text: 
+    Text: It's time for me to grab a drink of water and then head home.
     SoundEffect: {fileID: 0}
     Effect: 0
     TriggerName: 
