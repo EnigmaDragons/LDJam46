@@ -18,6 +18,8 @@ MonoBehaviour:
     Demon: 0
   - Percentage: 0.25
     Demon: 1
+  - Percentage: 0.75
+    Demon: 2
   JournalEntry: 7
   Penalties:
   - Demon: 1

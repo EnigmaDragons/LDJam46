@@ -22,3 +22,5 @@ MonoBehaviour:
       Demon: 0
     - Percentage: 1
       Demon: 1
+    - Percentage: 1
+      Demon: 2

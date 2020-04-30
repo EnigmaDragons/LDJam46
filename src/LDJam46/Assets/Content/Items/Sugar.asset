@@ -20,3 +20,5 @@ MonoBehaviour:
     PerDemon:
     - Percentage: 0.5
       Demon: 0
+    - Percentage: 0.5
+      Demon: 2
