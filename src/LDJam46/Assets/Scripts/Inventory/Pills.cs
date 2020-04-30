@@ -10,8 +10,14 @@ public class Pills : MonoBehaviour
     {
         if (Input.GetButtonDown("Pills") && gameState.GameState.Items.Contains(pillsItem))
         {
-            Message.Publish(new UseItem(pillsItem));
-            Message.Publish(new ComfortConsumed(pillsComfort));
+            if (gameState.CurrentWorld == CurrentWorld.Real)
+            {
+            }
+            else
+            {
+                Message.Publish(new UseItem(pillsItem));
+                Message.Publish(new ComfortConsumed(pillsComfort));
+            }
         }
     }
 }

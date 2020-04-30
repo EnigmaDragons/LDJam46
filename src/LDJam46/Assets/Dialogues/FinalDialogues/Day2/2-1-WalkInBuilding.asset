@@ -10,36 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c5c7a4a9e5e821e4d8c01ebf9cb5f11c, type: 3}
-  m_Name: 2-3
+  m_Name: 2-1-WalkInBuilding
   m_EditorClassIdentifier: 
   Lines:
   - Type: 0
-    Text: The work day is almost finished!
+    Text: Yesterday was rough! That was quite the panic attack.
     SoundEffect: {fileID: 0}
     Effect: 0
     TriggerName: 
     Image: {fileID: 0}
   - Type: 0
-    Text: 'Manager: Paulie, I need you to stay late and help troubleshoot.'
+    Text: It's a new day. Maybe today will be better than yesterday.
     SoundEffect: {fileID: 0}
     Effect: 0
     TriggerName: 
     Image: {fileID: 0}
   - Type: 0
-    Text: 'Manager: We''re having a crazy outage, and no one can fix it.'
+    Text: Let me grab a coffee before I get started on everything.
     SoundEffect: {fileID: 0}
     Effect: 0
     TriggerName: 
-    Image: {fileID: 0}
-  - Type: 0
-    Text: Oh no! I had important dinner plans!
-    SoundEffect: {fileID: 0}
-    Effect: 0
-    TriggerName: 
-    Image: {fileID: 0}
-  - Type: 4
-    Text: 
-    SoundEffect: {fileID: 0}
-    Effect: 0
-    TriggerName: 
-    Image: {fileID: 0}
+    Image: {fileID: 21300000, guid: 60bc0aa229ebf9f48becc09dfdc9fe06, type: 3}

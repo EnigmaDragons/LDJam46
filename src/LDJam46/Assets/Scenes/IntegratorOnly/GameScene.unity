@@ -732,6 +732,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8720065444799270088, guid: 91a4ebe79b1ebf0499cf704c34110a51,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 9055639211831307908, guid: 91a4ebe79b1ebf0499cf704c34110a51,
         type: 3}
       propertyPath: m_AnchorMin.y

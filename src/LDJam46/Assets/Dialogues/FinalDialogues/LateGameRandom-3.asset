@@ -10,31 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c5c7a4a9e5e821e4d8c01ebf9cb5f11c, type: 3}
-  m_Name: MorningCoffee
+  m_Name: LateGameRandom-3
   m_EditorClassIdentifier: 
   Lines:
-  - Type: 1
-    Text: 
-    SoundEffect: {fileID: 8300000, guid: 6351975687510ca4aa3cb6d3d3ad3081, type: 3}
+  - Type: 0
+    Text: These past days have been tough.
+    SoundEffect: {fileID: 0}
     Effect: 0
     TriggerName: 
     Image: {fileID: 0}
   - Type: 0
-    Text: 'Hmmm, that''s better. I needed that. '
+    Text: ' If I can just make it through one whole work day, I''ll be in control
+      of my emotions again.'
     SoundEffect: {fileID: 0}
     Effect: 0
-    TriggerName: Desk
+    TriggerName: 
     Image: {fileID: 0}
-  - Type: 0
-    Text: I should probably get back to my desk, this next meeting is going to be
-      tricky.
-    SoundEffect: {fileID: 0}
-    Effect: 0
-    TriggerName: Desk
-    Image: {fileID: 0}
-  - Type: 3
+  - Type: 4
     Text: 
-    SoundEffect: {fileID: 8300000, guid: 38b98b2b6991dc740ad935909c9efb9c, type: 3}
+    SoundEffect: {fileID: 0}
     Effect: 0
-    TriggerName: Desk
+    TriggerName: 
     Image: {fileID: 0}

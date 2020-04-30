@@ -265,6 +265,16 @@ PrefabInstance:
       propertyPath: m_Bounds.m_Extent.x
       value: 2.6602914
       objectReference: {fileID: 0}
+    - target: {fileID: 3696761512303492726, guid: 79260ee276120004d8b3bf765812b5a1,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -146403711
+      objectReference: {fileID: 0}
+    - target: {fileID: 3696761512303492726, guid: 79260ee276120004d8b3bf765812b5a1,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 3733378787444964685, guid: 79260ee276120004d8b3bf765812b5a1,
         type: 3}
       propertyPath: m_Name
@@ -274,6 +284,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5363658237668756730, guid: 79260ee276120004d8b3bf765812b5a1,
+        type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.1981132
+      objectReference: {fileID: 0}
+    - target: {fileID: 5363658237668756730, guid: 79260ee276120004d8b3bf765812b5a1,
+        type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.1981132
+      objectReference: {fileID: 0}
+    - target: {fileID: 5363658237668756730, guid: 79260ee276120004d8b3bf765812b5a1,
+        type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.1981132
       objectReference: {fileID: 0}
     - target: {fileID: 6056071312093150119, guid: 79260ee276120004d8b3bf765812b5a1,
         type: 3}

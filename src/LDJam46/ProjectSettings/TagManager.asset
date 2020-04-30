@@ -49,6 +49,9 @@ TagManager:
   - name: AboveGround
     uniqueID: 3274301975
     locked: 0
+  - name: CoworkerBelow
+    uniqueID: 451453791
+    locked: 0
   - name: Character
     uniqueID: 4148563585
     locked: 0
